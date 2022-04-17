@@ -23,3 +23,55 @@ want to calculate.
 <br>
 <img width="346" alt="Screenshot 2022-04-17 051507" src="https://user-images.githubusercontent.com/56235026/163708289-ef16a5c9-d8df-4d6b-8aba-e5953631bef1.png">
 
+## Basic Input Syntax
+The fundamental syntax for a calculation command is as follows:
+
+<span style="color: #1ac8ff"> /calc2 </span>
+<span style="color: #3eef6f"> string: </span>
+<span style="color: #e30000"> servant </span>
+<span style="color: #f4a120"> arguments </span>
+<br>
+As you've seen above, once you have selected the 
+<span style="color: #1ac8ff"> /calc2</span> command, 
+the <span style="color: #3eef6f"> string:</span> box will automatically appear as well. 
+All you will be responsible for typing after you have selected the command are the 
+<span style="color: #e30000"> servant</span>
+and the command <span style="color: #f4a120"> arguments</span>.
+
+The <span style="color: #e30000"> servant</span> is technically an argument itself, but it is distinct in that it is
+required. The servant refers to the specific servant who you will be calculating for. You will not be able to run the 
+command without providing a servant.
+
+As you will see shortly, arguments are separated by spaces. Since the servant name is technically an argument itself, 
+it is no exception. Only the first argument is considered to be the servant, so this means that the servant name
+<u>**cannot contain spaces**</u>. If you need to specify a servant whose name contains a space, such as 
+`Arjuna Alter`, you can simply enter it as `ArjunaAlter`.
+
+After the servant, the rest of the <span style="color: #f4a120"> arguments</span> that you provide, if any, will make 
+up the details of your specific calculation. The documentation goes into more detail about what types of arguments there 
+are in the [arguments](./arguments.md) page, but for the time being, know that a `20% attack buff`, such as 
+<img width="20" alt="Merlin" src="https://static.atlasacademy.io/JP/Faces/f_5008000.png">
+[Merlin's](https://apps.atlasacademy.io/db/JP/servant/150)
+<img width="20" alt="Dreamlike Charisma" src="https://static.atlasacademy.io/JP/SkillIcons/skill_00300.png">
+[Dreamlike Charisma](https://apps.atlasacademy.io/db/JP/skill/321550), would be represented as `a20`, and a 
+`50% buster buff`, such as 
+<img width="20" alt="Merlin" src="https://static.atlasacademy.io/JP/Faces/f_5008000.png">
+[Merlin's](https://apps.atlasacademy.io/db/JP/servant/150)
+<img width="20" alt="Hero Creation" src="https://static.atlasacademy.io/JP/SkillIcons/skill_00306.png">
+[Hero Creation](https://apps.atlasacademy.io/db/JP/skill/323650), would be represented as `bm50`.
+
+The way to separate multiple arguments is through spaces. So if you wanted to provide both 20% attack and 
+50% buster buffs, you would enter `a20 bm50`.
+
+With all of that in mind, let's try to put it together. Say you wanted to calculate for 
+<img width="20" alt="Ereshkigal" src="https://static.atlasacademy.io/JP/Faces/f_3032000.png">
+[Ereshkigal](https://apps.atlasacademy.io/db/JP/servant/196)
+with a 20% attack buff and 50% buster buff. How do you think you might do that?
+
+You'd do: 
+<span style="color: #1ac8ff"> /calc2 </span>
+<span style="color: #3eef6f"> string: </span>
+<span style="color: #e30000"> Ereshkigal </span>
+<span style="color: #f4a120"> a20 bm50 </span>
+<br>
+
