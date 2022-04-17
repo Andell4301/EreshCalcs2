@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## What is this?
+This wiki is to help document how to use the new, revamped calculation command with Ereshbot. Currently, this command is `/calcs2`. 
+Please note that at the time of writing, this command is still not available for public use.
 
-You can use the [editor on GitHub](https://github.com/Andell4301/EreshCalcs2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## I already know how to use the original EreshBot calc command. Should I still read this?
+That depends. If you don't care about the new features, then probably not. Everything that you could do with the old command can be done in the exact same way with the new command, except for the fact that the servant name now has to be one word (i.e. from "Arjuna Alter" to "ArjunaAlter") and that everything goes in the same box now.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+For example:
 
-### Markdown
+**Old Command**:<br>
+/calc `servant:`Arjuna Alter `string:`ce2400 n80 a30 p50 m20 saber hp1000
+<br>**New Command**:<br>
+/calc2 `string:`ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Andell4301/EreshCalcs2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+With that said, **the new calculation command is much, much more powerful.** If you'd like to take advantage of all the new features it offers, you should read on.
