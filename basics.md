@@ -17,7 +17,9 @@ key to select it.
 <br>
 <br>
 Once you've hit the enter key and selected the `calc2` command, a box labeled `string` will appear. This will be where 
-you will enter your calculation string.
+you will enter what we call your
+<span style="color: #89f6a9"> calculation string</span>. This is the text that you use to tell EreshBot what it is you
+want to calculate.
 <br>
 <img width="346" alt="Screenshot 2022-04-17 051507" src="https://user-images.githubusercontent.com/56235026/163708289-ef16a5c9-d8df-4d6b-8aba-e5953631bef1.png">
 
