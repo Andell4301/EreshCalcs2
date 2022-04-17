@@ -49,12 +49,16 @@ it is no exception. Only the first argument is considered to be the servant, so 
 
 After the servant, the rest of the <span style="color: #f4a120"> arguments</span> that you provide, if any, will make 
 up the details of your specific calculation. The documentation goes into more detail about what types of arguments there 
-are in the [arguments](./arguments.md) page, but for the time being, know that a `20% attack buff`, such as 
+are in the [arguments](./arguments) page, but for the time being, know that:
+<br>
+A `20% attack buff`, such as 
 <img width="20" alt="Merlin" src="https://static.atlasacademy.io/JP/Faces/f_5008000.png">
 [Merlin's](https://apps.atlasacademy.io/db/JP/servant/150)
 <img width="20" alt="Dreamlike Charisma" src="https://static.atlasacademy.io/JP/SkillIcons/skill_00300.png">
-[Dreamlike Charisma](https://apps.atlasacademy.io/db/JP/skill/321550), would be represented as `a20`, and a 
-`50% buster buff`, such as 
+[Dreamlike Charisma](https://apps.atlasacademy.io/db/JP/skill/321550), would be represented as `a20`.
+<br>
+
+A `50% buster buff`, such as 
 <img width="20" alt="Merlin" src="https://static.atlasacademy.io/JP/Faces/f_5008000.png">
 [Merlin's](https://apps.atlasacademy.io/db/JP/servant/150)
 <img width="20" alt="Hero Creation" src="https://static.atlasacademy.io/JP/SkillIcons/skill_00306.png">
