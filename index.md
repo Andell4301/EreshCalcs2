@@ -8,9 +8,10 @@ That depends. If you don't care about the new features, then probably not. Every
 For example:
 
 **Old Command**:<br>
-<span style="color: #545454"> /calc `servant:`</span>
+<span style="background-color: #545454">
+<span style="color: #FD8F2D"> /calc servant:</span>
 <span style="color: #FD8F2D">Arjuna Alter</span>
-<span style="color: #545454">`string:`</span>
+<span style="color: #FD8F2D">string:</span>
 <span style="color: #FD8F2D">ce2400 n80 a30 p50 m20 saber hp1000</span>
 <br>**New Command**:<br>
 /calc2 `string:`ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
