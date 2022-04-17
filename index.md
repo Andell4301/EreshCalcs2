@@ -1,5 +1,5 @@
 ## What is this?
-This wiki is to help document how to use the new, revamped calculation command with Ereshbot. Currently, this command is `/calcs2`. 
+This wiki is to help document how to use the new, revamped calculation command with Ereshbot. Currently, this command is `/calc2`. 
 Please note that at the time of writing, this command is still not available for public use.
 
 ## I already know how to use the original EreshBot calc command. Should I still read this?
