@@ -10,7 +10,7 @@ For example:
 
 **Old Command**:<br>
 `/calc servant:` Arjuna Alter `string:` ce2400 n80 a30 p50 m20 saber hp1000
-</br>**New Command**:<br>
+<br>**New Command**:<br>
 `/calc2 string:` ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
 
 With that said, the new command is much, much more powerful. If you'd like to take advantage of all the new 
@@ -27,3 +27,4 @@ a single command.
 That is not to say, however, that multi-calcs are the only new tricks up the revamped command's proverbial sleeve.
 The new version of the command comes with a host of new arguments to use, critical star calculation support, 
 and generally far more granular control over exactly what it is you want to calculate.
+
