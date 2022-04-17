@@ -26,30 +26,32 @@ want to calculate.
 ## Basic Input Syntax
 The fundamental syntax for a calculation command is as follows:
 
-<span style="color: #0083af"> /calc2 </span>
+<b><span style="color: #0083af"> /calc2 </span>
 <span style="color: #00a82f"> string: </span>
 <span style="color: #b70000"> servant </span>
-<span style="color: #c97c00"> arguments </span>
+<span style="color: #c97c00"> arguments </span></b>
 <br>
-As you've seen above, once you have selected the 
-<span style="color: #0083AFFF"> /calc2</span> command, 
-the <span style="color: #00A82FFF"> string:</span> box will automatically appear as well. 
-All you will be responsible for typing after you have selected the command are the 
-<span style="color: #B70000FF"> servant</span>
-and the command <span style="color: #C97C00FF"> arguments</span>.
 
-The <span style="color: #B70000FF"> servant</span> is technically an argument itself, but it is distinct in that it is
+As you've seen above, once you have selected the 
+<b><span style="color: #0083AFFF"> /calc2</span></b> command, 
+the <b><span style="color: #00A82FFF"> string:</span></b> box will automatically appear as well. 
+All you will be responsible for typing after you have selected the command are the 
+<b><span style="color: #B70000FF"> servant</span></b>
+and the command <b><span style="color: #C97C00FF"> arguments</span></b>.
+
+The <b><span style="color: #B70000FF"> servant</span></b> is technically an argument itself, but it is distinct in that it is
 required. The servant refers to the specific servant who you will be calculating for. You will not be able to run the 
 command without providing a servant.
 
 As you will see shortly, arguments are separated by spaces. Since the servant name is technically an argument itself, 
 it is no exception. Only the first argument is considered to be the servant, so this means that the servant name
-<u>**cannot contain spaces**</u>. If you need to specify a servant whose name contains a space, such as 
+<u><b>cannot contain spaces</b></u>. If you need to specify a servant whose name contains a space, such as 
 `Arjuna Alter`, you can simply enter it as `ArjunaAlter`.
 
-After the servant, the rest of the <span style="color: #C97C00FF"> arguments</span> that you provide, if any, will make 
+After the servant, the rest of the <b><span style="color: #C97C00FF"> arguments</span></b> that you provide, if any, will make 
 up the details of your specific calculation. The documentation goes into more detail about what types of arguments there 
 are in the [arguments](./arguments) page, but for the time being, know that:
+<br>
 <br>
 A `20% attack buff` would be represented as `a20`.
 <br>
@@ -64,8 +66,7 @@ With all of that in mind, let's try to put it together. Say you wanted to calcul
 with a 20% attack buff and 50% buster buff. How do you think you might do that?
 
 You'd do: 
-<span style="color: #0083AFFF"> /calc2 </span>
+<b><span style="color: #0083AFFF"> /calc2 </span>
 <span style="color: #00A82FFF"> string: </span>
 <span style="color: #B70000FF"> Ereshkigal </span>
-<span style="color: #C97C00FF"> a20 bm50 </span>
-<br>
+<span style="color: #C97C00FF"> a20 bm50 </span></b>
