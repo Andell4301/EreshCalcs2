@@ -1,4 +1,4 @@
-##How To Actually *Use* The Calculation Command
+## How To Actually *Use* The Calculation Command
 Like EreshBot's other commands, the calculation command is a slash command.
 To utilize slash commands, you'll want to first input the character `/` into your chat box.
 <br>
