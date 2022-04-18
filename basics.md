@@ -39,8 +39,8 @@ All you will be responsible for typing after you have selected the command are t
 and the command <span style="color: #C97C00FF;font-weight:bold"> arguments</span>.
 
 <hr>
-#### The Servant Argument
-The <span style="color: #B70000FF;font-weight:bold"> servant</span> is technically an argument itself, 
+<h4 style="color:#B70000FF">The Servant Argument</h4>
+The servant is technically an argument itself, 
 but it is distinct in that it is required. The servant refers to the specific servant who you will be calculating for. 
 You will not be able to run the command without providing a servant.
 
@@ -56,9 +56,10 @@ Please note that the servant name is fuzzy-matched. This basically means that if
 doesn't know, it will try to guess who you mean. "Arashkigal" would match to "Ereshkigal" and so on. Aliases can also
 be used, such as "Eresh" for "Ereshkigal." Finally, both servant collection numbers (ex. 196) and IDs (ex. 303200) can 
 be used.
+
 <hr>
-#### The Other Arguments
-After the servant, the rest of the <span style="color: #C97C00FF;font-weight:bold"> arguments</span> 
+<h4 style="color:#C97C00FF">The Servant Argument</h4>
+After the servant, the rest of the arguments
 that you provide, if any, will make up the details of your specific calculation. The documentation goes into more 
 detail about what types of arguments there are in the [arguments](./arguments) page, but for the time being, know that:
 <br>
@@ -69,6 +70,9 @@ A `50% buster buff` would be represented as `bm50`.
 
 The way to separate multiple arguments is through spaces. So if you wanted to provide both 20% attack and 
 50% buster buffs, you would enter `a20 bm50`.
+
+<hr>
+<h4>Basic Input Summary</h4>
 
 With all of that in mind, let's try to put it together. Say you wanted to calculate for 
 <img width="20" alt="Ereshkigal" src="https://static.atlasacademy.io/JP/Faces/f_3032000.png">
