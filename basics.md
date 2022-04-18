@@ -58,7 +58,7 @@ be used, such as "Eresh" for "Ereshkigal." Finally, both servant collection numb
 be used.
 
 <hr>
-<h4 style="color:#C97C00FF">The Servant Argument</h4>
+<h4 style="color:#C97C00FF">The Other Arguments</h4>
 After the servant, the rest of the arguments
 that you provide, if any, will make up the details of your specific calculation. The documentation goes into more 
 detail about what types of arguments there are in the [arguments](./arguments) page, but for the time being, know that:
