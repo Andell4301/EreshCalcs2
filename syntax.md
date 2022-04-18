@@ -61,10 +61,10 @@ You'd do:
 <span style="color: #C97C00FF;font-weight:bold"> a20 bm50 </span>
 
 ## Multi-Calc Input Syntax
-::: warning
-This section assumes that you
-:::
-
+<p style="padding: 15px;background-color: rgba(244,67,54,0.62);border-radius: 25px;color: white;margin-bottom: 15px;">
+This section assumes that you have read and understood the basic syntax section. It is also 
+helpful to be familiar with using basic calculations first before trying to use multi-calcs.
+</p>
 The servant argument aside, EreshBot calculation arguments can essentially be broken down into three distinct types.
 The first type are those that are used to specify the structure of the calculation. This includes args like `enemy` or 
 `card`. The second type are those used to specify a card or card chain. This includes args like `buster` or `arts`.
@@ -104,6 +104,11 @@ The full list of structure arguments is as follows:
     <td>nwave#</td>
     <td>Defines and/or switches to a wave. Also automatically fills the wave.</td>
     <td>nwave1</td>
+  </tr>
+  <tr>
+    <td>w#</td>
+    <td>Used for targeting waves with cards.</td>
+    <td>w1</td>
   </tr>
   <tr>
     <td>rng#</td>
@@ -157,4 +162,27 @@ The most important thing to remember when dealing with multi calcs is that
 the order of your arguments matters
 </span>.
 
-With that in mind, let's go through 
+With that in mind, the best way to understand how all of these work together is to look at some examples.
+
+### Example 1:
+`/calc2 string: Ereshkigal bnpae nwave1 card3 e3 card4 e3`
+<br>
+<br>
+Lets break the calculation string down into its components.
+
+ <table>
+  <tr>
+    <th>Argument(s)</th>
+    <th>Effect</th>
+  </tr>
+  <tr>
+    <td>Ereshkigal</td>
+    <td>This indicates that the servant we are calculating for is Ereshkigal.</td>
+  </tr>
+  <tr>
+    <td>bnpae</td>
+    <td>This is a string of card chain arguments. Each letter is technically its own 
+argument, but together they make up the card string. This is equivalent to specifying 
+`buster noble arts extra`</td>
+  </tr>
+</table>
