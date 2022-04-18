@@ -44,9 +44,17 @@ required. The servant refers to the specific servant who you will be calculating
 command without providing a servant.
 
 As you will see shortly, arguments are separated by spaces. Since the servant name is technically an argument itself, 
-it is no exception. Only the first argument is considered to be the servant, so this means that the servant name
-<u><b>cannot contain spaces</b></u>. If you need to specify a servant whose name contains a space, such as 
+it is no exception. Only the first argument is considered to be the servant, so this means that 
+<span style="color: #B70000FF">
+<u><b>the servant name cannot contain spaces</b></u>
+</span>.
+If you need to specify a servant whose name contains a space, such as 
 `Arjuna Alter`, you can simply enter it as `ArjunaAlter`.
+
+Please note that the servant name is fuzzy-matched. This basically means that if you give EreshBot a servant it 
+doesn't know, it will try to guess who you mean. "Arashkigal" would match to "Ereshkigal" and so on. Aliases can also
+be used, such as "Eresh" for "Ereshkigal." Finally, both servant collection numbers (ex. 196) and IDs (ex. 303200) can 
+be used.
 
 After the servant, the rest of the <b><span style="color: #C97C00FF"> arguments</span></b> that you provide, if any, will make 
 up the details of your specific calculation. The documentation goes into more detail about what types of arguments there 
