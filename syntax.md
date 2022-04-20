@@ -73,13 +73,13 @@ syntax and the default assumptions. It is also helpful but not strictly necessar
 
 The servant argument aside, EreshBot calculation arguments can essentially be broken down into three distinct types.
 
-1. Arguments used to specify the structure of the calculation, such as the number of enemies or which arguments apply 
-to which enemy. This includes args like `enemy` and`card`.
-<br>
-2. Arguments used to specify a card or card chain. This includes args like `buster` and `arts`.
-<br>
-3. Arguments used to specify the specifics of your calculation, such as what level the servant is or how much 
-buster card bonus they have. This includes args like `level`, `fou`, `atk` and `def`.
+ <ol>
+  <li>Arguments used to specify the structure of the calculation, such as the number of 
+    enemies or which arguments apply to which enemy. This includes args like <b>enemy</b> and <b>card</b>.</li>
+  <li>Arguments used to specify a card or card chain. This includes args like <b>buster</b> and <b>arts</b>.</li>
+  <li>Arguments used to specify the specifics of your calculation, such as what level the servant is or how much 
+buster card bonus they have. This includes args like <b>level</b>, <b>fou</b>, <b>atk</b> and <b>def</b>.</li>
+</ol>
 
 This section will focus on how to use the first two types of arguments.
 The most important thing to remember when dealing with multi calcs is that 
@@ -203,13 +203,16 @@ specified. For a brief explanation of each structure and card chain argument, se
     <td>x</td>
   </tr>
 </table>
-</details>
 
 * Note: Some arguments, such as `np` and `n`, have other functions when supplied with a number (ex `np5`). Make sure
 that you do **not** supply a number to use them as a card chain argument.
 * For a more in depth explanation of each argument, see  the [arguments](./arguments.md) page.
+</details>
 
-### Example 1:
+Below are examples of different calculation commands that illustrate how these structure and card chain args 
+come together.
+<details>
+  <summary><b>Example 1:</b></summary>
 <span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria buster</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 def-20</span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
@@ -261,9 +264,11 @@ that you do **not** supply a number to use them as a card chain argument.
 
 In summary, this calculation will hit enemy2 with a buster card from Artoria. Enemy1 will have 20% def down, but 
 they won't end up being hit, as our card specifies enemy2 as the target.
+</details>
 
+<details>
+  <summary><b>Example 2:</b></summary>
 
-### Example 2:
 <span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria bnpae </span>
 <span style="color: #00A82FFF;font-weight:bold"> nwave1</span>
 <span style="color: #B70000FF;font-weight:bold"> card3 e3</span>
@@ -321,9 +326,11 @@ they won't end up being hit, as our card specifies enemy2 as the target.
 </details>
 
 In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
-
-1) The first card is buster, and since no target is specified, will hit enemy1.
-2) The second card is a noble phantasm. No target is specified, and Artoria's noble phantasm
-is an AoE noble phantasm that hits all enemies. So it will hit all enemies in the wave.
-3) The third card is an arts card. For card 3, e3 was specified. So it will hit enemy3.
-4) Finally, the fourth card is an extra card. For card 4, e3 was specified. So it will hit enemy3.
+ <ol>
+  <li>The first card is buster, and since no target is specified, will hit enemy1.</li>
+  <li>The second card is a noble phantasm. No target is specified, and Artoria's noble phantasm
+    is an AoE noble phantasm that hits all enemies. So it will hit all enemies in the wave.</li>
+  <li>The third card is an arts card. For card 3, e3 was specified. So it will hit enemy3.</li>
+  <li>Finally, the fourth card is an extra card. For card 4, e3 was specified. So it will hit enemy3.</li>
+</ol>
+</details>
