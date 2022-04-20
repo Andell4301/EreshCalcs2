@@ -108,13 +108,12 @@ Take the following two calcs for example:
 In the first calc, only the third enemy would have HP specified. The other enemies would not. But in 
 the second calc, all three enemies would have HP specified.
 
-You'll notice that in the charts below, I refer to arguments as "defining" and "switching to" things. That's essentially
-describing the behavior illustrated above. When you supply the argument `enemy1` for example, you're both telling 
-EreshBot that `enemy1` exists _and_ making it so that, until you specify a new structure arg, all arguments 
-that come after `enemy1` will be applied only to `enemy1`. If you switch away from `enemy1`, say by providing `enemy2`,
-you can always specify `enemy1` again to go back to it. It won't overwrite the first one.
+Essentially, arguments like `enemy` do two things. They both **define** the existence of an enemy as well as 
+**switch to it** it so any arguments that follow it will only be applied to that enemy until a new structure argument is
+specified. For a brief explanation of each structure and card chain argument, see the charts below.
 
-**The full list of structure arguments is as follows:**
+<details>
+  <summary><b>Full List of Structure Arguments</b></summary>
  <table>
   <tr>
     <th>Argument</th>
@@ -138,7 +137,7 @@ you can always specify `enemy1` again to go back to it. It won't overwrite the f
   </tr>
   <tr>
     <td>wave#</td>
-    <td>Switches to a wave.</td>
+    <td>Switches to a wave. This arg does not define waves. See nwave.</td>
     <td>wave1</td>
   </tr>
   <tr>
@@ -156,9 +155,17 @@ you can always specify `enemy1` again to go back to it. It won't overwrite the f
     <td>Applies a specified rng to the entire calculation.</td>
     <td>rng1.0</td>
   </tr>
+  <tr>
+    <td>wavesize#</td>
+    <td>Specifies the number of enemies per wave. Used to indicate that waves should 
+    have 6 enemies for certain story fights.</td>
+    <td>wavesize6</td>
+  </tr>
 </table>
+</details>
 
-**The full list of card chain arguments are as follows:**
+<details>
+  <summary><b>Full List of Card Chain Arguments</b></summary>
  <table>
   <tr>
     <th>Argument</th>
@@ -196,6 +203,7 @@ you can always specify `enemy1` again to go back to it. It won't overwrite the f
     <td>x</td>
   </tr>
 </table>
+</details>
 
 * Note: Some arguments, such as `np` and `n`, have other functions when supplied with a number (ex `np5`). Make sure
 that you do **not** supply a number to use them as a card chain argument.
@@ -246,7 +254,11 @@ that you do **not** supply a number to use them as a card chain argument.
   </tr>
 </table>
 
+<details>
+  <summary><b>Command Output</b></summary>
 <img src="./images/multi_calc/example_1.png" alt="Multi Calcs Example 1">
+</details>
+
 In summary, this calculation will hit enemy2 with a buster card from Artoria. Enemy1 will have 20% def down, but 
 they won't end up being hit, as our card specifies enemy2 as the target.
 
@@ -307,7 +319,11 @@ they won't end up being hit, as our card specifies enemy2 as the target.
   </tr>
 </table>
 
+<details>
+  <summary><b>Command Output</b></summary>
 <img src="./images/multi_calc/example_2.png" alt="Multi Calcs Example 2">
+</details>
+
 In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
 
 1) The first card is buster, and since no target is specified, will hit enemy1.
