@@ -74,10 +74,8 @@ syntax and the default assumptions. It is also helpful but not strictly necessar
 The servant argument aside, EreshBot calculation arguments can essentially be broken down into three distinct types.
 
 1) Arguments used to specify the structure of the calculation, such as the number of enemies or which arguments apply 
-to which enemy. This includes args like `enemy` and`card`. 
-<br>
+to which enemy. This includes args like `enemy` and`card`.
 2) Arguments used to specify a card or card chain. This includes args like `buster` and `arts`.
-<br>
 3) Arguments used to specify the specifics of your calculation, such as what level the servant is or how much 
 buster card bonus they have. This includes args like `level`, `fou`, `atk` and `def`.
 
@@ -87,7 +85,7 @@ The most important thing to remember when dealing with multi calcs is that
 the order of your arguments matters </span>. If your calculation string includes the `enemy` arg for 
 example, arguments that you include after that argument will only be applied to that enemy.
 
-If, for example, you were to calculate:
+Take the following two calcs for example:
 <br>
 <span style="color: #0083AFFF;font-weight:bold"> 
 /calc2 string: Ereshkigal
@@ -95,12 +93,7 @@ If, for example, you were to calculate:
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 </span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
 <span style="color: #C97C00FF;font-weight:bold"> enemy3 </span>
-<span style="color: #C97C00FF;font-weight:bold;border-bottom: 2px solid"> hp22050</span>,
-the hp22050 argument would _only_ be applied to enemy3. The other enemies would not have any 
-HP specified!
-<br>
-<br>
-If, on the other hand, you were to calculate:
+<span style="color: #C97C00FF;font-weight:bold;border-bottom: 2px solid"> hp22050</span>
 <br>
 <span style="color: #0083AFFF;font-weight:bold"> 
 /calc2 string: Ereshkigal
@@ -110,7 +103,8 @@ If, on the other hand, you were to calculate:
 <span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
 <span style="color: #C97C00FF;font-weight:bold"> enemy3</span>,
 <br>
-Then in this case, all the enemies would have the hp22050 argument applied to them.
+In the first calc, only the third enemy would have HP specified. The other enemies would not. But in 
+the second calc, all three enemies would have HP specified.
 
 You'll notice that in the charts below, I refer to arguments as "defining" and "switching to" things. That's essentially
 describing the behavior illustrated above. When you supply the argument `enemy1` for example, you're both telling 
