@@ -333,7 +333,7 @@ In particular, we'll be simulating the NP4 variant of the Double Skadi + Lancelo
 <img src="./images/multi_calc/dss_comp.png" alt="Christmas Lotto Node NP4">
 (Note: The minor discrepancy in max damage is due to the sheet using 1.1x for max RNG, instead 
 of the actual max of 1.099x that EreshBot uses.)
-
+<br><br>
 A calculation string for a full run like this is long and complex. To help make it a bit simpler, you'll want to make 
 as much use of argument scope as you can.
 For example, we know that all the ghosts here are sky attribute. The only enemies that aren't sky are 
@@ -341,7 +341,8 @@ the Chimera and Moriarty himself. You _could_ apply the attribute to each enemy 
 better way to do this would be to apply sky globally and override it on the Chimera and Moriarty.
 <br>
 
-In any case, let's take a look at the calc string for this.
+With that in mind, let's take a look at the calc string for this.
+<br>
 
 <span style="color: #0083AFFF;font-weight:bold"> /calc2 string: Lancelot npnpnp np4 xss ce2000 archer sky</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 hp32149</span>
@@ -354,7 +355,7 @@ In any case, let's take a look at the calc string for this.
 <span style="color: #4aadad;font-weight:bold"> enemy8 man hp180792</span>
 <span style="color: #e06c75;font-weight:bold"> enemy9 hp44771</span>
 <span style="color: #000000;font-weight:bold"> card1 w1 a10 ng50 fr50</span>
-<span style="color: #abe790;font-weight:bold"> card2 w2 ng100 a20 d-30 fr50</span>
+<span style="color: #3f831d;font-weight:bold"> card2 w2 ng100 a20 d-30 fr50</span>
 <span style="color: #ff6f00;font-weight:bold"> card3 w3 n50 a30 d-30</span>
 
 </details>
