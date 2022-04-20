@@ -73,12 +73,12 @@ syntax and the default assumptions. It is also helpful but not strictly necessar
 
 The servant argument aside, EreshBot calculation arguments can essentially be broken down into three distinct types.
 
-1) Arguments used to specify the structure of the calculation, such as the number of enemies or which arguments apply 
+1. Arguments used to specify the structure of the calculation, such as the number of enemies or which arguments apply 
 to which enemy. This includes args like `enemy` and`card`.
 <br>
-2) Arguments used to specify a card or card chain. This includes args like `buster` and `arts`.
+2. Arguments used to specify a card or card chain. This includes args like `buster` and `arts`.
 <br>
-3) Arguments used to specify the specifics of your calculation, such as what level the servant is or how much 
+3. Arguments used to specify the specifics of your calculation, such as what level the servant is or how much 
 buster card bonus they have. This includes args like `level`, `fou`, `atk` and `def`.
 
 This section will focus on how to use the first two types of arguments.
