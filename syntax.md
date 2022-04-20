@@ -109,7 +109,7 @@ In the first calc, only the third enemy would have HP specified. The other enemi
 the second calc, all three enemies would have HP specified.
 
 Essentially, arguments like `enemy` do two things. They both **define** the existence of an enemy as well as 
-**switch to it** it so any arguments that follow it will only be applied to that enemy until a new structure argument is
+**switch to** it so any arguments that follow it will only be applied to that enemy until a new structure argument is
 specified. For a brief explanation of each structure and card chain argument, see the charts below.
 
 #### Full List of Structure Arguments
