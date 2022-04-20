@@ -1,12 +1,4 @@
-## Navigation
-<nav>
-    <ol>
-      <li><a href="https://andell4301.github.io/EreshCalcs2/index.md">Introduction</a></li>
-      <li><a href="https://andell4301.github.io/EreshCalcs2/basics.md">Basics</a></li>
-      <li><a href="https://andell4301.github.io/EreshCalcs2/syntax.md">Syntax</a></li>
-      <li><a href="https://andell4301.github.io/EreshCalcs2/arguments.md">Arguments</a></li>
-    </ol>
-</nav>
+# Welcome to the EreshCalcs2 Wiki!
 
 ## What is this?
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
