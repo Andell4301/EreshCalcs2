@@ -255,7 +255,6 @@ come together.
 In summary, this calculation will hit enemy2 with a buster card from Artoria. Enemy1 will have 20% def down, but 
 they won't end up being hit, as our card specifies enemy2 as the target.
 <br>
-<br>
 <img src="./images/multi_calc/example_1.png" alt="Multi Calcs Example 1">
 </details>
 
