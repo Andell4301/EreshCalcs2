@@ -27,4 +27,3 @@ a single command.
 That is not to say, however, that multi-calcs are the only new tricks up the revamped command's proverbial sleeve.
 The new version of the command comes with a host of new arguments to use, critical star calculation support, 
 and generally far more granular control over exactly what it is you want to calculate.
-

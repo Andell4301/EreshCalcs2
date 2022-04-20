@@ -1,11 +1,12 @@
 ## Basic Input Syntax
 The fundamental syntax for a calculation command is as follows:
 
-<span style="color: #0083af;font-weight:bold"> /calc2 </span>
-<span style="color: #00a82f;font-weight:bold"> string: </span>
-<span style="color: #b70000;font-weight:bold"> servant </span>
-<span style="color: #c97c00;font-weight:bold"> arguments </span>
+<span style="color: #0083af;font-weight:bold">/calc2 </span>
+<span style="color: #00a82f;font-weight:bold">string: </span>
+<span style="color: #b70000;font-weight:bold">servant </span>
+<span style="color: #c97c00;font-weight:bold">arguments </span>
 <br>
+
 As you may have seen in the [basics](basics.md) page, once you have selected the 
 <span style="color: #0083AFFF;font-weight:bold"> /calc2</span> command, 
 the <span style="color: #00A82FFF;font-weight:bold"> string:</span> box will automatically appear as well. 
@@ -14,6 +15,7 @@ All you will be responsible for typing after you have selected the command are t
 and the command <span style="color: #C97C00FF;font-weight:bold"> arguments</span>.
 
 <hr>
+
 <h5 style="color:#B70000FF">The Servant Argument</h5>
 The servant is technically an argument itself, 
 but it is distinct in that it is required. The servant refers to the specific servant who you will be calculating for. 
@@ -33,6 +35,7 @@ be used, such as "Eresh" for "Ereshkigal." Finally, both servant collection numb
 be used.
 
 <hr>
+
 <h5 style="color:#C97C00FF">The Other Arguments</h5>
 After the servant, the rest of the arguments
 that you provide, if any, will make up the details of your specific calculation. The documentation goes into more 
@@ -47,6 +50,7 @@ The way to separate multiple arguments is through spaces. So if you wanted to pr
 50% buster buffs, you would enter `a20 bm50`.
 
 <hr>
+
 <h5>Basic Input Summary</h5>
 
 With all of that in mind, let's try to put it together. Say you wanted to calculate for 
@@ -62,18 +66,59 @@ You'd do:
 
 ## Multi-Calc Input Syntax
 <p style="padding: 15px;background-color: rgba(244,67,54,0.62);border-radius: 25px;color: white;margin-bottom: 15px;">
-This section assumes that you have read and understood the basic syntax section. It is also 
-helpful to be familiar with using basic calculations first before trying to use multi-calcs.
+Multi-Calcs are an advanced use case. Before diving into them, you should be comfortable with basic
+syntax and the default assumptions. It is also helpful but not strictly necessary to be familiar with the argument list.
 </p>
+
+
 The servant argument aside, EreshBot calculation arguments can essentially be broken down into three distinct types.
-The first type are those that are used to specify the structure of the calculation. This includes args like `enemy` or 
-`card`. The second type are those used to specify a card or card chain. This includes args like `buster` or `arts`.
-Finally, the third type are those that are used to specify the specifics of your calculation, such as `level`, `fou`,
-`atk` or `def`.
+
+1) Arguments used to specify the structure of the calculation, such as the number of enemies or which arguments apply 
+to which enemy. This includes args like `enemy` and`card`. 
+<br>
+2) Arguments used to specify a card or card chain. This includes args like `buster` and `arts`.
+<br>
+3) Arguments used to specify the specifics of your calculation, such as what level the servant is or how much 
+buster card bonus they have. This includes args like `level`, `fou`, `atk` and `def`.
 
 This section will focus on how to use the first two types of arguments.
+The most important thing to remember when dealing with multi calcs is that 
+<span style="color: #B70000FF;font-weight:bold;border-bottom: 2px solid">
+the order of your arguments matters </span>. If your calculation string includes the `enemy` arg for 
+example, arguments that you include after that argument will only be applied to that enemy.
 
-The full list of structure arguments is as follows:
+If, for example, you were to calculate:
+<br>
+<span style="color: #0083AFFF;font-weight:bold"> 
+/calc2 string: Ereshkigal
+</span>
+<span style="color: #00A82FFF;font-weight:bold"> enemy1 </span>
+<span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
+<span style="color: #C97C00FF;font-weight:bold"> enemy3 </span>
+<span style="color: #C97C00FF;font-weight:bold;border-bottom: 2px solid"> hp22050</span>,
+the hp22050 argument would _only_ be applied to enemy3. The other enemies would not have any 
+HP specified!
+<br>
+<br>
+If, on the other hand, you were to calculate:
+<br>
+<span style="color: #0083AFFF;font-weight:bold"> 
+/calc2 string: Ereshkigal
+</span>
+<span style="color: #0083AFFF;font-weight:bold;border-bottom: 2px solid">hp22050</span>
+<span style="color: #00A82FFF;font-weight:bold"> enemy1 </span>
+<span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
+<span style="color: #C97C00FF;font-weight:bold"> enemy3</span>,
+<br>
+Then in this case, all the enemies would have the hp22050 argument applied to them.
+
+You'll notice that in the charts below, I refer to arguments as "defining" and "switching to" things. That's essentially
+describing the behavior illustrated above. When you supply the argument `enemy1` for example, you're both telling 
+EreshBot that `enemy1` exists _and_ making it so that, until you specify a new structure arg, all arguments 
+that come after `enemy1` will be applied only to `enemy1`. If you switch away from `enemy1`, say by providing `enemy2`,
+you can always specify `enemy1` again to go back to it. It won't overwrite the first one.
+
+**The full list of structure arguments is as follows:**
  <table>
   <tr>
     <th>Argument</th>
@@ -82,7 +127,7 @@ The full list of structure arguments is as follows:
   </tr>
   <tr>
     <td>card#</td>
-    <td>Defines and/or switches to a card.</td>
+    <td>Switches to a card. This arg does not define cards. See card chain arguments.</td>
     <td>card1</td>
   </tr>
   <tr>
@@ -101,7 +146,7 @@ The full list of structure arguments is as follows:
     <td>wave1</td>
   </tr>
   <tr>
-    <td>nwave#</td>
+    <td>nwave#, newwave#</td>
     <td>Defines and/or switches to a wave. Also automatically fills the wave.</td>
     <td>nwave1</td>
   </tr>
@@ -111,12 +156,13 @@ The full list of structure arguments is as follows:
     <td>w1</td>
   </tr>
   <tr>
-    <td>rng#</td>
+    <td>rng#, rand#, random#</td>
     <td>Applies a specified rng to the entire calculation.</td>
     <td>rng1.0</td>
   </tr>
-</table> 
-The full list of card chain arguments are as follows:
+</table>
+
+**The full list of card chain arguments are as follows:**
  <table>
   <tr>
     <th>Argument</th>
@@ -154,35 +200,122 @@ The full list of card chain arguments are as follows:
     <td>x</td>
   </tr>
 </table>
+
 * Note: Some arguments, such as `np` and `n`, have other functions when supplied with a number (ex `np5`). Make sure
 that you do **not** supply a number to use them as a card chain argument.
-
-The most important thing to remember when dealing with multi calcs is that 
-<span style="color: #B70000FF;font-weight:bold;border-bottom: 2px solid">
-the order of your arguments matters
-</span>.
-
-With that in mind, the best way to understand how all of these work together is to look at some examples.
+* For a more in depth explanation of each argument, see  the [arguments](./arguments.md) page.
 
 ### Example 1:
-`/calc2 string: Ereshkigal bnpae nwave1 card3 e3 card4 e3`
+<span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria buster</span>
+<span style="color: #00A82FFF;font-weight:bold"> enemy1 def-20</span>
+<span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
+<span style="color: #C97C00FF;font-weight:bold"> card1 e2</span>
 <br>
-<br>
-Lets break the calculation string down into its components.
+ <table>
+  <tr>
+    <th>Argument</th>
+    <th>Effect</th>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">Artoria</td>
+    <td>This indicates that the servant we are calculating for is Artoria.</td>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">buster</td>
+    <td>This sets the card that we are calculating to one of Artoria's buster cards.</td>
+  </tr>
+  <tr>
+    <td style="color: #00A82FFF;font-weight:bold">enemy1</td>
+    <td>This specifies that enemy1 exists, and until a new structure arg is provided, all future 
+    arguments will apply only to this enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #00A82FFF;font-weight:bold">def-20</td>
+    <td>This applies 20% defense down specifically to enemy1. Any damage dealt to enemy1 will take this debuff 
+    into account.</td>
+  </tr>
+  <tr>
+    <td style="color: #B70000FF;font-weight:bold">enemy2</td>
+    <td>This specifies that enemy2 exists, and until a new structure arg is provided, all future
+    arguments will apply only to this enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #C97C00FF;font-weight:bold">card1</td>
+    <td>Switches to card1. Until a new structure arg is provided, all future 
+    args will apply to card1, which in this case is the buster card specified earlier.</td>
+  </tr>
+  <tr>
+    <td style="color: #C97C00FF;font-weight:bold">e2</td>
+    <td>Sets enemy2 as the target of card1. This means that card1 will only hit enemy2.</td>
+  </tr>
+</table>
 
+<img src="./images/multi_calc/example_1.png" alt="Multi Calcs Example 1">
+In summary, this calculation will hit enemy2 with a buster card from Artoria. Enemy1 will have 20% def down, but 
+they won't end up being hit, as our card specifies enemy2 as the target.
+
+
+### Example 2:
+<span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria bnpae </span>
+<span style="color: #00A82FFF;font-weight:bold"> nwave1</span>
+<span style="color: #B70000FF;font-weight:bold"> card3 e3</span>
+<span style="color: #C97C00FF;font-weight:bold"> card4 e3</span>
+<br>
  <table>
   <tr>
     <th>Argument(s)</th>
     <th>Effect</th>
   </tr>
   <tr>
-    <td>Ereshkigal</td>
-    <td>This indicates that the servant we are calculating for is Ereshkigal.</td>
+    <td style="color: #0083AFFF;font-weight:bold">Artoria</td>
+    <td>This indicates that the servant we are calculating for is Artoria.</td>
   </tr>
   <tr>
-    <td>bnpae</td>
-    <td>This is a string of card chain arguments. Each letter is technically its own 
-argument, but together they make up the card string. This is equivalent to specifying 
-`buster noble arts extra`</td>
+    <td style="color: #0083AFFF;font-weight:bold">bnpae</td>
+    <td>This is a string of card chain arguments. 
+    It is equivalent to specifying 
+    <img src="./images/cards/buster.png" alt="Buster" height=15> buster
+    <img src="./images/cards/np.png" alt="noble" height=15> noble 
+    <img src="./images/cards/arts.png" alt="Arts" height=15> arts 
+    <img src="./images/cards/extra.png" alt="Extra" height=15> extra. These will be the cards
+    that will be calculated.
+    </td>
+  </tr>
+  <tr>
+    <td style="color: #00A82FFF;font-weight:bold">nwave1</td>
+    <td>This specifies and switches to full wave 1. It's equivalent to specifying 
+    enemy1 enemy2 enemy3 wave1. It creates enemies to fill up the wave,  then
+    switches to wave1 so that all future args will be applied only to wave1 until a
+    new structure arg is provided.
+    </td>
+  </tr>
+  <tr>
+    <td style="color: #B70000FF;font-weight:bold">card3</td>
+    <td>Switches to card3. Until a new structure arg is provided, all future 
+    args will apply to card3, which in this case is the arts card.
+    </td>
+  </tr>
+  <tr>
+    <td style="color: #B70000FF;font-weight:bold">e3</td>
+    <td>Sets enemy3 as the target of card1. This means that card3 will only hit enemy3.</td>
+  </tr>
+  <tr>
+    <td style="color: #C97C00FF;font-weight:bold">card4</td>
+    <td>Switches to card4. Until a new structure arg is provided, all future 
+    args will apply to card4, which in this case is the arts card.
+    </td>
+  </tr>
+  <tr>
+    <td style="color: #C97C00FF;font-weight:bold">e3</td>
+    <td>Sets enemy3 as the target of card1. This means that card4 will only hit enemy3.</td>
   </tr>
 </table>
+
+<img src="./images/multi_calc/example_2.png" alt="Multi Calcs Example 2">
+In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
+
+1) The first card is buster, and since no target is specified, will hit enemy1.
+2) The second card is a noble phantasm. No target is specified, and Artoria's noble phantasm
+is an AoE noble phantasm that hits all enemies. So it will hit all enemies in the wave.
+3) The third card is an arts card. For card 3, e3 was specified. So it will hit enemy3.
+4) Finally, the fourth card is an extra card. For card 4, e3 was specified. So it will hit enemy3.
