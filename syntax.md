@@ -103,7 +103,7 @@ Take the following two calcs for example:
 <span style="color: #0083AFFF;font-weight:bold;border-bottom: 2px solid">hp22050</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 </span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
-<span style="color: #C97C00FF;font-weight:bold"> enemy3</span>,
+<span style="color: #C97C00FF;font-weight:bold"> enemy3</span>
 <br>
 In the first calc, only the third enemy would have HP specified. The other enemies would not. But in 
 the second calc, all three enemies would have HP specified.
