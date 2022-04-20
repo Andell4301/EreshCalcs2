@@ -339,10 +339,10 @@ as much use of argument scope as you can.
 For example, we know that all the ghosts here are sky attribute. The only enemies that aren't sky are 
 the Chimera and Moriarty himself. You _could_ apply the attribute to each enemy individually, but a 
 better way to do this would be to apply sky globally and override it on the Chimera and Moriarty.
-<br>
+<br><br>
 
 With that in mind, let's take a look at the calc string for this.
-<br>
+<br><br>
 
 <span style="color: #0083AFFF;font-weight:bold"> /calc2 string: Lancelot npnpnp np4 xss ce2000 archer sky</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 hp32149</span>
