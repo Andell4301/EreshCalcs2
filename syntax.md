@@ -344,7 +344,7 @@ better way to do this would be to apply sky globally and override it on the Chim
 With that in mind, let's take a look at the calc string for this.
 <br><br>
 
-<span style="color: #0083AFFF;font-weight:bold"> /calc2 string: Lancelot npnpnp np4 xss ce2000 archer sky</span>
+<span style="color: #0083AFFF;font-weight:bold"> /calc2 string: Lancelot npnpnp np4 sscope xss archer sky</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 hp32149</span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 hp32739</span>
 <span style="color: #C97C00FF;font-weight:bold"> enemy3 hp31560</span>
@@ -357,5 +357,104 @@ With that in mind, let's take a look at the calc string for this.
 <span style="color: #000000;font-weight:bold"> card1 w1 a10 ng50 fr50</span>
 <span style="color: #3f831d;font-weight:bold"> card2 w2 ng100 a20 d-30 fr50</span>
 <span style="color: #ff6f00;font-weight:bold"> card3 w3 n50 a30 d-30</span>
+
+ <table>
+  <tr>
+    <th>Argument</th>
+    <th>Effect</th>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">Lancelot</td>
+    <td>This indicates that the servant we are calculating for is Lancelot.</td>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">npnpnp</td>
+    <td>This indicates that we will be simulating three uses of Lancelot's Noble Phantasm.</td>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">np4</td>
+    <td>This means that the Lancelot we are calculating for is NP Level 4. Take note 
+    of the difference between the np arg with and without a number.</td>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">sscope</td>
+    <td>Dedicated arg for level 100 Kaleidoscope. It's equivalent to ce2000.</td>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">xss</td>
+    <td>Globally specify double Skadi buffs without def down. It's equivalent to 
+    writing qm100 qcd200.</td>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">archer</td>
+    <td>Globally specifies all enemies as archers. This could be overridden on an enemy, wave, 
+    or card basis if needed, but in this case it's fine.</td>
+  </tr>
+  <tr>
+    <td style="color: #0083AFFF;font-weight:bold">sky</td>
+    <td>Globally specifies all enemies as sky attribute. The Chimera and Moriarty are not sky, 
+    so we will override them separately, but all other enemies are sky, so it is convenient to 
+    specify it globally.</td>
+  </tr>
+  <tr>
+    <td style="color: #00a82f;font-weight:bold">enemy1</td>
+    <td>This specifies that enemy1 exists, and until a new structure arg is provided, all future 
+    arguments will apply only to this enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #00a82f;font-weight:bold">hp32149</td>
+    <td>This indicates that enemy1 has 32,149 HP. It is necessary to specify HP for 
+    refund or stargen to be calculated on any give enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #b70000;font-weight:bold">. . .</td>
+    <td>This is the advanced calc, so let's skip over the repetitive enemy# hp# 
+    sequence to some of the more interesting ones.</td>
+  </tr>
+  <tr>
+    <td style="color: #b858fc;font-weight:bold">enemy4</td>
+    <td>This specifies that enemy4 exists, and until a new structure arg is provided, all future 
+    arguments will apply only to this enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #b858fc;font-weight:bold">earth</td>
+    <td>This specifies that enemy4 should be earth attribute. We set the sky attribute 
+    globally, but providing an enemy specific attribute to enemy4 will override the global one 
+    for the specific enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #b858fc;font-weight:bold">hp104814</td>
+    <td>This indicates that enemy4 has 104,814 HP. It is necessary to specify HP for 
+    refund or stargen to be calculated on any give enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #b70000;font-weight:bold">. . .</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="color: #4aadad;font-weight:bold">enemy8</td>
+    <td>This specifies that enemy8 exists, and until a new structure arg is provided, all future 
+    arguments will apply only to this enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #4aadad;font-weight:bold">man</td>
+    <td>This specifies that enemy8 should be man attribute. We set the sky attribute 
+    globally, but providing an enemy specific attribute to enemy4 will override the global one 
+    for the specific enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #4aadad;font-weight:bold">hp180792</td>
+    <td>This indicates that enemy4 has 180,792 HP. It is necessary to specify HP for 
+    refund or stargen to be calculated on any give enemy.</td>
+  </tr>
+  <tr>
+    <td style="color: #000000;font-weight:bold">card1</td>
+    <td>Switches to card1. Until a new structure arg is provided, all future 
+    args will apply only to card1. In this case, card1 is Lancelot's first NP.</td>
+  </tr>
+
+
+
+</table>
 
 </details>
