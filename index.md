@@ -1,10 +1,10 @@
 ## Navigation
 <nav>
     <ol>
-      <li><a href="./index.md">Introduction</a></li>
-      <li><a href="./basics.md">Basics</a></li>
-      <li><a href="./syntax.md">Syntax</a></li>
-      <li><a href="./arguments.md">Arguments</a></li>
+      <li><a href="https://andell4301.github.io/EreshCalcs2/index.md">Introduction</a></li>
+      <li><a href="https://andell4301.github.io/EreshCalcs2/basics.md">Basics</a></li>
+      <li><a href="https://andell4301.github.io/EreshCalcs2/syntax.md">Syntax</a></li>
+      <li><a href="https://andell4301.github.io/EreshCalcs2/arguments.md">Arguments</a></li>
     </ol>
 </nav>
 
