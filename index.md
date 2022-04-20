@@ -1,3 +1,13 @@
+## Navigation
+<nav>
+    <ol>
+      <li><a href="./index.md">Introduction</a></li>
+      <li><a href="./basics.md">Basics</a></li>
+      <li><a href="./syntax.md">Syntax</a></li>
+      <li><a href="./arguments.md">Arguments</a></li>
+    </ol>
+</nav>
+
 ## What is this?
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
 Currently, this command is `/calc2`.
