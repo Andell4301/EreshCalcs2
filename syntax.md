@@ -112,7 +112,7 @@ Essentially, arguments like `enemy` do two things. They both **define** the exis
 **switch to** it so any arguments that follow it will only be applied to that enemy until a new structure argument is
 specified. For a brief explanation of each structure and card chain argument, see the charts below.
 
-#### Full List of Structure Arguments
+<b>Full List of Structure Arguments</b>
  <table>
   <tr>
     <th>Argument</th>
@@ -162,7 +162,7 @@ specified. For a brief explanation of each structure and card chain argument, se
   </tr>
 </table>
 
-#### Full List of Card Chain Arguments
+<b>Full List of Card Chain Arguments</b>
  <table>
   <tr>
     <th>Argument</th>
@@ -320,4 +320,43 @@ In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
   <li>Finally, the fourth card is an extra card. For card 4, e3 was specified. So it will hit enemy3.</li>
 </ol>
 <img src="./images/multi_calc/example_2.png" alt="Multi Calcs Example 2">
+</details>
+
+<details>
+  <summary><b>Example 3 (Advanced)</b></summary>
+
+This time, we're going to simulate a three turn comp on the 
+[Christmas 2020 Lotto Node](https://apps.atlasacademy.io/db/NA/quest/94031329/1/).
+<img src="./images/multi_calc/christmas_node.png" alt="Christmas Lotto Node">
+In particular, we'll be simulating the NP4 variant of the Double Skadi + Lancelot Comp
+[provided by XZero and SaberofAvalon](https://docs.google.com/spreadsheets/d/e/2PACX-1vRlsfhYFXrPzhtbR7LGsn8cXR388SBf0hgnhpq9EH3PR5f1jn4i2rjWyicx0mE63v1DDqZwGOaNAFoW/pubhtml#).
+<img src="./images/multi_calc/dss_comp.png" alt="Christmas Lotto Node NP4">
+(Note: The minor discrepancy in max damage is due to the sheet using 1.1x for max RNG, instead 
+of the actual max of 1.099x that EreshBot uses.)
+
+A calculation string for a full run like this is long and complex. To help make it a bit simpler, you'll want to make 
+as much use of argument scope as you can.
+For example, we know that all the ghosts here are sky attribute. The only enemies that aren't sky are 
+the Chimera and Moriarty himself. You _could_ apply the attribute to each enemy individually, but a 
+better way to do this would be to apply sky globally and override it on the Chimera and Moriarty.
+<br>
+
+In any case, let's take a look at the calc string for this.
+
+<div style="padding: 15px;background-color: rgb(39,43,51);border-radius: 25px;margin-bottom: 15px;">
+<span style="color: #0083AFFF;font-weight:bold"> /calc2 string: Lancelot npnpnp np4 xss ce2000 archer sky</span>
+<span style="color: #00A82FFF;font-weight:bold"> enemy1 hp32149</span>
+<span style="color: #B70000FF;font-weight:bold"> enemy2 hp32739</span>
+<span style="color: #C97C00FF;font-weight:bold"> enemy3 hp31560</span>
+<span style="color: #b858fc;font-weight:bold"> enemy4 earth hp104814</span>
+<span style="color: #c08c69;font-weight:bold"> enemy5 hp38586</span>
+<span style="color: #ff00f3;font-weight:bold"> enemy6 hp37927</span>
+<span style="color: #f5d42c;font-weight:bold"> enemy7 hp45511</span>
+<span style="color: #4aadad;font-weight:bold"> enemy8 man hp180792</span>
+<span style="color: #e06c75;font-weight:bold"> enemy9 hp44771</span>
+<span style="color: #ffffff;font-weight:bold"> card1 w1 a10 ng50 fr50</span>
+<span style="color: #abe790;font-weight:bold"> card2 w2 ng100 a20 d-30 fr50</span>
+<span style="color: #ff6f00;font-weight:bold"> card3 w3 n50 a30 d-30</span>
+</div>
+
 </details>
