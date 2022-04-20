@@ -252,11 +252,11 @@ come together.
     <td>Sets enemy2 as the target of card1. This means that card1 will only hit enemy2.</td>
   </tr>
 </table>
-
-<img src="./images/multi_calc/example_1.png" alt="Multi Calcs Example 1">
-
 In summary, this calculation will hit enemy2 with a buster card from Artoria. Enemy1 will have 20% def down, but 
 they won't end up being hit, as our card specifies enemy2 as the target.
+<br>
+<br>
+<img src="./images/multi_calc/example_1.png" alt="Multi Calcs Example 1">
 </details>
 
 <details>
@@ -312,9 +312,6 @@ they won't end up being hit, as our card specifies enemy2 as the target.
     <td>Sets enemy3 as the target of card1. This means that card4 will only hit enemy3.</td>
   </tr>
 </table>
-
-<img src="./images/multi_calc/example_2.png" alt="Multi Calcs Example 2">
-
 In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
  <ol>
   <li>The first card is buster, and since no target is specified, will hit enemy1.</li>
@@ -323,4 +320,5 @@ In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
   <li>The third card is an arts card. For card 3, e3 was specified. So it will hit enemy3.</li>
   <li>Finally, the fourth card is an extra card. For card 4, e3 was specified. So it will hit enemy3.</li>
 </ol>
+<img src="./images/multi_calc/example_2.png" alt="Multi Calcs Example 2">
 </details>
