@@ -208,7 +208,7 @@ that you do **not** supply a number to use them as a card chain argument.
 Below are examples of different calculation commands that illustrate how these structure and card chain args 
 come together.
 <details>
-  <summary><b>Example 1:</b></summary>
+  <summary><b>Example 1</b></summary>
 <span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria buster</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 def-20</span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
@@ -253,17 +253,14 @@ come together.
   </tr>
 </table>
 
-<details>
-  <summary><b>Command Output</b></summary>
 <img src="./images/multi_calc/example_1.png" alt="Multi Calcs Example 1">
-</details>
 
 In summary, this calculation will hit enemy2 with a buster card from Artoria. Enemy1 will have 20% def down, but 
 they won't end up being hit, as our card specifies enemy2 as the target.
 </details>
 
 <details>
-  <summary><b>Example 2:</b></summary>
+  <summary><b>Example 2</b></summary>
 
 <span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria bnpae </span>
 <span style="color: #00A82FFF;font-weight:bold"> nwave1</span>
@@ -316,10 +313,7 @@ they won't end up being hit, as our card specifies enemy2 as the target.
   </tr>
 </table>
 
-<details>
-  <summary><b>Command Output</b></summary>
 <img src="./images/multi_calc/example_2.png" alt="Multi Calcs Example 2">
-</details>
 
 In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
  <ol>
