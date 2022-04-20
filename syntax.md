@@ -112,8 +112,7 @@ Essentially, arguments like `enemy` do two things. They both **define** the exis
 **switch to it** it so any arguments that follow it will only be applied to that enemy until a new structure argument is
 specified. For a brief explanation of each structure and card chain argument, see the charts below.
 
-<details>
-  <summary><b>Full List of Structure Arguments</b></summary>
+#### Full List of Structure Arguments
  <table>
   <tr>
     <th>Argument</th>
@@ -162,10 +161,8 @@ specified. For a brief explanation of each structure and card chain argument, se
     <td>wavesize6</td>
   </tr>
 </table>
-</details>
 
-<details>
-  <summary><b>Full List of Card Chain Arguments</b></summary>
+#### Full List of Card Chain Arguments
  <table>
   <tr>
     <th>Argument</th>
@@ -207,7 +204,6 @@ specified. For a brief explanation of each structure and card chain argument, se
 * Note: Some arguments, such as `np` and `n`, have other functions when supplied with a number (ex `np5`). Make sure
 that you do **not** supply a number to use them as a card chain argument.
 * For a more in depth explanation of each argument, see  the [arguments](./arguments.md) page.
-</details>
 
 Below are examples of different calculation commands that illustrate how these structure and card chain args 
 come together.
