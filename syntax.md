@@ -280,12 +280,12 @@ they won't end up being hit, as our card specifies enemy2 as the target.
   </tr>
   <tr>
     <td style="color: #0083AFFF;font-weight:bold">bnpae</td>
-    <td>This is a string of card chain arguments. 
+    <td style="vertical-align: middle">This is a string of card chain arguments. 
     It is equivalent to specifying 
-    <img src="./images/cards/buster.png" alt="Buster" height=15, style="text-align: center;"> buster
-    <img src="./images/cards/np.png" alt="noble" height=15, style="text-align: center;"> noble 
-    <img src="./images/cards/arts.png" alt="Arts" height=15, style="text-align: center;"> arts 
-    <img src="./images/cards/extra.png" alt="Extra" height=15, style="text-align: center;"> extra. These will be the cards
+    <img src="./images/cards/buster.png" alt="Buster" height=15> buster
+    <img src="./images/cards/np.png" alt="noble" height=15> noble 
+    <img src="./images/cards/arts.png" alt="Arts" height=15> arts 
+    <img src="./images/cards/extra.png" alt="Extra" height=15> extra. These will be the cards
     that will be calculated.
     </td>
   </tr>
