@@ -337,7 +337,7 @@ of the actual max of 1.099x that EreshBot uses.)
 A calculation string for a full run like this is long and complex. To help make it a bit simpler, you'll want to make 
 as much use of argument scope as you can.
 For example, we know that all the ghosts here are sky attribute. The only enemies that aren't sky are 
-the Chimera and Moriarty himself. You _could_ apply the attribute to each enemy individually, but a 
+the Chimera and Moriarty himself. You <i>could</i> apply the attribute to each enemy individually, but a 
 better way to do this would be to apply sky globally and override it on the Chimera and Moriarty.
 <br><br>
 
