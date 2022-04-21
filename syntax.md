@@ -361,7 +361,6 @@ arguments, as you should know what those are doing. Skips will be indicated by
 <span style="color: #000000;font-weight:bold"> card1 w1 a10 ng50 fr50</span>
 <span style="color: #3f831d;font-weight:bold"> card2 w2 a20 ng100 d-30 fr50</span>
 <span style="color: #ff6f00;font-weight:bold"> card3 w3 n50 a30 d-30</span>
-
  <table>
   <tr>
     <th>Argument</th>
