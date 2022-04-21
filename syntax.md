@@ -342,7 +342,11 @@ better way to do this would be to apply sky globally and override it on the Chim
 <br><br>
 
 With that in mind, let's take a look at the calc string for this.
-<br><br>
+Note that as this is the advanced example, I'm going to skip over some of the repetitive enemy# hp#
+arguments, as you should know what those are doing. Skips will be indicated by
+<span style="color: #B70000FF;font-weight:bold"> . . . </span>
+<br>
+<br>
 
 <span style="color: #0083AFFF;font-weight:bold"> /calc2 string: Lancelot npnpnp np4 sscope xss archer sky</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 hp32149</span>
@@ -355,7 +359,7 @@ With that in mind, let's take a look at the calc string for this.
 <span style="color: #4aadad;font-weight:bold"> enemy8 man hp180792</span>
 <span style="color: #e06c75;font-weight:bold"> enemy9 hp44771</span>
 <span style="color: #000000;font-weight:bold"> card1 w1 a10 ng50 fr50</span>
-<span style="color: #3f831d;font-weight:bold"> card2 w2 ng100 a20 d-30 fr50</span>
+<span style="color: #3f831d;font-weight:bold"> card2 w2 a20 ng100 d-30 fr50</span>
 <span style="color: #ff6f00;font-weight:bold"> card3 w3 n50 a30 d-30</span>
 
  <table>
@@ -408,8 +412,7 @@ With that in mind, let's take a look at the calc string for this.
   </tr>
   <tr>
     <td style="color: #b70000;font-weight:bold">. . .</td>
-    <td>This is the advanced calc, so let's skip over the repetitive enemy# hp# 
-    sequence to some of the more interesting ones.</td>
+    <td></td>
   </tr>
   <tr>
     <td style="color: #b858fc;font-weight:bold">enemy4</td>
@@ -454,7 +457,9 @@ With that in mind, let's take a look at the calc string for this.
   </tr>
   <tr>
     <td style="color: #000000;font-weight:bold">w1</td>
-    <td>Sets wave1 as the target of card1. This means that card1 will hit wave1.</td>
+    <td>Sets wave1 as the target of card1. This means that card1 will hit wave1. By 
+    default, wavesize is 3. 9 enemies were specified, so that means the targets here 
+    are enemies 1-3.</td>
   </tr>
   <tr>
     <td style="color: #000000;font-weight:bold">a10</td>
@@ -470,9 +475,63 @@ With that in mind, let's take a look at the calc string for this.
     when the next turn begins, so adding that here can help visualize if we will have 100%+ np gauge after this turn 
     in order to NP next turn.</td>
   </tr>
-
-
-
+  <tr>
+    <td style="color: #3f831d;font-weight:bold">card2</td>
+    <td>Switches to card2. Until a new structure arg is provided, all future 
+    args will apply only to card2. In this case, card2 is Lancelot's second NP.</td>
+  </tr>
+  <tr>
+    <td style="color: #3f831d;font-weight:bold">w2</td>
+    <td>Sets wave2 as the target of card2. This means that card2 will hit wave2. By 
+    default, wavesize is 3. 9 enemies were specified, so that means the targets here 
+    are enemies 4-6.</td>
+  </tr>
+  <tr>
+    <td style="color: #3f831d;font-weight:bold">a20</td>
+    <td>This gives card2 a 20% attack buff. This is the atk buff on Lancelot's NP. It lasts 
+    3 turns and is 10% each time, so our second turn will get 10% from the first NP and 10% 
+    from the second.</td>
+  </tr>
+  <tr>
+    <td style="color: #3f831d;font-weight:bold">ng100</td>
+    <td>This gives card2 a 100% np gain buff. This is the np gain buff on Lancelot's third skill.</td>
+  </tr>
+  <tr>
+    <td style="color: #3f831d;font-weight:bold">d-30</td>
+    <td>This adds 30% defense down to card2. We could also apply this to wave2 via the 
+    wave arg, but we know that card2 will hit all enemies in wave2, so it's fine to just 
+    apply the 30% def down to the card itself.</td>
+  </tr>
+  <tr>
+    <td style="color: #3f831d;font-weight:bold">fr50</td>
+    <td>This adds 50% refund to card2. We know that we'll be giving Lancelot one of the Skadis' 50% batteries 
+    when the next turn begins, so adding that here can help visualize if we will have 100%+ np gauge after this turn 
+    in order to NP next turn.</td>
+  </tr>
+  <tr>
+    <td style="color: #ff6f00;font-weight:bold">card3</td>
+    <td>Switches to card3. Until a new structure arg is provided, all future 
+    args will apply only to card3. In this case, card3 is Lancelot's third NP.</td>
+  </tr>
+  <tr>
+    <td style="color: #ff6f00;font-weight:bold">w3</td>
+    <td>Sets wave3 as the target of card3. This means that card2 will hit wave3. By 
+    default, wavesize is 3. 9 enemies were specified, so that means the target here 
+    is enemies 7-9.</td>
+  </tr>
+  <tr>
+    <td style="color: #ff6f00;font-weight:bold">a30</td>
+    <td>This gives card3 a 30% attack buff. This is the atk buff on Lancelot's NP. It lasts 
+    3 turns and is 10% each time, so our third turn will get 10% from the first NP, 10% 
+    from the second, and 10% from the third.</td>
+  </tr>
+  <tr>
+    <td style="color: #ff6f00;font-weight:bold">d-30</td>
+    <td>This adds 30% defense down to card3. We could also apply this to wave3 via the 
+    wave arg, but we know that card3 will hit all enemies in wave3, so it's fine to just 
+    apply the 30% def down to the card itself.</td>
+  </tr>
 </table>
-
+<br>
+<img src="./images/multi_calc/example_3.png" alt="Multi Calcs Example 3">
 </details>
