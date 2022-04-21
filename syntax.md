@@ -325,11 +325,11 @@ In summary, this calculation has four cards (bnpae) and three enemies (nwave1).
 <details>
   <summary><b>Example 3 (Advanced)</b></summary>
 
-This time, we're going to simulate a three turn comp on the 
-[Christmas 2020 Lotto Node](https://apps.atlasacademy.io/db/NA/quest/94031329/1/).
+This time, we're going to simulate a three turn comp on the
+<a href="https://apps.atlasacademy.io/db/NA/quest/94031329/1/">Christmas 2020 Lotto Node</a>.
 <img src="./images/multi_calc/christmas_node.png" alt="Christmas Lotto Node">
 In particular, we'll be simulating the NP4 variant of the Double Skadi + Lancelot Comp
-[provided by XZero and SaberofAvalon](https://docs.google.com/spreadsheets/d/e/2PACX-1vRlsfhYFXrPzhtbR7LGsn8cXR388SBf0hgnhpq9EH3PR5f1jn4i2rjWyicx0mE63v1DDqZwGOaNAFoW/pubhtml#).
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlsfhYFXrPzhtbR7LGsn8cXR388SBf0hgnhpq9EH3PR5f1jn4i2rjWyicx0mE63v1DDqZwGOaNAFoW/pubhtml#">provided by XZero and SaberofAvalon</a>.
 <img src="./images/multi_calc/dss_comp.png" alt="Christmas Lotto Node NP4">
 (Note: The minor discrepancy in max damage is due to the sheet using 1.1x for max RNG, instead 
 of the actual max of 1.099x that EreshBot uses.)
