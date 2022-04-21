@@ -452,6 +452,24 @@ With that in mind, let's take a look at the calc string for this.
     <td>Switches to card1. Until a new structure arg is provided, all future 
     args will apply only to card1. In this case, card1 is Lancelot's first NP.</td>
   </tr>
+  <tr>
+    <td style="color: #000000;font-weight:bold">w1</td>
+    <td>Sets wave1 as the target of card1. This means that card1 will hit wave1.</td>
+  </tr>
+  <tr>
+    <td style="color: #000000;font-weight:bold">a10</td>
+    <td>This gives card1 a 10% attack buff. This is the atk buff on Lancelot's NP.</td>
+  </tr>
+  <tr>
+    <td style="color: #000000;font-weight:bold">ng50</td>
+    <td>This gives card1 a 50% np gain buff. This is the np gain buff on the 2004 Mystic Code.</td>
+  </tr>
+  <tr>
+    <td style="color: #000000;font-weight:bold">fr50</td>
+    <td>This adds 50% refund to card1. We know that we'll be giving Lancelot one of the Skadis' 50% batteries 
+    when the next turn begins, so adding that here can help visualize if we will have 100%+ np gauge after this turn 
+    in order to NP next turn.</td>
+  </tr>
 
 
 
