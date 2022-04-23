@@ -110,7 +110,35 @@ the second calc, all three enemies would have HP specified.
 
 Essentially, arguments like `enemy` do two things. They both **define** the existence of an enemy as well as 
 **switch to** it so any arguments that follow it will only be applied to that enemy until a new structure argument is
-specified. For a brief explanation of each structure and card chain argument, see the charts below.
+specified. You can think of arguments like these as changing the scope of any subsequent arguments.
+
+It is also important to consider how arguments interact with other arguments in a different scope.
+Take the following two calcs for example:
+<br>
+<span style="color: #0083AFFF;font-weight:bold"> 
+/calc2 string: Ereshkigal buster bm50
+</span>
+<span style="color: #00A82FFF;font-weight:bold"> card1 bm60 </span>
+<br>
+<span style="color: #0083AFFF;font-weight:bold"> 
+/calc2 string: Ereshkigal buster fou1500
+</span>
+<span style="color: #00A82FFF;font-weight:bold"> card1 fou2000 </span>
+<br>
+In both cases, these are calculating a buster card from Ereshkigal.
+In the first case, we have global `bm50` (50% buster mod) and `bm60` specifically for card1. 
+In this case, the buster card will have a total of `bm110`, as buster mod applied globally is added to buster mod
+applied specifically to card1.
+
+In the second case, we have global `fou1500` as well as `fou2000` specifically for card1.
+Although there is a paw argument for calculating fou paws, many people add the extra atk from fou paws by 
+using the normal fou argument on a card by card basis. In this case, fou for the second card will **NOT** be 3500.
+It will be 2000, because `fou2000` overrides `fou1500` for card1. It does not add together.
+
+In the vast majority of cases, arguments that override rather than sum will go in most to least specific priority.
+That is to say, `Enemy > Card > Wave > General`. To check the details for a specific argument, see the arguments page.
+
+For a brief explanation of each structure and card chain argument, see the charts below.
 
 <b>Full List of Structure Arguments</b>
  <table>
