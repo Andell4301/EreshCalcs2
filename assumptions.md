@@ -7,6 +7,8 @@ Structure Arguments:
 1) If a card is not specified, `card1` will be set to an NP.
 2) If an enemy isn't specified, a blank enemy `enemy1` will be created.
 3) If `wavesize` isn't specified, it will be set to 3. 
+4) If exactly three cards are provided, none of them are blank cards (<code>x</code>), none of them are 
+extra cards, and at least one card is not an NP, an extra card will be added to the command chain.
 
 Servant Attributes / Buffs:
  <ol>
