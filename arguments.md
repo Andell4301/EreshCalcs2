@@ -20,6 +20,7 @@ hits who, etc.
     <td>❌</td>
     <td>N/A</td>
     <td>N/A</td>
+</tr>
 </table>
 All arguments following the card argument will apply only to the specified card until a new card, enemy, or wave
 arg is specified. 
