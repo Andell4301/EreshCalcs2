@@ -182,7 +182,7 @@ This would calculate two Noble Phantasms from Ereshkigal. The first Noble Phanta
 and would have 30% Card Up. The second Noble Phantasm would only hit <code>wave2</code>, and would have 60% Card Up.
 </details>
 <details>
-  <summary><b>NewWave</b></summary>
+  <summary><b>NewWave / NWave</b></summary>
  <table>
   <tr>
     <th>Arg</th>
