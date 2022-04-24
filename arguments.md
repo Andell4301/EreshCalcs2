@@ -59,7 +59,8 @@ This would calculate a Buster➝NP➝Quick➝Extra chain from Ereshkigal. The Bu
     <td>N/A</td>
 </tr>
 </table>
-All arguments following the enemy argument will apply only to the specified enemy until a new card is specified. 
+All arguments following the enemy argument will apply only to the specified enemy until a new card, enemy, or wave
+is specified. 
 The enemy argument also defines new enemies. If you use <code>enemy3</code> when there are only 2 enemies, 
 a new enemy in position 3 will be created.
 <br><br>
