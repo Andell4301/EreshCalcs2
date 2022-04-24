@@ -71,18 +71,18 @@ Usage Examples:
 <code>/calc2 string: Ereshkigal enemy1 saber hp1000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against one saber enemy with 1000 HP.
-<br>
+<br><br>
 <code>/calc2 string: Ereshkigal enemy1 saber hp1000 enemy2 berserker hp5000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against one saber enemy with 1000 HP and one 
 berserker enemy with 5000 HP. Note that as Ereshkigal's Noble Phantasm is AoE, it would hit both by default.
-<br>
+<br><br>
 <code>/calc2 string: Ereshkigal enemy1 m40 d-30 enemy2 m60 d-20</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against two enemies. When hitting the first enemy, 
 the Noble Phantasm will have 40% Card Up and 30% Defense Down. When hitting the second enemy, 
 the Noble Phantasm will have 60% Card Up and 20% Defense Down.
-<br>
+<br><br>
 <code>/calc2 string: Ereshkigal buster enemy1 m40 d-30 enemy2 m60 d-20</code>
 <br>
 This would calculate a buster card from Ereshkigal. Two enemies are specified, but since normal 
