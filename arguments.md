@@ -221,3 +221,77 @@ This would calculate Ereshkigal's Noble Phantasm against a wave of 3 enemies. Wh
 the Noble Phantasm would have 30% Card Up.
 
 </details>
+<details>
+  <summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> W</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>w</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used for targeting waves with a card. If provided after a card, the card will only hit
+the specified wave. For an AoE Noble Phantasm, this means that it will hit all enemies in the wave.
+For a normal card, it will hit the first enemy in the wave.
+<br><br>
+The <code>w</code> argument can only be used if provided after first explicitly switching to a card.
+<br><br>
+If an invalid wave is provided, the argument will be ignored. Ex. if there are only 2 waves, 
+<code>w3</code> will be ignored.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal nwave1 nwave2 card1 w2</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against <code>wave2</code> of enemies. Two full waves 
+are defined using <code>nwave</code>, and since the Phantasm is AoE, it will hit 
+<code>enemy4</code>, <code>enemy5</code>, and <code>enemy6</code>.
+<br><br>
+<code>/calc2 string: Ereshkigal nwave1 nwave2 buster card1 w2</code>
+<br>
+This would calculate Ereshkigal's Buster card against <code>enemy4</code>. This is because two waves of 3 enemies 
+are defined using <code>nwave</code>, and the buster card will only hit the first enemy of <code>wave2</code> when 
+using <code>w2</code> as a target. The first enemy of <code>wave2</code> is <code>enemy4</code>.
+<br><br>
+</details>
+<details>
+  <summary><b>🎲 RNG / Rand / Random</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>rng, rand, random</td>
+    <td>✔️</td>
+    <td>️️✔️</td>
+    <td>N/A</td>
+    <td>Ignore</td>
+</tr>
+</table>
+Used to provide a custom RNG value as opposed to the default range of 
+<code>0.9</code>, <code>1.0</code>, and <code>1.099</code>. Note that only one custom RNG value 
+can be provided. Subsequent values will be ignored.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal rng1.077</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with an RNG value of <code>1.077</code>.
+<br><br>
+<code>/calc2 string: Ereshkigal bb rng1.077</code>
+<br>
+This would calculate two of Ereshkigal's Buster Cards, each with an RNG value of <code>1.077</code>.
+</details>
