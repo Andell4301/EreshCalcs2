@@ -42,7 +42,7 @@ This would calculate a Buster➝NP➝Quick➝Extra chain from Ereshkigal. The Bu
 30% ATK Up, 30% Card Up, and 50% NP Damage Up. The Quick card would have 20% ATK Up, 30% Card Up, and 70% NP Damage Up.
 </details>
 <details>
-  <summary><b><img src="./images/icons/enemies_light.png" alt="Enemy Icon" style="width: 19px; height:auto; border:none; padding:0"> Enemy</b></summary>
+  <summary><b><img src="./images/icons/enemies_light.png" alt="Enemy Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0"> Enemy</b></summary>
  <table>
   <tr>
     <th>Arg</th>
