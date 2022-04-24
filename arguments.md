@@ -56,6 +56,7 @@ This would calculate a Buster➝NP➝Quick➝Extra chain from Ereshkigal. The Bu
     <td>❌</td>
     <td>N/A</td>
     <td>N/A</td>
+</tr>
 </table>
 All arguments following the enemy argument will apply only to the specified enemy until a new card is specified. 
 The enemy argument also defines new enemies. If you use <code>enemy3</code> when there are only 2 enemies, 
@@ -103,6 +104,7 @@ cards can only hit one enemy, it would only hit <code>enemy1</code>. The buster 
     <td>❌</td>
     <td>N/A</td>
     <td>N/A</td>
+</tr>
 </table>
 Used for targeting enemies with a card. If provided after a card, the card will only hit
 the specified enemy. For AoE Noble Phantasms, multiple <code>e</code> args can be specified.
@@ -151,6 +153,7 @@ Noble Phantasm would only hit <code>enemy1</code> and <code>enemy2</code>.
     <td>❌</td>
     <td>N/A</td>
     <td>N/A</td>
+</tr>
 </table>
 All arguments following the wa argument will apply only to the specified wave until a new card, enemy, or wave 
 arg is specified. 
@@ -185,6 +188,7 @@ Usage Examples:
     <td>❌</td>
     <td>N/A</td>
     <td>N/A</td>
+</tr>
 </table>
 The newwave argument is used to define and switch to entire waves at once. It is equivalent to specifying
 <code>enemy#</code> for each enemy that would be in a given wave, followed by <code>wave#</code> for the 
