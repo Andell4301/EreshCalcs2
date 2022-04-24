@@ -203,8 +203,8 @@ The newwave argument is used to define and switch to entire waves at once. It is
 <code>enemy#</code> for each enemy that would be in a given wave, followed by <code>wave#</code> for the 
 corresponding wave.
 <br><br>
-For example, say that you use <code>nwave3</code>, and your <code>wavesize</code> is the default 
-of 3. If each wave is 3 enemies, that would mean a third wave would contain enemies 7, 8, and 9.
+For example, say that you use <code>nwave3</code> with a <code>wavesize</code> of the default 
+3. If each wave is 3 enemies, that would mean a third wave would contain enemies 7, 8, and 9.
 In this scenario, <code>nwave3</code> would be equivalent to <code>enemy7 enemy8 enemy9 wave3</code>.
 <br><br>
 In the scenario that you specify an already existing wave, <code>nwave</code> will fill out 
