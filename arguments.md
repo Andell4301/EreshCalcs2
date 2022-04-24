@@ -172,7 +172,14 @@ Utilizing <code>wave0</code> will return you to the general scope.
 <b>Usage Examples:</b>
 <br>
 <code>/calc2 string: Ereshkigal enemy1 enemy2 wave1 m30</code>
-
+<br>
+This would calculate Ereshkigal's Noble Phantasm against two enemies. When hitting both 
+enemies, the Noble Phantasm would have 30% Card Up.
+<br><br>
+<code>/calc2 string: Ereshkigal npnp nwave1 nwave2 wave1 m30 wave2 m60 card1 w1 card2 w2</code>
+<br>
+This would calculate two Noble Phantasms from Ereshkigal. The first Noble Phantasm would only hit <code>wave1</code>,
+and would have 30% Card Up. The second Noble Phantasm would only hit <code>wave2</code>, and would have 60% Card Up.
 </details>
 <details>
   <summary><b>NewWave</b></summary>
@@ -209,5 +216,8 @@ Utilizing <code>nwave0</code> will return you to the general scope.
 <b>Usage Examples:</b>
 <br>
 <code>/calc2 string: Ereshkigal nwave1 m30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against a wave of 3 enemies. When hitting any of the enemies, 
+the Noble Phantasm would have 30% Card Up.
 
 </details>
