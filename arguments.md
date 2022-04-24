@@ -5,7 +5,7 @@ Utilized for setting up the structure of the calculation. How many enemies, whic
 hits who, etc.
 
 <details>
-  <summary><b>Card</b></summary>
+  <summary><b><img src="./images/icons/cards.png" alt="Card Icon" height="19"> Card</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -42,7 +42,7 @@ This would calculate a Buster➝NP➝Quick➝Extra chain from Ereshkigal. The Bu
 30% ATK Up, 30% Card Up, and 50% NP Damage Up. The Quick card would have 20% ATK Up, 30% Card Up, and 70% NP Damage Up.
 </details>
 <details>
-  <summary><b>Enemy</b></summary>
+  <summary><b><img src="./images/icons/enemies_light.png" alt="Enemy Icon" height="19"> Enemy</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -90,7 +90,7 @@ cards can only hit one enemy, it would only hit <code>enemy1</code>. The Buster 
 40% Card Up and 30% Defense Down.
 </details>
 <details>
-  <summary><b>E</b></summary>
+  <summary><b><img src="./images/icons/enemies_light.png" alt="Enemy Icon" height="19"> E</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -139,7 +139,7 @@ This would calculate Ereshkigal's Noble Phantasm against a wave defined with 3 e
 Noble Phantasm would only hit <code>enemy1</code> and <code>enemy2</code>.
 </details>
 <details>
-  <summary><b>Wave</b></summary>
+  <summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" height="19"> Wave</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -182,7 +182,7 @@ This would calculate two Noble Phantasms from Ereshkigal. The first Noble Phanta
 and would have 30% Card Up. The second Noble Phantasm would only hit <code>wave2</code>, and would have 60% Card Up.
 </details>
 <details>
-  <summary><b>NewWave / NWave</b></summary>
+  <summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" height="19"> NewWave / NWave</b></summary>
  <table>
   <tr>
     <th>Arg</th>
