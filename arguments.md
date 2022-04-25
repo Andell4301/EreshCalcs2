@@ -463,7 +463,7 @@ This would calculate one Quick card from Ereshkigal.
 This would calculate two Quick cards from Ereshkigal.
 </details>
 <details>
-  <summary><b><img src="./images/cards/extra.png" alt="Extra Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Extra / E ☆</b></summary>
+  <summary><b><img src="./images/cards/extra.png" alt="Extra Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Extra / E</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -501,7 +501,7 @@ This would calculate one Extra card from Ereshkigal.
 This would calculate two Extra cards from Ereshkigal.
 </details>
 <details>
-  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Noble / NP / N ☆</b>
+  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Noble / NP / N</b>
 </summary>
  <table>
   <tr>
@@ -539,12 +539,43 @@ This would calculate one Noble Phantasm card from Ereshkigal.
 <br>
 This would calculate two Noble Phantasm cards from Ereshkigal.
 </details>
+<details>
+  <summary><b><img src="./images/cards/card_bg_blank.png" alt="NP Icon" style="width: 16px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> X</b>
+</summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate skip a card while including it within a chain.
+Useful for cases such as <code>/calc2 string: Ereshkigal bxb</code> where you still want
+the third card to be in position 3, even if you aren't calculating a second card.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal bxb</code>
+<br>
+This would calculate one two Buster cards from Ereshkigal, with the first card in position 1 and the second card
+in position 3.
+</details>
 
 <b>☆ Important Note:</b>
 <br>
 The <code>np</code>, <code>n</code>, and <code>e</code> arguments do different things depending on whether or not 
 you include a number with them.
 <details>
+<summary>More Details</summary>
 <code>np#</code>: Sets NP level.
 <br>
 <code>np</code>: Card argument for NP.
