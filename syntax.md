@@ -66,22 +66,19 @@ You'd do:
 
 ## Multi-Calc Input Syntax
 <p style="padding: 15px;background-color: rgba(244,67,54,0.62);border-radius: 25px;color: white;margin-bottom: 15px;">
-Multi-Calcs are an advanced use case. Before diving into them, you should be comfortable with basic
+Multi calcs are an advanced use case. Before diving into them, you should be comfortable with basic
 syntax and the default assumptions. It is also helpful but not strictly necessary to be familiar with the argument list.
 </p>
 
 
-The servant argument aside, EreshBot calculation arguments can essentially be broken down into three distinct types.
+When it comes to multi calcs, there are two specific types of [arguments](./arguments) that are important:
 
  <ol>
   <li>Arguments used to specify the structure of the calculation, such as the number of 
     enemies or which arguments apply to which enemy. This includes args like <b>enemy</b> and <b>card</b>.</li>
   <li>Arguments used to specify a card or card chain. This includes args like <b>buster</b> and <b>arts</b>.</li>
-  <li>Arguments used to specify the specifics of your calculation, such as what level the servant is or how much 
-buster card bonus they have. This includes args like <b>level</b>, <b>fou</b>, <b>atk</b> and <b>def</b>.</li>
 </ol>
 
-This section will focus on how to use the first two types of arguments.
 The most important thing to remember when dealing with multi calcs is that 
 <span style="color: #B70000FF;font-weight:bold;border-bottom: 2px solid">
 the order of your arguments matters </span>. If your calculation string includes the `enemy` arg for 

@@ -192,7 +192,7 @@ and would have 30% Card Up. The second Noble Phantasm would only hit <code>wave2
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>newwave, nwave</td>
+    <td>newwave<br>nwave</td>
     <td>✔️</td>
     <td>❌</td>
     <td>N/A</td>
@@ -323,7 +323,7 @@ of 6 enemies (<code>nwave2</code>). Note that the wave of 6 enemies will begin w
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>rng, rand, random</td>
+    <td>rng<br>rand<br>random</td>
     <td>✔️</td>
     <td>️️✔️</td>
     <td>N/A</td>
@@ -343,4 +343,218 @@ This would calculate Ereshkigal's Noble Phantasm with an RNG value of <code>1.07
 <code>/calc2 string: Ereshkigal bb rng1.077</code>
 <br>
 This would calculate two of Ereshkigal's Buster Cards, each with an RNG value of <code>1.077</code>.
+</details>
+
+### Card Arguments
+Utilized to tell EreshBot which cards to calculate.
+<br><br>
+<b>Important Note:</b>
+<br>
+The <code>np</code>, <code>n</code>, and <code>e</code> arguments do different things depending on whether or not 
+you include a number with them.
+<br>
+
+<code>np#</code>: Sets NP level.
+<br>
+<code>np</code>: Card argument for NP.
+<hr style="width: 200px; margin: 5px">
+<code>n#</code>: Sets NP damage.
+<br>
+<code>n</code>: Card argument for NP.
+<hr style="width: 200px; margin: 5px">
+<code>e#</code>: Sets target enemy for a card.
+<br>
+<code>e</code>: Card argument for Extra.
+<br><br><br>
+
+<details>
+  <summary><b><img src="./images/cards/buster.png" alt="Buster Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Buster / B</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>buster<br>b</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate a Buster card.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal buster</code>
+<br>
+This would calculate one Buster card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal buster buster</code>
+<br>
+This would calculate two Buster cards from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal b</code>
+<br>
+This would calculate one Buster card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal bb</code>
+<br>
+This would calculate two Buster cards from Ereshkigal.
+</details>
+<details>
+  <summary><b><img src="./images/cards/arts.png" alt="Arts Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Arts / A</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>arts<br>a</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate an Arts card.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal arts</code>
+<br>
+This would calculate one Arts card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal arts arts</code>
+<br>
+This would calculate two Arts cards from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal a</code>
+<br>
+This would calculate one Arts card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal aa</code>
+<br>
+This would calculate two Arts cards from Ereshkigal.
+</details>
+<details>
+  <summary><b><img src="./images/cards/quick.png" alt="Quick Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Quick / Q</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>quick<br>q</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate a Quick card.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal quick</code>
+<br>
+This would calculate one Quick card from Ereshkigal.
+<br><br>    
+<code>/calcs2 string: Ereshkigal quick quick</code>
+<br>
+This would calculate two Quick cards from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal q</code>
+<br>
+This would calculate one Quick card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal qq</code>
+<br>
+This would calculate two Quick cards from Ereshkigal.
+</details>
+<details>
+  <summary><b><img src="./images/cards/extra.png" alt="Extra Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Extra / E</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>extra<br>e</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate an Extra card.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal extra</code>
+<br>
+This would calculate one Extra card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal extra extra</code>
+<br>
+This would calculate two Extra cards from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal e</code>
+<br>
+This would calculate one Extra card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal ee</code>
+<br>
+This would calculate two Extra cards from Ereshkigal.
+</details>
+<details>
+  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Noble / NP / N</b>
+</summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>noble<br>np<br>n</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate a Noble Phantasm card.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal np</code>
+<br>
+This would calculate one Noble Phantasm card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal npnp</code>
+<br>
+This would calculate two Noble Phantasm cards from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal n</code>
+<br>
+This would calculate one Noble Phantasm card from Ereshkigal.
+<br><br>
+<code>/calcs2 string: Ereshkigal nn</code>
+<br>
+This would calculate two Noble Phantasm cards from Ereshkigal.
 </details>
