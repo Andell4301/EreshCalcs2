@@ -678,7 +678,7 @@ This would calculate one of Ereshkigal's Buster cards in position 3.
 Used to indicate the specifics of your servant, such as NP level, CE Attack, etc.
 <br>
 <details>
-  <summary><b>Level / Lvl / Lv / L</b></summary>
+  <summary><b><img src="./images/icons/level.png" alt="Level" style="width: 19px; height:auto; border:none; padding:0; margin:0"> Level / Lvl / Lv / L</b></summary>
  <table>
   <tr>
     <th>Arg</th>
