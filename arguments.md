@@ -569,7 +569,6 @@ the third card to be in position 3, even if you aren't calculating a second card
 This would calculate one two Buster cards from Ereshkigal, with the first card in position 1 and the second card
 in position 3.
 </details>
-
 <b>☆ Important Note:</b>
 <br>
 The <code>np</code>, <code>n</code>, and <code>e</code> arguments do different things depending on whether or not 
