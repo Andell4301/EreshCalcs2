@@ -347,24 +347,6 @@ This would calculate two of Ereshkigal's Buster Cards, each with an RNG value of
 
 ### Card Arguments
 Utilized to tell EreshBot which cards to calculate.
-<br><br>
-<b>Important Note:</b>
-<br>
-The <code>np</code>, <code>n</code>, and <code>e</code> arguments do different things depending on whether or not 
-you include a number with them.
-<br>
-
-<code>np#</code>: Sets NP level.
-<br>
-<code>np</code>: Card argument for NP.
-<hr style="width: 200px; margin: 5px">
-<code>n#</code>: Sets NP damage.
-<br>
-<code>n</code>: Card argument for NP.
-<hr style="width: 200px; margin: 5px">
-<code>e#</code>: Sets target enemy for a card.
-<br>
-<code>e</code>: Card argument for Extra.
 <br>
 <details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Buster / B</b></summary>
@@ -481,7 +463,7 @@ This would calculate one Quick card from Ereshkigal.
 This would calculate two Quick cards from Ereshkigal.
 </details>
 <details>
-  <summary><b><img src="./images/cards/extra.png" alt="Extra Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Extra / E</b></summary>
+  <summary><b><img src="./images/cards/extra.png" alt="Extra Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Extra / E ☆</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -519,7 +501,7 @@ This would calculate one Extra card from Ereshkigal.
 This would calculate two Extra cards from Ereshkigal.
 </details>
 <details>
-  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Noble / NP / N</b>
+  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Noble / NP / N ☆</b>
 </summary>
  <table>
   <tr>
@@ -556,4 +538,23 @@ This would calculate one Noble Phantasm card from Ereshkigal.
 <code>/calcs2 string: Ereshkigal nn</code>
 <br>
 This would calculate two Noble Phantasm cards from Ereshkigal.
+</details>
+
+<b>☆ Important Note:</b>
+<br>
+The <code>np</code>, <code>n</code>, and <code>e</code> arguments do different things depending on whether or not 
+you include a number with them.
+<details>
+<code>np#</code>: Sets NP level.
+<br>
+<code>np</code>: Card argument for NP.
+<hr style="width: 200px; margin: 5px">
+<code>n#</code>: Sets NP damage.
+<br>
+<code>n</code>: Card argument for NP.
+<hr style="width: 200px; margin: 5px">
+<code>e#</code>: Sets target enemy for a card.
+<br>
+<code>e</code>: Card argument for Extra.
+<br>
 </details>
