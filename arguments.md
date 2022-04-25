@@ -1,9 +1,9 @@
 ## Full Argument List
 
 ### Structure Arguments
-Utilized for setting up the structure of the calculation. How many enemies, which card 
+Used for setting up the structure of the calculation. How many enemies, which card 
 hits who, etc.
-
+<br>
 <details>
   <summary><b><img src="./images/icons/cards.png" alt="Card Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Card</b></summary>
  <table>
@@ -346,7 +346,7 @@ This would calculate two of Ereshkigal's Buster Cards, each with an RNG value of
 </details>
 
 ### Card Arguments
-Utilized to tell EreshBot which cards to calculate.
+Used to tell EreshBot which cards to calculate.
 <br>
 <details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Buster / B</b></summary>
@@ -587,4 +587,119 @@ you include a number with them.
 <br>
 <code>e</code>: Card argument for Extra.
 <br>
+</details>
+
+### Positional Arguments
+Used to tell EreshBot what position a card should be in. Useful when you want to calculate 
+a single card without providing a full chain. Position args do not affect cards already in chains.
+<br>
+<details>
+  <summary><b>First</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>first</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate that a given card should be in position 1. Using this argument will automatically
+apply the first card bonus for the card type.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal buster first</code>
+<br>
+This would calculate one of Ereshkigal's Buster cards in position 1.
+</details>
+<details>
+  <summary><b>Second</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>second</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate that a given card should be in position 2.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal buster second</code>
+<br>
+This would calculate one of Ereshkigal's Buster cards in position 2.
+</details>
+<details>
+  <summary><b>Third</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>third</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate that a given card should be in position 3.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal buster third</code>
+<br>
+This would calculate one of Ereshkigal's Buster cards in position 3.
+</details>
+
+
+### Servant Attribute Arguments
+Used to indicate the specifics of your servant, such as NP level, CE Attack, etc.
+<br>
+<details>
+  <summary><b>Level / Lvl / Lv / L</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>level<br>lvl<br>lv<br>l</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate the level of your servant. Servant's base attack is automatically set based on level.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calcs2 string: Ereshkigal lv50</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with an attack stat based on Ereshkigal's attack at level 50.
 </details>
