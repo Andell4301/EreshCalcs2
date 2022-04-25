@@ -365,8 +365,7 @@ you include a number with them.
 <code>e#</code>: Sets target enemy for a card.
 <br>
 <code>e</code>: Card argument for Extra.
-<br><br><br>
-
+<br><br>
 <details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Buster / B</b></summary>
  <table>
