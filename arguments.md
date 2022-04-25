@@ -274,7 +274,7 @@ using <code>w2</code> as a target. The first enemy of <code>wave2</code> is <cod
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>w</td>
+    <td>wavesize</td>
     <td>✔️ (1-6)</td>
     <td>❌</td>
     <td>N/A</td>
@@ -292,18 +292,25 @@ If you were to specify <code>wavesize4</code> however, it would create one wave 
 <br><br>
 Please note that <code>wavesize</code> is global. You cannot specify a different <code>wavesize</code> 
 for different waves. With that said, you don't need to. You can still make a three enemy wave even if 
-<code>wavesize</code> is 6 by simply manually creating the enemies. For example:
-<br>
-<code>/calc2 string: Ereshkigal wavesize6 nwave1 enemy7 enemy8 enemy9</code>
-<br>
-The above input would create one wave of 6 enemies (<code>nwave1</code>) and a second wave of three enemies 
-(<code>enemy7 enemy8 enemy9</code>).
+<code>wavesize</code> is 6 by simply manually creating the enemies.
 <br><br>
 <b>Usage Examples:</b>
 <br>
 <code>/calc2 string: Ereshkigal wavesize6 nwave1</code>
 <br>
 This would set the number of enemies per wave to 6 and create one wave of 6 enemies.
+<br><br>
+<code>/calc2 string: Ereshkigal wavesize6 nwave1 enemy7 enemy8 enemy9</code>
+<br>
+This would create one wave of 6 enemies (<code>nwave1</code>) and a second wave of three enemies 
+(<code>enemy7 enemy8 enemy9</code>).
+<br><br>
+<code>/calc2 string: Ereshkigal wavesize6 enemy1 enemy2 enemy3 nwave2</code>
+<br>
+This would create one wave of three enemies (<code>enemy1 enemy2 enemy3</code>) and a second wave
+of 6 enemies (<code>nwave2</code>). Note that the wave of 6 enemies will begin with <code>enemy7</code> and end with 
+<code>enemy12,</code> as <code>wavesize</code> is 6 so any enemies prior to 7 would be part of 
+<code>wave1</code> and thus not a new wave.
 </details>
 <details>
   <summary><b>🎲 RNG / Rand / Random</b></summary>
