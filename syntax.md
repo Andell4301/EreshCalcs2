@@ -178,15 +178,15 @@ For a brief explanation of each structure and card chain argument, see the chart
     <td>w1</td>
   </tr>
   <tr>
-    <td>rng#, rand#, random#</td>
-    <td>Applies a specified rng to the entire calculation.</td>
-    <td>rng1.0</td>
-  </tr>
-  <tr>
     <td>wavesize#</td>
     <td>Specifies the number of enemies per wave. Used to indicate that waves should 
     have 6 enemies for certain story fights.</td>
     <td>wavesize6</td>
+  </tr>
+  <tr>
+    <td>rng#, rand#, random#</td>
+    <td>Applies a specified rng to the entire calculation.</td>
+    <td>rng1.0</td>
   </tr>
 </table>
 

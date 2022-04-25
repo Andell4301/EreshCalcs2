@@ -264,6 +264,48 @@ using <code>w2</code> as a target. The first enemy of <code>wave2</code> is <cod
 <br><br>
 </details>
 <details>
+<summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> WaveSize</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>w</td>
+    <td>✔️ (1-6)</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to specify the number of enemies per wave, 1-6. In practice, unless you really know what you're doing and 
+why you're doing it, this should <b>only</b> ever be used for battles with 6 enemy waves.
+<br><br>
+Note that this argument neither creates enemies nor waves. It is only used to indicate how many enemies should be 
+allowed in a wave, and consequently how to split the enemies already provided.
+<br><br>
+By default, <code>/calc2 string: Ereshkigal enemy1 enemy4</code> would create two waves with one enemy each.
+If you were to specify <code>wavesize4</code> however, it would create one wave with two enemies.
+<br><br>
+Please note that <code>wavesize</code> is global. You cannot specify a different <code>wavesize</code> 
+for different waves. With that said, you don't need to. You can still make a three enemy wave even if 
+<code>wavesize</code> is 6 by simply manually creating the enemies. For example:
+<br>
+<code>/calc2 string: Ereshkigal wavesize6 nwave1 enemy7 enemy8 enemy9</code>
+<br>
+The above input would create one wave of 6 enemies (<code>nwave1</code>) and a second wave of three enemies 
+(<code>enemy7 enemy8 enemy9</code>).
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal wavesize6 nwave1</code>
+<br>
+This would set the number of enemies per wave to 6 and create one wave of 6 enemies.
+</details>
+<details>
   <summary><b>🎲 RNG / Rand / Random</b></summary>
  <table>
   <tr>
