@@ -370,19 +370,19 @@ Used to tell EreshBot to calculate a Buster card.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal buster</code>
+<code>/calc2 string: Ereshkigal buster</code>
 <br>
 This would calculate one Buster card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal buster buster</code>
+<code>/calc2 string: Ereshkigal buster buster</code>
 <br>
 This would calculate two Buster cards from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal b</code>
+<code>/calc2 string: Ereshkigal b</code>
 <br>
 This would calculate one Buster card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal bb</code>
+<code>/calc2 string: Ereshkigal bb</code>
 <br>
 This would calculate two Buster cards from Ereshkigal.
 </details>
@@ -408,19 +408,19 @@ Used to tell EreshBot to calculate an Arts card.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal arts</code>
+<code>/calc2 string: Ereshkigal arts</code>
 <br>
 This would calculate one Arts card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal arts arts</code>
+<code>/calc2 string: Ereshkigal arts arts</code>
 <br>
 This would calculate two Arts cards from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal a</code>
+<code>/calc2 string: Ereshkigal a</code>
 <br>
 This would calculate one Arts card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal aa</code>
+<code>/calc2 string: Ereshkigal aa</code>
 <br>
 This would calculate two Arts cards from Ereshkigal.
 </details>
@@ -446,19 +446,19 @@ Used to tell EreshBot to calculate a Quick card.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal quick</code>
+<code>/calc2 string: Ereshkigal quick</code>
 <br>
 This would calculate one Quick card from Ereshkigal.
 <br><br>    
-<code>/calcs2 string: Ereshkigal quick quick</code>
+<code>/calc2 string: Ereshkigal quick quick</code>
 <br>
 This would calculate two Quick cards from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal q</code>
+<code>/calc2 string: Ereshkigal q</code>
 <br>
 This would calculate one Quick card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal qq</code>
+<code>/calc2 string: Ereshkigal qq</code>
 <br>
 This would calculate two Quick cards from Ereshkigal.
 </details>
@@ -484,19 +484,19 @@ Used to tell EreshBot to calculate an Extra card.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal extra</code>
+<code>/calc2 string: Ereshkigal extra</code>
 <br>
 This would calculate one Extra card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal extra extra</code>
+<code>/calc2 string: Ereshkigal extra extra</code>
 <br>
 This would calculate two Extra cards from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal e</code>
+<code>/calc2 string: Ereshkigal e</code>
 <br>
 This would calculate one Extra card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal ee</code>
+<code>/calc2 string: Ereshkigal ee</code>
 <br>
 This would calculate two Extra cards from Ereshkigal.
 </details>
@@ -523,19 +523,19 @@ Used to tell EreshBot to calculate a Noble Phantasm card.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal np</code>
+<code>/calc2 string: Ereshkigal np</code>
 <br>
 This would calculate one Noble Phantasm card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal npnp</code>
+<code>/calc2 string: Ereshkigal npnp</code>
 <br>
 This would calculate two Noble Phantasm cards from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal n</code>
+<code>/calc2 string: Ereshkigal n</code>
 <br>
 This would calculate one Noble Phantasm card from Ereshkigal.
 <br><br>
-<code>/calcs2 string: Ereshkigal nn</code>
+<code>/calc2 string: Ereshkigal nn</code>
 <br>
 This would calculate two Noble Phantasm cards from Ereshkigal.
 </details>
@@ -564,7 +564,7 @@ the third card to be in position 3, even if you aren't calculating a second card
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal bxb</code>
+<code>/calc2 string: Ereshkigal bxb</code>
 <br>
 This would calculate one two Buster cards from Ereshkigal, with the first card in position 1 and the second card
 in position 3.
@@ -616,7 +616,7 @@ apply the first card bonus for the card type.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal buster first</code>
+<code>/calc2 string: Ereshkigal buster first</code>
 <br>
 This would calculate one of Ereshkigal's Buster cards in position 1.
 </details>
@@ -642,7 +642,7 @@ Used to indicate that a given card should be in position 2.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal buster second</code>
+<code>/calc2 string: Ereshkigal buster second</code>
 <br>
 This would calculate one of Ereshkigal's Buster cards in position 2.
 </details>
@@ -668,11 +668,10 @@ Used to indicate that a given card should be in position 3.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal buster third</code>
+<code>/calc2 string: Ereshkigal buster third</code>
 <br>
 This would calculate one of Ereshkigal's Buster cards in position 3.
 </details>
-
 
 ### Servant Attribute Arguments
 Used to indicate the specifics of your servant, such as NP level, CE Attack, etc.
@@ -689,7 +688,7 @@ Used to indicate the specifics of your servant, such as NP level, CE Attack, etc
   </tr>
   <tr>
     <td>level<br>lvl<br>lv<br>l</td>
-    <td>❌</td>
+    <td>✔️</td>
     <td>❌</td>
     <td>N/A</td>
     <td>Replace</td>
@@ -699,7 +698,159 @@ Used to indicate the level of your servant. Servant's base attack is automatical
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calcs2 string: Ereshkigal lv50</code>
+<code>/calc2 string: Ereshkigal lv50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with an attack stat based on Ereshkigal's attack at level 50.
+</details>
+<details>
+  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NP</b>
+</summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>np</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to tell EreshBot what the NP level of your servant is.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal np3</code>
+<br>
+This would calculate a Noble Phantasm from Ereshkigal at NP level 3.
+</details>
+<details>
+  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Strengthen / STR / Lewd / Interlude / SetNP / SNP</b>
+</summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>np</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to tell EreshBot what the strengthening status of your servant is.
+<br>
+This argument is also used to switch between Noble Phantasms for servants like Space Ishtar 
+or Fairy Knight Lancelot.
+<br>
+Noble Phantasms are numbered starting from 0 in the same order they appear in <code>/np Servant</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal str1</code>
+<br>
+This would calculate Ereshkigal's upgraded Noble Phantasm.
+<br><br>
+<code>/calc2 string: Bride str0</code>
+<br>
+This would calculate Nero Bride's un-upgraded Noble Phantasm.
+<br><br>
+<code>/calc2 string: Vlad str2</code>
+<br>
+This would calculate Vlad III's Noble Phantasm with its <i>second</i> strengthening.
+<br><br>
+<code>/calc2 string: Spishtar str1</code>
+<br>
+This would calculate Space Ishtar's Buster Noble Phantasm.
+</details>
+<details>
+  <summary><b><img src="./images/icons/fou.png" alt="Fou" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Fou / F</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>fou<br>f</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate how much additional ATK stat your servant should have from ATK fous.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal fou2000</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from fous.
+</details>
+<details>
+  <summary><b><img src="./images/icons/ce.png" alt="CE" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CE / C</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>ce<br>c</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate how much additional ATK stat your servant should have from a craft essence.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal ce2000</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from a craft essence.
+</details>
+<details>
+  <summary><b><img src="./images/icons/img_list_atk.png" alt="ATK" style="width: 23px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> TotalAttack / TA</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>totalattack<br>ta</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to specify the total attack stat of your servant. This will override all other sources of ATK.
+<br>
+In other words, if you specify total attack, then fou, ce, paw, and the servant's base attack will all be 
+ignored and replaced by your specified total attack.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal ta11525</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 11,525 ATK stat.
 </details>
