@@ -2655,6 +2655,52 @@ This would calculate Ereshkigal's Extra card with 50% Extra Star generation up.
 <br>
 This would calculate Ereshkigal's Extra card with 50% Extra Star generation down.
 </details>
+<details>
+  <summary><b>
+    <img src="./images/icons/stargen.png" alt="Flat Stars" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    FlatStarGain / FlatStars / FST / FS</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    flatstargain<br>flatstars<br>fst<br>fs
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to add flat stars to a calculation. Note that unlike most args, if this is applied to a card, it will NOT give 
+additional flat stars per enemy hit by that card, only to the card itself. If applied globally, it will similarly only 
+be applied once.
+<br><br>
+This is useful for adding starbomb skills or star per turn skills.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/stargen.png" alt="Flat Stars" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Flat Stars
+<br><br>
+Negative Values:
+<br>
+None
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal fs50</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 50 flat stars.
+</details>
 
 ### Shorthands
 brave, super, hyper, xss, xssd, xmm, etc.
+
+### Other Args
+reduced, v
