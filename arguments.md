@@ -589,90 +589,6 @@ you include a number with them.
 <br>
 </details>
 
-### Positional Arguments
-Used to tell EreshBot what position a card should be in. Useful when you want to calculate 
-a single card without providing a full chain. Position args do not affect cards already in chains.
-<br>
-<details>
-  <summary><b>First</b></summary>
- <table>
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>first</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>E>C>W>G</td>
-    <td>Replace</td>
-</tr>
-</table>
-Used to indicate that a given card should be in position 1. Using this argument will automatically
-apply the first card bonus for the card type.
-<br><br>
-<b>Usage Examples:</b>
-<br>
-<code>/calc2 string: Ereshkigal buster first</code>
-<br>
-This would calculate one of Ereshkigal's Buster cards in position 1.
-</details>
-<details>
-  <summary><b>Second</b></summary>
- <table>
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>second</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>E>C>W>G</td>
-    <td>Replace</td>
-</tr>
-</table>
-Used to indicate that a given card should be in position 2.
-<br><br>
-<b>Usage Examples:</b>
-<br>
-<code>/calc2 string: Ereshkigal buster second</code>
-<br>
-This would calculate one of Ereshkigal's Buster cards in position 2.
-</details>
-<details>
-  <summary><b>Third</b></summary>
- <table>
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>third</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>E>C>W>G</td>
-    <td>Replace</td>
-</tr>
-</table>
-Used to indicate that a given card should be in position 3.
-<br><br>
-<b>Usage Examples:</b>
-<br>
-<code>/calc2 string: Ereshkigal buster third</code>
-<br>
-This would calculate one of Ereshkigal's Buster cards in position 3.
-</details>
-
 ### Servant Attribute Arguments
 Used to indicate the specifics of your servant, such as NP level, CE Attack, etc.
 <br>
@@ -800,6 +716,32 @@ Used to indicate how much additional ATK stat your servant should have from ATK 
 This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from fous.
 </details>
 <details>
+  <summary><b><img src="./images/icons/2000.png" alt="Paw" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Paw / FouPaw / Print / Footprint</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>paw<br>foupaw<br>print<br>footprint</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate how much additional ATK stat your servant should have from fou paws.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster paw250</code>
+<br>
+This would calculate Ereshkigal's Buster card with 250 additional ATK from fou paws.
+</details>
+<details>
   <summary><b><img src="./images/icons/ce.png" alt="CE" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CE / C</b></summary>
  <table>
   <tr>
@@ -854,3 +796,385 @@ ignored and replaced by your specified total attack.
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 11,525 ATK stat.
 </details>
+
+### Card Attribute Arguments
+Used to specify things like buster first bonus, whether a card critically hits, etc.
+<br>
+<details>
+  <summary><b>1️⃣ First</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>first</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate that a given card should be in position 1. Using this argument will automatically
+apply the first card bonus for the card type.
+<br><br>
+Note that this argument will not affect cards in card chains.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster first</code>
+<br>
+This would calculate one of Ereshkigal's Buster cards in position 1.
+</details>
+<details>
+  <summary><b>2️⃣ Second</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>second</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate that a given card should be in position 2.
+<br><br>
+Note that this argument will not affect cards in card chains.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster second</code>
+<br>
+This would calculate one of Ereshkigal's Buster cards in position 2.
+</details>
+<details>
+  <summary><b>3️⃣ Third</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>third</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to indicate that a given card should be in position 3.
+<br><br>
+Note that this argument will not affect cards in card chains.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster third</code>
+<br>
+This would calculate one of Ereshkigal's Buster cards in position 3.
+</details>
+<details>
+  <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> BusterFirst / BF</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>busterfirst<br>bf</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force buster first card bonus even in cases where a buster card is not 
+first and/or you are calculating a single non-buster card.
+<br>
+Note that when calculating a single buster card or using a card chain that begins with a buster card,
+this bonus is automatically applied.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal quick bf</code>
+<br>
+This would calculate a quick card from Ereshkigal with buster first bonus.
+<br><br>
+<code>/calc2 string Ereshkigal xqbe bf</code>
+<br>
+This would calculate an X→Quick→Buster→Extra card chain from Ereshkigal with buster first bonus.
+This could be useful if the x card is a different servant's buster card.
+</details>
+<details>
+  <summary><b><img src="./images/cards/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ArtsFirst / AF</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>artsfirst<br>af</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force arts first card bonus even in cases where an arts card is not 
+first and/or you are calculating a single non-arts card.
+<br>
+Note that when calculating a single arts card or using a card chain that begins with an arts card,
+this bonus is automatically applied.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal quick af</code>
+<br>
+This would calculate a quick card from Ereshkigal with arts first bonus.
+<br><br>
+<code>/calc2 string Ereshkigal xqbe af</code>
+<br>
+This would calculate an X→Quick→Buster→Extra card chain from Ereshkigal with arts first bonus.
+This could be useful if the x card is a different servant's arts card.
+</details>
+<details>
+  <summary><b><img src="./images/cards/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> QuickFirst / QF</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>quickfirst<br>qf</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force quick first card bonus even in cases where a quick card is not 
+first and/or you are calculating a single non-quick card.
+<br>
+Note that when calculating a single quick card or using a card chain that begins with a quick card,
+this bonus is automatically applied.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal arts qf</code>
+<br>
+This would calculate an arts card from Ereshkigal with quick first bonus.
+<br><br>
+<code>/calc2 string Ereshkigal xabe qf</code>
+<br>
+This would calculate an X→Arts→Buster→Extra card chain from Ereshkigal with quick first bonus.
+This could be useful if the x card is a different servant's quick card.
+</details>
+<details>
+  <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NoBusterFirst / NoBF</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>nobusterfirst<br>nobf</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force remove the buster first card bonus even when calculating a single 
+buster card or a card chain beginning with a buster card.
+<br>
+As far as I am aware, this is impossible for the player, but when calculating an enemy's cards, this can be applied.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster nobf</code>
+<br>
+This would calculate a single buster card from Ereshkigal without buster first bonus.
+<br><br>
+<code>/calc2 string Ereshkigal bbb bf</code>
+<br>
+This would calculate an Buster→Buster→Buster→Extra card chain from Ereshkigal without buster first bonus.
+</details>
+<details>
+  <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> BusterChain / BC</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>busterchain<br>bc</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force a buster chain bonus even when calculating a single card.
+<br>
+Note that when calculating a buster card chain using card arguments, this is automatically applied.
+<br>
+Additionally, using this argument will automatically apply buster first.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster bc</code>
+<br>
+This would calculate a single Buster card from Ereshkigal as a part of a buster chain.
+</details>
+<details>
+  <summary><b><img src="./images/cards/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ArtsChain / AC</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>artschain<br>ac</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force an arts chain bonus even when calculating a single card.
+<br>
+Note that when calculating an arts card chain using card arguments, this is automatically applied.
+<br>
+Additionally, using this chain argument will automatically apply arts first.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal arts ac</code>
+<br>
+This would calculate a single Arts card from Ereshkigal as a part of an arts chain.
+</details>
+<details>
+  <summary><b><img src="./images/cards/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> QuickChain / QC</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>quickchain<br>qc</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force a quick chain bonus even when calculating a single card.
+<br>
+Note that when calculating a quick card chain using card arguments, this is automatically applied.
+<br>
+Additionally, using this argument will automatically apply quick first.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal quick qc</code>
+<br>
+This would calculate a single Quick card from Ereshkigal as a part of a quick chain.
+</details>
+<details>
+  <summary><b><img src="./images/cards/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ExtraCardModifier / ECM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>extracardmodifier<br>ecm</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to set a custom extra card modifier. Note that this argument only impacts extra cards.
+<br>
+When calculating using card chains, the extra card modifier is automatically applied with the appropriate amount.
+<br><br>
+Note: This value is 1 by default, 2 if the extra card is part of a brave chain, and 3.5 if the extra card is
+part of a color brave chain (ex. bbbe). Note that in FGO, generally you cannot use an extra card in any other scenario 
+than as a part of a brave chain, so in practice this value should <b>always</b> be 2.0 or 3.5.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal extra ecm2</code>
+<br>
+This would calculate an extra card from Ereshkigal with an extra card modifier of 2.
+<br><br>
+<code>/calc2 string Ereshkigal extra ecm3.5</code>
+<br>
+This would calculate an extra card from Ereshkigal with an extra card modifier of 3.5.
+</details>
+<details>
+  <summary><b><img src="./images/icons/crit_dmg_up.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Critical / Crit</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>critical<br>crit</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument indicates that a card is a critical hit.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal quick critical</code>
+<br>
+This would calculate a single Quick card from Ereshkigal, and that card would be a critical hit.
+</details>
+
+### Shorthands
+brave, super, hyper, xss, xssd, xmm, etc.
