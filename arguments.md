@@ -1805,7 +1805,7 @@ Attack Down
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% Attack Up.
 <br><br>
-<code>/calc2 string: Ereshkigal extra a-30</code>
+<code>/calc2 string: Ereshkigal a-30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% Attack Down.
 </details>
@@ -1851,9 +1851,55 @@ Defense Down
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defense up.
 <br><br>
-<code>/calc2 string: Ereshkigal extra d-30</code>
+<code>/calc2 string: Ereshkigal d-30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defense down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/sp_atk_up.png" alt="Sp Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/sp_atk_down.png" alt="Sp Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    PowerMod / Power / PMod / P</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    powermod<br>power<br>pmod<br>p
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set power mod / special attack buffs. This is <b>NOT</b> for servants like Gilgamesh. This is for things 
+like event damage bonuses or Musashi's first skill.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/sp_atk_up.png" alt="Sp Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Special Attack Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/sp_atk_down.png" alt="Sp Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Special Attack Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal p30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% special attack up.
+<br><br>
+<code>/calc2 string: Ereshkigal p-30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% special attack down.
 </details>
 
 
