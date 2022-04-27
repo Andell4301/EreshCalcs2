@@ -619,7 +619,7 @@ Used to indicate the level of your servant. Servant's base attack is automatical
 This would calculate Ereshkigal's Noble Phantasm with an attack stat based on Ereshkigal's attack at level 50.
 </details>
 <details>
-  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NP</b>
+  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NPLevel / NP</b>
 </summary>
  <table>
   <tr>
@@ -630,7 +630,7 @@ This would calculate Ereshkigal's Noble Phantasm with an attack stat based on Er
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>np</td>
+    <td>nplevel<br>np</td>
     <td>✔️</td>
     <td>❌</td>
     <td>N/A</td>
@@ -1117,7 +1117,7 @@ This would calculate an extra card from Ereshkigal with an extra card modifier o
 This would calculate an extra card from Ereshkigal with an extra card modifier of 3.5.
 </details>
 <details>
-  <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NoBusterFirst / NoBF</b></summary>
+  <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NoBusterFirst / NoBF / No-BF</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -1127,7 +1127,7 @@ This would calculate an extra card from Ereshkigal with an extra card modifier o
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>nobusterfirst<br>nobf</td>
+    <td>nobusterfirst<br>nobf<br>no-bf</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -1205,7 +1205,7 @@ This corresponds to <code>npDamageMultiplier</code> in the damage formula.
 This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550%.
 </details>
 <details>
-  <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardMultiplierOverride / CMV</b></summary>
+  <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardMultiplierOverride / CMV / CardValue / CDV / CardDamageVal</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -1215,7 +1215,9 @@ This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>cardmultiplieroverride<br>cmv</td>
+    <td>
+    cardmultiplieroverride<br>cmv<br>cardvalue<br>cdv<br>carddamageval
+    </td>
     <td>✔️</td>
     <td>✔️</td>
     <td>E>C>W>G</td>
@@ -1362,6 +1364,35 @@ enemy server mod (NP Gen), and enemy server rate (Star Gen).
 This would calculate Ereshkigal's Noble Phantasm against a saber class enemy.
 </details>
 <details>
+  <summary><b><img src="./images/icons/All_Gold.png" alt="Class Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ClassAdvantageOverride / CAO</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    classadvantageoverride<br>cao<br>
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to manually set the class advantage override versus an enemy as opposed to using
+the enemy class argument.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal cao2.0</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with a 2x class advantage.
+</details>
+<details>
   <summary><b>天 Human / Man / Sky / Heaven / Earth / Star / Beast </b></summary>
  <table>
   <tr>
@@ -1388,6 +1419,66 @@ This argument can be used to set the attribute of an enemy.
 <code>/calc2 string: Ereshkigal earth</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an Earth attribute enemy.
+</details>
+<details>
+  <summary><b><img src="./images/icons/np_gain_up.png" alt="NP" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> EnemyServerMod / ESM / SM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    enemyservermod<br>esm<br>sm<br>
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to manually set the server mod of an enemy.
+<br><br>
+This corresponds to <code>enemyServerMod</code> in the NP Generation formula.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal arts hp2250 esm1.2</code>
+<br>
+This would calculate Ereshkigal's arts card against an enemy with a server mod of 120%
+</details>
+<details>
+  <summary><b><img src="./images/icons/star_gen_up.png" alt="Stars" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> EnemyServerRate / ESR / SR / SRR / ServerRate</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    enemyserverrate<br>esr<br>sr<br>srr<br>serverrate
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to manually set the server mod of an enemy.
+<br><br>
+This corresponds to <code>enemyServerMod</code> in the NP Generation formula.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal arts hp2250 esm1.2</code>
+<br>
+This would calculate Ereshkigal's arts card against an enemy with a server mod of 120%
 </details>
 
 ### Shorthands
