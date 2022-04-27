@@ -1,3 +1,5 @@
+<body style="min-width: fit-content">
+
 <h2>Full Argument List</h2>
 
 <h3>Structure Arguments</h3>
