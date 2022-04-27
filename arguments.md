@@ -1,6 +1,6 @@
 <body style="width: fit-content">
 
-<h3>Full Argument List</h3>
+<h2>Full Argument List</h3>
 
 <h3>Structure Arguments</h3>
 Used for setting up the structure of the calculation. How many enemies, which card 
