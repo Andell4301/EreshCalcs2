@@ -1,8 +1,8 @@
 <body style="width: fit-content">
 
-## Full Argument List
+<h3>Full Argument List</h3>
 
-### Structure Arguments
+<h3>Structure Arguments</h3>
 Used for setting up the structure of the calculation. How many enemies, which card 
 hits who, etc.
 <br>
@@ -347,7 +347,7 @@ This would calculate Ereshkigal's Noble Phantasm with an RNG value of <code>1.07
 This would calculate two of Ereshkigal's Buster Cards, each with an RNG value of <code>1.077</code>.
 </details>
 
-### Card Arguments
+<h3>Card Arguments</h3>
 Used to tell EreshBot which cards to calculate.
 <br>
 <details>
@@ -591,7 +591,7 @@ you include a number with them.
 <br>
 </details>
 
-### Servant Attribute Arguments
+<h3>Servant Attribute Arguments</h3>
 Used to indicate the specifics of your servant, such as NP level, CE Attack, etc.
 <br>
 <details>
@@ -799,7 +799,7 @@ ignored and replaced by your specified total attack.
 This would calculate Ereshkigal's Noble Phantasm with 11,525 ATK stat.
 </details>
 
-### Card Attribute Arguments
+<h3>Card Attribute Arguments</h3>
 Used to specify things like buster first bonus, whether a card critically hits, etc.
 <br>
 <details>
@@ -1298,7 +1298,7 @@ This corresponds to <code>cardStarValue</code> in the Star Generation formula.
 This would calculate a buster card from Ereshkigal with a refund value of 15%.
 </details>
 
-### Enemy Attribute Arguments
+<h3>Enemy Attribute Arguments</h3>
 <details>
   <summary><b><img src="./images/icons/img_list_hp.png" alt="HP" style="width: 23px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> EnemyHP / HP</b></summary>
  <table>
@@ -1483,7 +1483,7 @@ This corresponds to <code>serverRate</code> in the Star Generation formula.
 This would calculate Ereshkigal's quick card against an enemy with a server rate of 100%
 </details>
 
-### Buff Arguments
+<h3>Buff Arguments</h3>
 <details>
   <summary><b>
     <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
@@ -2701,7 +2701,7 @@ None
 This would calculate Ereshkigal's Noble Phantasm with 50 flat stars.
 </details>
 
-### Shorthands
+<h3>Shorthands</h3>
 <details>
   <summary><b><img src="./images/cards/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Brave</b></summary>
  <table>
@@ -3149,7 +3149,7 @@ This argument is a shorthand for <code>ce2000 qm10 ng10</code>.
 This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quick Mod and 10% NP Gen Up.
 </details>
 
-### Other Args
+<h3>Other Args</h3>
 <details>
   <summary><b>Verbose / V</b></summary>
  <table>
