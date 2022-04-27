@@ -1,4 +1,5 @@
 ##Assumptions
+
 Given that `/calc2 string: Ereshkigal` is  a valid calculation, you may have noticed that EreshBot
 must be assuming some arguments by default. This is indeed the case. Below is a list of everything that 
 is included by default in a calculation if not explicitly specified:
