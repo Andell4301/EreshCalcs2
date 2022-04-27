@@ -1,5 +1,3 @@
-<body style="width: max-content">
-
 <h2>Full Argument List</h2>
 
 <h3>Structure Arguments</h3>
