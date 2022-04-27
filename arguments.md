@@ -1481,5 +1481,237 @@ This corresponds to <code>serverRate</code> in the Star Generation formula.
 This would calculate Ereshkigal's quick card against an enemy with a server rate of 100%
 </details>
 
+### Damage Buff Arguments
+<details>
+  <summary><b>
+    <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    CardMod / CM / M</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    cardmod<br>cm<br>m
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set cardmod. This argument is universal and applies to Buster, Arts, and Quick cards. It does <b>NOT</b>
+apply to Extra cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Up (Ex. Buster Card Up) 
+<br>
+<img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Resist Down (Ex. Buster Card Resist Down)
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Down (Ex. Buster Card Down)
+<br>
+<img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Resist Up (Ex. Buster Card Resist Up)
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal m30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% Card Damage Up.
+<br><br>
+<code>/calc2 string: Ereshkigal m-30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% Card Damage Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    BCardMod / BCM / BM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    bcardmod<br>bcm<br>bm
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set buster specific cardmod. This argument will only apply to Buster cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Card Up
+<br>
+<img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Card Down
+<br>
+<img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Card Resist Up
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster bm30</code>
+<br>
+This would calculate Ereshkigal's Buster card with 30% Buster Damage Up.
+<br><br>
+<code>/calc2 string: Ereshkigal buster bm-30</code>
+<br>
+This would calculate Ereshkigal's Buster card 30% Buster Damage Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    QCardMod / QCM / QM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    qcardmod<br>qcm<br>qm
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set quick specific cardmod. This argument will only apply to Quick cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Card Up
+<br>
+<img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Card Down
+<br>
+<img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Card Resist Up
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal quick qm30</code>
+<br>
+This would calculate Ereshkigal's Quick card with 30% Quick Damage Up.
+<br><br>
+<code>/calc2 string: Ereshkigal quick qm-30</code>
+<br>
+This would calculate Ereshkigal's Quick card 30% Quick Damage Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    ACardMod / ACM / AM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    acardmod<br>acm<br>am
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set arts specific cardmod. This argument will only apply to Arts cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Card Up
+<br>
+<img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Card Down
+<br>
+<img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Card Resist Up
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal arts am30</code>
+<br>
+This would calculate Ereshkigal's Arts card with 30% Arts Damage Up.
+<br><br>
+<code>/calc2 string: Ereshkigal arts am-30</code>
+<br>
+This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
+</details>
+
+
 ### Shorthands
 brave, super, hyper, xss, xssd, xmm, etc.
