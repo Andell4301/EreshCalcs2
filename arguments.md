@@ -1481,7 +1481,7 @@ This corresponds to <code>serverRate</code> in the Star Generation formula.
 This would calculate Ereshkigal's quick card against an enemy with a server rate of 100%
 </details>
 
-### Damage Buff Arguments
+### Buff Arguments
 <details>
   <summary><b>
     <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
@@ -1879,7 +1879,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defen
 </tr>
 </table>
 Used to set power mod / special attack buffs. This is <b>NOT</b> for servants like Gilgamesh. This is for things 
-like event damage bonuses or Musashi's first skill.
+like event damage bonuses,  Musashi's first skill, or the NP of servants like Jack the Ripper with apply a buff.
 <br><br>
 Positive Values:
 <br>
@@ -2104,7 +2104,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Down.
 </tr>
 </table>
 Used to set Super Effective Modifier. This is used for servants like Gilgamesh and Enkidu with an NP
-that deals supereffective damage. This is NOT used for servants like Jack the Ripper with an NP that applies a 
+that deals Super Effective damage. This is NOT used for servants like Jack the Ripper with an NP that applies a 
 power mod buff.
 <br><br>
 Please note that the base value of SE is 100%. Gilgamesh's 50% Additional Damage vs Servants should be 
@@ -2124,6 +2124,340 @@ None
 <code>/calc2 string: Ereshkigal se150</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 150% Super Effective Modifier.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    Critical / Crit / CritDamage / CD </b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    critical<br>crit<br>critdamage<br>cd
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Crit damage up or down. This argument applies to all card types. Note that using this argument 
+does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
+critically hit.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Crit Damage Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Crit Damage Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Buster crit cd100</code>
+<br>
+This would calculate Ereshkigal's Buster card with 100% Critical Damage Up and sets the card as a Critical Hit.
+<br><br>
+<code>/calc2 string: Ereshkigal Buster crit cd-100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    BusterCritical / BusterCrit / BusterCritDamage / BCD </b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    bustercritical<br>bustercrit<br>bustercritdamage<br>bcd
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Crit damage up or down. This argument only works for Buster cards. Note that using this argument 
+does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
+critically hit.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Crit Damage Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Crit Damage Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Buster crit bcd100</code>
+<br>
+This would calculate Ereshkigal's Buster card with 100% Critical Damage Up and sets the card as a Critical Hit.
+<br><br>
+<code>/calc2 string: Ereshkigal Buster crit bcd-100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    QuickCritical / QuickCrit / QuickCritDamage / QCD </b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    quickcritical<br>quickcrit<br>quickcritdamage<br>qcd
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Crit damage up or down. This argument only works for Quick cards. Note that using this argument 
+does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
+critically hit.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Crit Damage Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Crit Damage Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Quick crit qcd100</code>
+<br>
+This would calculate Ereshkigal's Quick card with 100% Critical Damage Up and sets the card as a Critical Hit.
+<br><br>
+<code>/calc2 string: Ereshkigal Quick crit qcd-100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    ArtsCritical / ArtsCrit / ArtsCritDamage / ACD </b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    artscritical<br>artscrit<br>artscritdamage<br>acd
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Crit damage up or down. This argument only works for Arts cards. Note that using this argument 
+does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
+critically hit.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Crit Damage Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Crit Damage Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Arts crit acd100</code>
+<br>
+This would calculate Ereshkigal's Arts card with 100% Critical Damage Up and sets the card as a Critical Hit.
+<br><br>
+<code>/calc2 string: Ereshkigal Arts crit acd-100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/np_gain_up.png" alt="NP Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/np_gain_down.png" alt="NP Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    NPGain / NPGen / NG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    npgain<br>npgen<br>ng
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set NP Gen Up or Down buffs.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/np_gain_up.png" alt="NP Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+NP Gain Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/np_gain_down.png" alt="NP Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+NP Gain Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal hp1000 ng50</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 50% NP generation up.
+<br><br>
+<code>/calc2 string: Ereshkigal hp1000 ng-50</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 50% NP generation down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/battery_2.png" alt="Flat Refund" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    FlatRefund / FlatGain / FG / FR</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    flatrefund<br>flatgain<br>fg<br>fr
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to add flat refund to a calculation. Note that unlike most args, if this is applied to a card, it will NOT give 
+additional flat refund per enemy hit by that card, only to the card itself. If applied globally, it will similarly only 
+be applied once.
+<br><br>
+This is useful for adding, for example, Skadi's 50% battery at the end of a turn to see if you will have enough NP Guage
+to use a Noble Phantasm the next turn. This can also be used for flat NP gen per turn.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/battery_2.png" alt="Flat Refund" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Flat Refund
+<br><br>
+Negative Values:
+<br>
+None
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal fr50</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 50% flat refund.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    StarGain / SG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    stargain<br>sg
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Star Gen Up or Down buffs. Works for all card types.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Star Gain Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Star Gain Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal hp1000 sg50</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 50% Star generation up.
+<br><br>
+<code>/calc2 string: Ereshkigal hp1000 sg-50</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 50% Star generation down.
 </details>
 
 ### Shorthands
