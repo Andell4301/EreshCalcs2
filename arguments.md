@@ -2700,7 +2700,564 @@ This would calculate Ereshkigal's Noble Phantasm with 50 flat stars.
 </details>
 
 ### Shorthands
-brave, super, hyper, xss, xssd, xmm, etc.
+<details>
+  <summary><b><img src="./images/cards/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Brave</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>brave</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ecm3.5</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal extra brave</code>
+<br>
+This would calculate an extra card from Ereshkigal with an extra card modifier of 3.5.
+</details>
+<details>
+  <summary><b><img src="./images/icons/7999.png" alt="Grail" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Super / Supered</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>super<br>supered</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument is a shorthand for <code>enemy0 lv100 fou2000</code>
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal super</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm at level 100 with 2000 fou ATK.
+</details>
+<details>
+  <summary><b><img src="./images/icons/7999.png" alt="Grail" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Superer / SuperGrail / Hyper</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>superer<br>supergrail<br>hyper</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument is a shorthand for <code>enemy0 lv120 fou2000</code>
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal hyper</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm at level 120 with 2000 fou ATK.
+</details>
+<details>
+  <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XSS</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>xss</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>qcd200 qcm100</code>. Remember to set your card to critical if 
+you want it to crit!
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Sei Quick crit xss</code>
+<br>
+This would calculate Sei Shonagons's quick card with 100% Quick Card Mod and 200% Quick Critical Damage.
+</details>
+<details>
+  <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/def_down.png" alt="Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XSSD</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>xssd</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>qcd200 qcm100 d-60</code>. Remember to set your card to critical if 
+you want it to crit!
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Sei Quick crit xssd</code>
+<br>
+This would calculate Sei Shonagons's quick card with 100% Quick Card Mod, 200% Quick Critical Damage, and 60% Def Down.
+</details>
+<details>
+  <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XMM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>xmm</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>a40 bm100</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Buster xmm</code>
+<br>
+This would calculate Ereshkigal's Buster card with 100% Buster Card Mod and 40% Attack Mod.
+</details>
+<details>
+  <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/crit_dmg_up.png" alt="Crit" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XMMC</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>xmmc</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>a40 bm100 cd200</code>. Make sure to set your card to 
+crit if you want it to crit!
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Buster xmmc</code>
+<br>
+This would calculate Ereshkigal's Buster card with 100% Buster Card Mod, 40% Attack Mod, and 200% Crit Damage.
+</details>
+<details>
+  <summary><b><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XWW</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>xww</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>a60 cd100 fd1000</code>. Make sure to set your card to 
+crit if you want it to crit!
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Buster xww</code>
+<br>
+This would calculate Ereshkigal's Buster card with 60% Attack Mod, 100% Crit Damage, and 1000 Flat Damage.
+</details>
+<details>
+  <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XCC</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>xcc</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>a40 am100</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Arts xcc</code>
+<br>
+This would calculate Ereshkigal's Arts card with 40% Attack Mod and 100% Arts Mod.
+</details>
+<details>
+  <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/np_gain_up.png" alt="NP Gain" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XCCNG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>xccng</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>a40 am100 ng60</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal Arts hp22500 xccng</code>
+<br>
+This would calculate Ereshkigal's Arts card with 40% Attack Mod, 100% Arts Mod, and 60% NP Gen Up.
+</details>
+<details>
+  <summary><b><img src="./images/icons/bg.png" alt="Black Grail" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperBlackGrail / SuperBG / SBG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>superblackgrail<br>superbg<br>sbg</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ce2400 n80</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal sbg</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2400 CE ATK and 80% NP Damage Up.
+</details>
+<details>
+  <summary><b><img src="./images/icons/ad.png" alt="Aerial Drive" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperAD</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>superad</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ce2000 bm10 n10</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal superad</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 10% Buster Mod and 10% NP Mod.
+</details>
+<details>
+  <summary><b><img src="./images/icons/gs.png" alt="Golden Sumo" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperSumo / SuperGS</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>supersumo<br>supergs</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ce2000 a15</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal supersumo</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 15% ATK Up.
+</details>
+<details>
+  <summary><b><img src="./images/icons/hns.png" alt="Holy Night Supper" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperHNS / SuperHolyNight</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>superhns<br>superholynight</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ce2000 cd15 n15</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal superhns</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK, 15% Crit Damage Up and 15% NP Damage Up.
+</details>
+<details>
+  <summary><b><img src="./images/icons/kscope.png" alt="Scope" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SScope</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>sscope</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ce2000</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal sscope</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK.
+</details>
+<details>
+  <summary><b><img src="./images/icons/fc.png" alt="Fondant" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperFondant / SF</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>superfondant<br>sf</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ce2000 p30</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal sf</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 30% Power Mod.
+</details>
+<details>
+  <summary><b><img src="./images/icons/toc.png" alt="ToC" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperTraces / SuperTOC</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>supertraces<br>supertoc</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>ce2000 qm10 ng10</code>.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Sei supertoc</code>
+<br>
+This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quick Mod and 10% NP Gen Up.
+</details>
 
 ### Other Args
-reduced, v
+<details>
+  <summary><b>Verbose / V</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>verbose<br>v</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Blocks hiding enemy num and card num on the summary page even in cases where they would normally be hidden.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal v</code>
+<br>
+</details>
+<details>
+  <summary><b>ReducedMin / ReduceMin</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>reducedmin<br>reducemin</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used for custom reducedHP for Min RNG. This is a debug arg. If you need to use this, you probably already know how.
+If you don't, you probably shouldn't be using this.
+<br><br>
+</details>
+<details>
+  <summary><b>ReducedAVG / ReduceAVG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>reducedavg<br>reduceavg</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used for custom reducedHP for Average RNG. This is a debug arg. If you need to use this, you probably already know how.
+If you don't, you probably shouldn't be using this.
+<br><br>
+</details>
+<details>
+  <summary><b>ReducedMax / ReduceMax</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>reducedmax<br>reducemax</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used for custom reducedHP for Max RNG. This is a debug arg. If you need to use this, you probably already know how.
+If you don't, you probably shouldn't be using this.
+<br><br>
+</details>
+<details>
+  <summary><b>ReducedCustom / ReduceCustom</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>reducedcustom<br>reducecustom</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used for custom reducedHP for Custom RNG. This is a debug arg. If you need to use this, you probably already know how.
+If you don't, you probably shouldn't be using this.
+<br><br>
+</details>
