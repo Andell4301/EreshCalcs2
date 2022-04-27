@@ -2081,6 +2081,50 @@ This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Up.
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Down.
 </details>
+<details>
+  <summary><b>
+    <img src="./images/icons/sp_atk_up.png" alt="Sp Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    SuperEffectiveMod / Super / SEMod / SEM / SE / S</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    supereffectivemod<br>super<br>semod<br>sem<br>se<br>s
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Super Effective Modifier. This is used for servants like Gilgamesh and Enkidu with an NP
+that deals supereffective damage. This is NOT used for servants like Jack the Ripper with an NP that applies a 
+power mod buff.
+<br><br>
+Please note that the base value of SE is 100%. Gilgamesh's 50% Additional Damage vs Servants should be 
+inputted as SE150. See the <code>/np</code> command of a servant for the proper value to input in the command.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/sp_atk_up.png" alt="Sp Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Super Effective Modifier Up
+<br><br>
+Negative Values:
+<br>
+None
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal se150</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 150% Super Effective Modifier.
+</details>
 
 ### Shorthands
 brave, super, hyper, xss, xssd, xmm, etc.
