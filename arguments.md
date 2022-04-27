@@ -1764,6 +1764,97 @@ This would calculate Ereshkigal's Extra card with 30% Extra Damage Up.
 <br>
 This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
 </details>
+<details>
+  <summary><b>
+    <img src="./images/icons/atk_up.png" alt="Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/atk_down.png" alt="Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    AtkMod / Attack / ATK / A</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    atkmod<br>attack<br>atk<br>a
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set attack mod for attack up buffs like Charisma.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/atk_up.png" alt="Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Attack Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/atk_down.png" alt="Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Attack Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal a30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% Attack Up.
+<br><br>
+<code>/calc2 string: Ereshkigal extra a-30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% Attack Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/def_up.png" alt="Def Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/def_down.png" alt="Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    DefMod / Defence / Defense / Def / D</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    defmod<br>defence<br>defense<br>def<br>d
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set defense mod for defense up buffs. Note that defense UP will reduce your damage, and 
+defense DOWN will increase your damage. So for Skadi's defense down skill, you'll want to use NEGATIVE 30.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/def_up.png" alt="Def Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Defense Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/def_down.png" alt="Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Defense Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal d30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defense up.
+<br><br>
+<code>/calc2 string: Ereshkigal extra d-30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defense down.
+</details>
 
 
 ### Shorthands
