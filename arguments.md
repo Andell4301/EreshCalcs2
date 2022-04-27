@@ -2459,6 +2459,202 @@ This would calculate Ereshkigal's Noble Phantasm with 50% Star generation up.
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50% Star generation down.
 </details>
+<details>
+  <summary><b>
+    <img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    BStarGain / BSG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    bstargain<br>bsg
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Star Gen Up or Down buffs. This argument only works for Buster cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Star Gain Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Star Gain Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster hp1000 bsg50</code>
+<br>
+This would calculate Ereshkigal's Buster card with 50% Buster Star generation up.
+<br><br>
+<code>/calc2 string: Ereshkigal buster hp1000 bsg-50</code>
+<br>
+This would calculate Ereshkigal's Buster card with 50% Buster Star generation down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    QStarGain / QSG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    qstargain<br>qsg
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Star Gen Up or Down buffs. This argument only works for Quick cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Star Gain Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Star Gain Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal quick hp1000 qsg50</code>
+<br>
+This would calculate Ereshkigal's Quick card with 50% Quick Star generation up.
+<br><br>
+<code>/calc2 string: Ereshkigal quick hp1000 qsg-50</code>
+<br>
+This would calculate Ereshkigal's Quick card with 50% Quick Star generation down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    AStarGain / ASG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    astargain<br>asg
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Star Gen Up or Down buffs. This argument only works for Arts cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Star Gain Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Star Gain Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal arts hp1000 asg50</code>
+<br>
+This would calculate Ereshkigal's Arts card with 50% Arts Star generation up.
+<br><br>
+<code>/calc2 string: Ereshkigal arts hp1000 asg-50</code>
+<br>
+This would calculate Ereshkigal's Arts card with 50% Arts Star generation down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    EStarGain / ESG</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    estargain<br>esg
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Star Gen Up or Down buffs. This argument only works for Extra cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Star Gain Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+<img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Star Gain Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal extra hp1000 esg50</code>
+<br>
+This would calculate Ereshkigal's Extra card with 50% Extra Star generation up.
+<br><br>
+<code>/calc2 string: Ereshkigal extra hp1000 esg-50</code>
+<br>
+This would calculate Ereshkigal's Extra card with 50% Extra Star generation down.
+</details>
 
 ### Shorthands
 brave, super, hyper, xss, xssd, xmm, etc.
