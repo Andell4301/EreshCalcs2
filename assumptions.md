@@ -5,11 +5,16 @@ must be assuming some arguments by default. This is indeed the case. Below is a 
 is included by default in a calculation if not explicitly specified:
 
 Structure Arguments:
-1) If a card is not specified, `card1` will be set to an NP.
-2) If an enemy isn't specified, a blank enemy `enemy1` will be created.
-3) If `wavesize` isn't specified, it will be set to 3. 
-4) If exactly three cards are provided, none of them are blank cards (<code>x</code>), none of them are 
-extra cards, and at least one card is not an NP, an extra card will be added to the command chain.
+<ol>
+<li>If a card is not specified, <code>card1</code> will be set to an NP.</li>
+<li>If an enemy isn't specified, a blank enemy <code>enemy1</code> will be created.</li>
+<li>If <code>wavesize</code> isn't specified, it will be set to 3.</li>
+<li>If exactly three cards are provided, none of them are blank cards (<code>x</code>), none of them are 
+extra cards, and at least one card is not an NP, an extra card will be added to the command chain.</li>
+<li>If a single card is calculated, EreshBot will assume it is in position one and benefits from 
+the <code>firstCardBonus</code> of its card type.</li>
+<li>If a card chain is calculated, card positions and first card bonuses are included accordingly.</li>
+</ol>
 
 Servant Attributes / Buffs:
  <ol>

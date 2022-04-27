@@ -1,3 +1,5 @@
+<body style="overflow-x:scroll">
+
 # Welcome to the EreshCalcs2 Wiki!
 
 [Basics](basics.md) | [Syntax](syntax.md) | [Arguments](arguments.md) | [Assumptions](assumptions.md) | [Reading](reading.md) | [FAQ](FAQ.md)
