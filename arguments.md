@@ -1205,7 +1205,7 @@ This corresponds to <code>npDamageMultiplier</code> in the damage formula.
 This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550%.
 </details>
 <details>
-  <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardMultiplierOverride / CMV / CardValue / CDV / CardDamageVal</b></summary>
+  <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardDamageVal / CDV / CardValue / CardMultiplierOverride / CMV</b></summary>
  <table>
   <tr>
     <th>Arg</th>
@@ -1470,15 +1470,15 @@ This would calculate Ereshkigal's arts card against an enemy with a server mod o
     <td>Replace</td>
 </tr>
 </table>
-This argument can be used to manually set the server mod of an enemy.
+This argument can be used to manually set the server rate of an enemy.
 <br><br>
-This corresponds to <code>enemyServerMod</code> in the NP Generation formula.
+This corresponds to <code>serverRate</code> in the Star Generation formula.
 <br><br>
 <b>Usage Examples:</b>
 <br>
-<code>/calc2 string: Ereshkigal arts hp2250 esm1.2</code>
+<code>/calc2 string: Ereshkigal quick hp2250 esr1</code>
 <br>
-This would calculate Ereshkigal's arts card against an enemy with a server mod of 120%
+This would calculate Ereshkigal's quick card against an enemy with a server rate of 100%
 </details>
 
 ### Shorthands
