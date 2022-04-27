@@ -1728,7 +1728,7 @@ This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
   </tr>
   <tr>
     <td>
-    acardmod<br>acm<br>am
+    ecardmod<br>ecm<br>em
     </td>
     <td>✔️</td>
     <td>✔️</td>
