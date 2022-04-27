@@ -1,4 +1,4 @@
-<body style="min-width: fit-content">
+<body style="min-width: max-content">
 
 <h2>Full Argument List</h2>
 
