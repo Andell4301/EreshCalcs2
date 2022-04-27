@@ -1,6 +1,6 @@
 # Welcome to the EreshCalcs2 Wiki!
 
-[Basics](basics.md) | [Syntax](syntax.md) | [Arguments](arguments.md) | [Assumptions](assumptions.md) | [Reading](reading.md) | [FAQ](faq.md)
+[Basics](basics.md) | [Syntax](syntax.md) | [Arguments](arguments.md) | [Assumptions](assumptions.md) | [Reading](reading.md) | [FAQ](FAQ.md)
 
 ## What is this?
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
