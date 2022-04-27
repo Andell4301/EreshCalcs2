@@ -1,3 +1,5 @@
+<body style="width: fit-content">
+
 ## Full Argument List
 
 ### Structure Arguments
