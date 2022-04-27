@@ -991,39 +991,6 @@ This would calculate an X→Arts→Buster→Extra card chain from Ereshkigal wit
 This could be useful if the x card is a different servant's quick card.
 </details>
 <details>
-  <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NoBusterFirst / NoBF</b></summary>
- <table>
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>nobusterfirst<br>nobf</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>E>C>W>G</td>
-    <td>Replace</td>
-</tr>
-</table>
-This argument can be used to force remove the buster first card bonus even when calculating a single 
-buster card or a card chain beginning with a buster card.
-<br>
-As far as I am aware, this is impossible for the player, but when calculating an enemy's cards, this can be applied.
-<br><br>
-<b>Usage Examples:</b>
-<br>
-<code>/calc2 string: Ereshkigal buster nobf</code>
-<br>
-This would calculate a single buster card from Ereshkigal without buster first bonus.
-<br><br>
-<code>/calc2 string Ereshkigal bbb bf</code>
-<br>
-This would calculate an Buster→Buster→Buster→Extra card chain from Ereshkigal without buster first bonus.
-</details>
-<details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> BusterChain / BC</b></summary>
  <table>
   <tr>
@@ -1150,6 +1117,39 @@ This would calculate an extra card from Ereshkigal with an extra card modifier o
 This would calculate an extra card from Ereshkigal with an extra card modifier of 3.5.
 </details>
 <details>
+  <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NoBusterFirst / NoBF</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>nobusterfirst<br>nobf</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force remove the buster first card bonus even when calculating a single 
+buster card or a card chain beginning with a buster card.
+<br>
+As far as I am aware, this is impossible for the player, but when calculating an enemy's cards, this can be applied.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster nobf</code>
+<br>
+This would calculate a single buster card from Ereshkigal without buster first bonus.
+<br><br>
+<code>/calc2 string Ereshkigal bbb bf</code>
+<br>
+This would calculate an Buster→Buster→Buster→Extra card chain from Ereshkigal without buster first bonus.
+</details>
+<details>
   <summary><b><img src="./images/icons/crit_dmg_up.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Critical / Crit</b></summary>
  <table>
   <tr>
@@ -1174,6 +1174,220 @@ This argument indicates that a card is a critical hit.
 <code>/calc2 string: Ereshkigal quick critical</code>
 <br>
 This would calculate a single Quick card from Ereshkigal, and that card would be a critical hit.
+</details>
+<details>
+  <summary><b><img src="./images/cards/np.png" alt="NP" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NPOverride / NPValue / NPV / NPO</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>npoverride<br>npvalue<br>npv<br>npo</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to set a custom np multiplier. This can be used to calculate very new NP before EreshBot 
+updates.
+<br><br>
+This corresponds to <code>npDamageMultiplier</code> in the damage formula.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal npv550</code>
+<br>
+This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550%.
+</details>
+<details>
+  <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardMultiplierOverride / CMV</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>cardmultiplieroverride<br>cmv</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to set a custom card multiplier. This can be used to manually set the value that 
+would typically be set by the <code>first</code>, <code>second</code>, and <code>third</code> arguments. 
+<br><br>
+This corresponds to <code>cardDamageValue</code> in the damage formula.
+<br><br>
+Note that unlike the positional arguments, this argument <i>can</i> be used even on cards in chains.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal buster cmv1.8</code>
+<br>
+This would calculate Ereshkigal's Buster card with a custom multiplier of 180%.
+</details>
+<details>
+  <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardRefundValue / CRV</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>cardrefundvalue<br>crv</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This can be used to set a custom NP value for a card. Doing so manually sets the card's np value 
+that is normally set automatically based on a card's position or by using the position arguments.
+<br><br>
+This corresponds to <code>cardNpValue</code> in the NP Generation formula.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal hp2250 quick crv1.5</code>
+<br>
+This would calculate a quick card from Ereshkigal with a refund value of 150%.
+</details>
+<details>
+  <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardStarValue / CSV</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>cardstarvalue<br>csv</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This can be used to set a custom star value for a card. Doing so manually sets the card's star value 
+that is normally set automatically based on a card's position or by using the position arguments.
+<br><br>
+This corresponds to <code>cardStarValue</code> in the Star Generation formula.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal hp2250 buster csv0.15</code>
+<br>
+This would calculate a buster card from Ereshkigal with a refund value of 15%.
+</details>
+
+### Enemy Attribute Arguments
+<details>
+  <summary><b><img src="./images/icons/img_list_hp.png" alt="HP" style="width: 23px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> EnemyHP / HP</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>enemyhp<br>hp</td>
+    <td>✔️</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+Used to set the HP of an enemy. This is required to calculate NP and Star Generation.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal hp20000</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 20,000 HP.
+<br><br>
+<code>/calc2 string: Ereshkigal enemy1 hp20000 enemy2 hp15000</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 20,000 HP and an enemy with 15,000 HP.
+</details>
+<details>
+  <summary><b><img src="./images/icons/All_Gold.png" alt="Class Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> [Any Class Name] (No Spaces)</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    saber<br>archer<br>lancer<br>
+    rider<br>caster<br>assassin<br>
+    berserker<br>zerk<br>zerker<br>shielder<br>ruler<br>
+    alterego<br>ego<br>avenger<br>mooncancer<br>moon<br>cancer<br>
+    foreigner<br>pretender<br>demongodpillar<br>
+    beasti<br>beast1<br>beastii<br>beast2<br>
+    beastiiir<br>beast3r<br>beastiiil<br>beast3l<br>
+    beastiv<br>beast4<br>beastunknown<br>cccfinaleemiyaalter<br>
+    </td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to set the class of an enemy. This automatically sets class advantage, 
+enemy server mod (NP Gen), and enemy server rate (Star Gen).
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal saber</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against a saber class enemy.
+</details>
+<details>
+  <summary><b>天 Human / Man / Sky / Heaven / Earth / Star / Beast </b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    human<br>man<br>sky<br>heaven<br>earth<br>star<br>beast
+    </td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to set the attribute of an enemy.
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal earth</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an Earth attribute enemy.
 </details>
 
 ### Shorthands
