@@ -1,5 +1,38 @@
 ## Full Argument List
 
+### How To Read This Guide
+This list contains all the arguments for EreshBot <code>/calc2</code>. Each argument has a table like 
+follows:
+
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>Names of all aliases for an<br>
+    argument, separated by a new
+    line.</td>
+    <td>❌ or ✔️ to indicate
+    whether or not an argument 
+    requires a number be included.</td>
+    <td>❌ or ✔️ to indicate whether or not an 
+    argument accepts decimals in the number.</td>
+    <td>Priority of arguments. This is the order in which arguments are prioritized. It is
+    typically E>C>W>G (Enemy>Card>Wave>General). For 
+    arguments that replace (see next column), this would mean that if the same argument is 
+    specified on an enemy and on a card, the calc would ignore the card arg in favor 
+    of the enemy. For arguments that sum, it isn't very important.</td>
+    <td>What to do when encountering multiple arguments of the same type. Typically either 
+replace or sum, where sum adds them together and replace will choose the one with the highest priority. 
+In cases where there are multiple of the same replace arg with the same priority, the last one 
+will be chosen.</td>
+</tr>
+</table>
+
 ### Structure Arguments
 Used for setting up the structure of the calculation. How many enemies, which card 
 hits who, etc.
