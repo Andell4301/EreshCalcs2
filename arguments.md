@@ -1901,7 +1901,186 @@ This would calculate Ereshkigal's Noble Phantasm with 30% special attack up.
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% special attack down.
 </details>
-
+<details>
+  <summary><b>
+    <img src="./images/icons/atk_up.png" alt="Flat Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/def_up.png" alt="Flat Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    FlatDamage / FDMG / FD / DMG / AD </b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    flatdamage<br>fdmg<br>fd<br>dmg<br>ad
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set flat damage (like from Waver's S3) and damage cut (like from Waver's S2).
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/atk_up.png" alt="Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Flat Damage Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/def_up.png" alt="Def Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Damage Cut Up
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal fd1000</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 1000 flat damage up.
+<br><br>
+<code>/calc2 string: Ereshkigal fd-1000</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 1000 damage cut.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/spec_def_up.png" alt="Special Def Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/spec_def_down.png" alt="Special Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    SpecialDefenceMod / SpecialDefenseMod / SDM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    specialdefencemod<br>specialdefensemod<br>sdm
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set special defense mod. This is given to some bosses like Gawain.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/spec_def_up.png" alt="Spec Def Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Special Defense Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/spec_def_down.png" alt="Spec Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Special Defense Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal sdm80</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 80% Special Defense Up.
+<br><br>
+<code>/calc2 string: Ereshkigal sdm-80</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 80% Special Defense Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/damage_special.png" alt="Damage Special Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/sp_atk_down.png" alt="Damage Special Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    DamageSpecialMod / DSMod / DSM / SPE</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    damagespecialmod<br>dsmod<br>dsm<br>spe
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set Damage Special Mod. So far, this is only utilized in "Advanced Quests" in Chaldea Gate.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/damage_special.png" alt="Damage Special Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Damage Special Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/sp_atk_down.png" alt="Damage Special Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Damage Special Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal spe100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Damage Special Up.
+<br><br>
+<code>/calc2 string: Ereshkigal spe-100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Damage Special Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/np_dmg_up.png" alt="NP Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    <img src="./images/icons/np_dmg_down.png" alt="NP Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    NPMod / N</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    npmod<br>n
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set NP damage up or down.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/np_dmg_up.png" alt="NP Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+NP Damage Up
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/np_dmg_down.png" alt="NP Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+NP Damage Down
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal n100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Up.
+<br><br>
+<code>/calc2 string: Ereshkigal n-100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Down.
+</details>
 
 ### Shorthands
 brave, super, hyper, xss, xssd, xmm, etc.
