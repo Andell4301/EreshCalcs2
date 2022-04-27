@@ -1711,6 +1711,59 @@ This would calculate Ereshkigal's Arts card with 30% Arts Damage Up.
 <br>
 This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
 </details>
+<details>
+  <summary><b>
+    <img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    ECardMod / ECM / EM</b></summary>
+ <table>
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    acardmod<br>acm<br>am
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set extra specific cardmod. This argument will only apply to Extra cards.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Up
+<br>
+<img src="./images/icons/extra_resist_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Down
+<br>
+<img src="./images/icons/extra_resist_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Resist Up
+<br><br>
+<b>Usage Examples:</b>
+<br>
+<code>/calc2 string: Ereshkigal extra am30</code>
+<br>
+This would calculate Ereshkigal's Extra card with 30% Extra Damage Up.
+<br><br>
+<code>/calc2 string: Ereshkigal extra am-30</code>
+<br>
+This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
+</details>
 
 
 ### Shorthands
