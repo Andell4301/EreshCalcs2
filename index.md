@@ -1,5 +1,7 @@
 # Welcome to the EreshCalcs2 Wiki!
 
+[Basics](basics.md) | [Syntax](syntax.md) | [Arguments](arguments.md) | [Assumptions](assumptions.md) | [Reading](reading.md) | [FAQ](faq.md)
+
 ## What is this?
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
 Currently, this command is `/calc2`.
