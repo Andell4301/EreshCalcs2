@@ -1,14 +1,14 @@
 ## Basic Input Syntax
 The fundamental syntax for a calculation command is as follows:
 
-<span style="color: #0083af;font-weight:bold">/calc2 </span>
+<span style="color: #0083af;font-weight:bold">/calc </span>
 <span style="color: #00a82f;font-weight:bold">string: </span>
 <span style="color: #b70000;font-weight:bold">servant </span>
 <span style="color: #c97c00;font-weight:bold">arguments </span>
 <br>
 
 As you may have seen in the [basics](basics.md) page, once you have selected the 
-<span style="color: #0083AFFF;font-weight:bold"> /calc2</span> command, 
+<span style="color: #0083AFFF;font-weight:bold"> /calc</span> command, 
 the <span style="color: #00A82FFF;font-weight:bold"> string:</span> box will automatically appear as well. 
 All you will be responsible for typing after you have selected the command are the 
 <span style="color: #B70000FF;font-weight:bold"> servant</span>
@@ -59,7 +59,7 @@ With all of that in mind, let's try to put it together. Say you wanted to calcul
 with a 20% attack buff and 50% buster buff. How do you think you might do that?
 
 You'd do: 
-<span style="color: #0083AFFF;font-weight:bold"> /calc2 </span>
+<span style="color: #0083AFFF;font-weight:bold"> /calc </span>
 <span style="color: #00A82FFF;font-weight:bold"> string: </span>
 <span style="color: #B70000FF;font-weight:bold"> Ereshkigal </span>
 <span style="color: #C97C00FF;font-weight:bold"> a20 bm50 </span>
@@ -87,7 +87,7 @@ example, arguments that you include after that argument will only be applied to 
 Take the following two calcs for example:
 <br>
 <span style="color: #0083AFFF;font-weight:bold"> 
-/calc2 string: Ereshkigal
+/calc string: Ereshkigal
 </span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 </span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
@@ -95,7 +95,7 @@ Take the following two calcs for example:
 <span style="color: #C97C00FF;font-weight:bold;border-bottom: 2px solid"> hp22050</span>
 <br>
 <span style="color: #0083AFFF;font-weight:bold"> 
-/calc2 string: Ereshkigal
+/calc string: Ereshkigal
 </span>
 <span style="color: #0083AFFF;font-weight:bold;border-bottom: 2px solid">hp22050</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 </span>
@@ -113,12 +113,12 @@ It is also important to consider how arguments interact with other arguments in 
 Take the following two calcs for example:
 <br>
 <span style="color: #0083AFFF;font-weight:bold"> 
-/calc2 string: Ereshkigal buster bm50
+/calc string: Ereshkigal buster bm50
 </span>
 <span style="color: #00A82FFF;font-weight:bold"> card1 bm60 </span>
 <br>
 <span style="color: #0083AFFF;font-weight:bold"> 
-/calc2 string: Ereshkigal buster fou1500
+/calc string: Ereshkigal buster fou1500
 </span>
 <span style="color: #00A82FFF;font-weight:bold"> card1 fou2000 </span>
 <br>
@@ -234,7 +234,7 @@ Below are examples of different calculation commands that illustrate how these s
 come together.
 <details>
   <summary><b>Example 1</b></summary>
-<span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria buster</span>
+<span style="color: #0083AFFF;font-weight:bold">/calc string: Artoria buster</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 def-20</span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 </span>
 <span style="color: #C97C00FF;font-weight:bold"> card1 e2</span>
@@ -286,7 +286,7 @@ they won't end up being hit, as our card specifies enemy2 as the target.
 <details>
   <summary><b>Example 2</b></summary>
 
-<span style="color: #0083AFFF;font-weight:bold">/calc2 string: Artoria bnpae </span>
+<span style="color: #0083AFFF;font-weight:bold">/calc string: Artoria bnpae </span>
 <span style="color: #00A82FFF;font-weight:bold"> nwave1</span>
 <span style="color: #B70000FF;font-weight:bold"> card3 e3</span>
 <span style="color: #C97C00FF;font-weight:bold"> card4 e3</span>
@@ -373,7 +373,7 @@ arguments, as you should know what those are doing. Skips will be indicated by
 <br>
 <br>
 
-<span style="color: #0083AFFF;font-weight:bold"> /calc2 string: Lancelot npnpnp np4 sscope xss archer sky</span>
+<span style="color: #0083AFFF;font-weight:bold"> /calc string: Lancelot npnpnp np4 sscope xss archer sky</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 hp32149</span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 hp32739</span>
 <span style="color: #C97C00FF;font-weight:bold"> enemy3 hp31560</span>

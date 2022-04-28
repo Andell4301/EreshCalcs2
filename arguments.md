@@ -31,12 +31,12 @@ Utilizing <code>card0</code> will return you to the global scope.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal card1 a30 m30 n50</code>
+<code>/calc string: Ereshkigal card1 a30 m30 n50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm, and that card would have 30% ATK Up, 30% Card Up, 
 and 50% NP Damage Up.
 <br><br>
-<code>/calc2 string: Ereshkigal bnqe card1 a30 m30 n50 card2 a20 d30 m70</code>
+<code>/calc string: Ereshkigal bnqe card1 a30 m30 n50 card2 a20 d30 m70</code>
 <br>
 This would calculate a Buster➝NP➝Quick➝Extra chain from Ereshkigal. The Buster card would have 
 30% ATK Up, 30% Card Up, and 50% NP Damage Up. The Quick card would have 20% ATK Up, 30% Card Up, and 70% NP Damage Up.
@@ -68,22 +68,22 @@ Utilizing <code>enemy0</code> will return you to the global scope.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal enemy1 saber hp1000</code>
+<code>/calc string: Ereshkigal enemy1 saber hp1000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against one saber enemy with 1000 HP.
 <br><br>
-<code>/calc2 string: Ereshkigal enemy1 saber hp1000 enemy2 berserker hp5000</code>
+<code>/calc string: Ereshkigal enemy1 saber hp1000 enemy2 berserker hp5000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against one saber enemy with 1000 HP and one 
 berserker enemy with 5000 HP. Note that as Ereshkigal's Noble Phantasm is AoE, it would hit both by default.
 <br><br>
-<code>/calc2 string: Ereshkigal enemy1 m40 d-30 enemy2 m60 d-20</code>
+<code>/calc string: Ereshkigal enemy1 m40 d-30 enemy2 m60 d-20</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against two enemies. When hitting the first enemy, 
 the Noble Phantasm will have 40% Card Up and 30% Defense Down. When hitting the second enemy, 
 the Noble Phantasm will have 60% Card Up and 20% Defense Down.
 <br><br>
-<code>/calc2 string: Ereshkigal buster enemy1 m40 d-30 enemy2 m60 d-20</code>
+<code>/calc string: Ereshkigal buster enemy1 m40 d-30 enemy2 m60 d-20</code>
 <br>
 This would calculate a Buster card from Ereshkigal. Two enemies are specified, but since normal 
 cards can only hit one enemy, it would only hit <code>enemy1</code>. The Buster card would have
@@ -117,23 +117,23 @@ If an invalid enemy is provided, the argument will be ignored. Ex. if there are 
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal nwave1 card1 e1</code>
+<code>/calc string: Ereshkigal nwave1 card1 e1</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against a wave defined with 3 enemies, but 
 the Noble Phantasm would only actually hit <code>enemy1</code>.
 <br><br>
-<code>/calc2 string: Ereshkigal bqa nwave1 card1 e1 card2 e2 card3 e3</code>
+<code>/calc string: Ereshkigal bqa nwave1 card1 e1 card2 e2 card3 e3</code>
 <br>
 This would calculate a Buster➝Quick➝Arts chain from Ereshkigal against a wave defined with 3 enemies.
 The Buster card would hit <code>enemy1</code>, the Quick card would hit <code>enemy2</code>, and 
 the Arts card would hit <code>enemy3</code>.
 <br><br>
-<code>/calc2 string: Ereshkigal npbb enemy1 enemy2 card2 e2 card3 e2</code>
+<code>/calc string: Ereshkigal npbb enemy1 enemy2 card2 e2 card3 e2</code>
 <br>
 This would calculate an NP➝Buster➝Buster chain from Ereshkigal against two enemies.
 The Noble Phantasm will hit both enemies, but the Buster cards will only hit <code>enemy2</code>.
 <br><br>
-<code>/calc2 string: Ereshkigal nwave1 card1 e1 e2</code>
+<code>/calc string: Ereshkigal nwave1 card1 e1 e2</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against a wave defined with 3 enemies, but the 
 Noble Phantasm would only hit <code>enemy1</code> and <code>enemy2</code>.
@@ -163,7 +163,7 @@ The wave argument does not define new waves. If you use <code>wave2</code> when 
 <code>wave2</code> and all arguments that would apply to <code>wave2</code> will be treated as invalid.
 <br><br>
 Waves are automatically generated based on the number of enemies and the value of <code>wavesize</code> (3 by default).
-In the calc <code>/calc2 string: Ereshkigal enemy1 enemy2 enemy3 enemy4</code>, <code>wave1</code> and 
+In the calc <code>/calc string: Ereshkigal enemy1 enemy2 enemy3 enemy4</code>, <code>wave1</code> and 
 <code>wave2</code> would be valid, with <code>wave1</code> containing enemies 1-3 and <code>wave2</code> 
 containing enemy 4.
 <br><br>
@@ -171,12 +171,12 @@ Utilizing <code>wave0</code> will return you to the general scope.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal enemy1 enemy2 wave1 m30</code>
+<code>/calc string: Ereshkigal enemy1 enemy2 wave1 m30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against two enemies. When hitting both 
 enemies, the Noble Phantasm would have 30% Card Up.
 <br><br>
-<code>/calc2 string: Ereshkigal npnp nwave1 nwave2 wave1 m30 wave2 m60 card1 w1 card2 w2</code>
+<code>/calc string: Ereshkigal npnp nwave1 nwave2 wave1 m30 wave2 m60 card1 w1 card2 w2</code>
 <br>
 This would calculate two Noble Phantasms from Ereshkigal. The first Noble Phantasm would only hit <code>wave1</code>,
 and would have 30% Card Up. The second Noble Phantasm would only hit <code>wave2</code>, and would have 60% Card Up.
@@ -215,7 +215,7 @@ Utilizing <code>nwave0</code> will return you to the general scope.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal nwave1 m30</code>
+<code>/calc string: Ereshkigal nwave1 m30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against a wave of 3 enemies. When hitting any of the enemies, 
 the Noble Phantasm would have 30% Card Up.
@@ -250,13 +250,13 @@ If an invalid wave is provided, the argument will be ignored. Ex. if there are o
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal nwave1 nwave2 card1 w2</code>
+<code>/calc string: Ereshkigal nwave1 nwave2 card1 w2</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against <code>wave2</code> of enemies. Two full waves 
 are defined using <code>nwave</code>, and since the Phantasm is AoE, it will hit 
 <code>enemy4</code>, <code>enemy5</code>, and <code>enemy6</code>.
 <br><br>
-<code>/calc2 string: Ereshkigal nwave1 nwave2 buster card1 w2</code>
+<code>/calc string: Ereshkigal nwave1 nwave2 buster card1 w2</code>
 <br>
 This would calculate Ereshkigal's Buster card against <code>enemy4</code>. This is because two waves of 3 enemies 
 are defined using <code>nwave</code>, and the buster card will only hit the first enemy of <code>wave2</code> when 
@@ -287,7 +287,7 @@ why you're doing it, this should <b>only</b> ever be used for battles with 6 ene
 Note that this argument neither creates enemies nor waves. It is only used to indicate how many enemies should be 
 allowed in a wave, and consequently how to split the enemies already provided.
 <br><br>
-By default, <code>/calc2 string: Ereshkigal enemy1 enemy4</code> would create two waves with one enemy each.
+By default, <code>/calc string: Ereshkigal enemy1 enemy4</code> would create two waves with one enemy each.
 If you were to specify <code>wavesize4</code> however, it would create one wave with two enemies.
 <br><br>
 Please note that <code>wavesize</code> is global. You cannot specify a different <code>wavesize</code> 
@@ -296,16 +296,16 @@ for different waves. With that said, you don't need to. You can still make a thr
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal wavesize6 nwave1</code>
+<code>/calc string: Ereshkigal wavesize6 nwave1</code>
 <br>
 This would set the number of enemies per wave to 6 and create one wave of 6 enemies.
 <br><br>
-<code>/calc2 string: Ereshkigal wavesize6 nwave1 enemy7 enemy8 enemy9</code>
+<code>/calc string: Ereshkigal wavesize6 nwave1 enemy7 enemy8 enemy9</code>
 <br>
 This would create one wave of 6 enemies (<code>nwave1</code>) and a second wave of three enemies 
 (<code>enemy7 enemy8 enemy9</code>).
 <br><br>
-<code>/calc2 string: Ereshkigal wavesize6 enemy1 enemy2 enemy3 nwave2</code>
+<code>/calc string: Ereshkigal wavesize6 enemy1 enemy2 enemy3 nwave2</code>
 <br>
 This would create one wave of three enemies (<code>enemy1 enemy2 enemy3</code>) and a second wave
 of 6 enemies (<code>nwave2</code>). Note that the wave of 6 enemies will begin with <code>enemy7</code> and end with 
@@ -336,11 +336,11 @@ can be provided. Subsequent values will be ignored.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal rng1.077</code>
+<code>/calc string: Ereshkigal rng1.077</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with an RNG value of <code>1.077</code>.
 <br><br>
-<code>/calc2 string: Ereshkigal bb rng1.077</code>
+<code>/calc string: Ereshkigal bb rng1.077</code>
 <br>
 This would calculate two of Ereshkigal's Buster Cards, each with an RNG value of <code>1.077</code>.
 </details>
@@ -370,19 +370,19 @@ Used to tell EreshBot to calculate a Buster card.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster</code>
+<code>/calc string: Ereshkigal buster</code>
 <br>
 This would calculate one Buster card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal buster buster</code>
+<code>/calc string: Ereshkigal buster buster</code>
 <br>
 This would calculate two Buster cards from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal b</code>
+<code>/calc string: Ereshkigal b</code>
 <br>
 This would calculate one Buster card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal bb</code>
+<code>/calc string: Ereshkigal bb</code>
 <br>
 This would calculate two Buster cards from Ereshkigal.
 </details>
@@ -408,19 +408,19 @@ Used to tell EreshBot to calculate an Arts card.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal arts</code>
+<code>/calc string: Ereshkigal arts</code>
 <br>
 This would calculate one Arts card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal arts arts</code>
+<code>/calc string: Ereshkigal arts arts</code>
 <br>
 This would calculate two Arts cards from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal a</code>
+<code>/calc string: Ereshkigal a</code>
 <br>
 This would calculate one Arts card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal aa</code>
+<code>/calc string: Ereshkigal aa</code>
 <br>
 This would calculate two Arts cards from Ereshkigal.
 </details>
@@ -446,19 +446,19 @@ Used to tell EreshBot to calculate a Quick card.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick</code>
+<code>/calc string: Ereshkigal quick</code>
 <br>
 This would calculate one Quick card from Ereshkigal.
 <br><br>    
-<code>/calc2 string: Ereshkigal quick quick</code>
+<code>/calc string: Ereshkigal quick quick</code>
 <br>
 This would calculate two Quick cards from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal q</code>
+<code>/calc string: Ereshkigal q</code>
 <br>
 This would calculate one Quick card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal qq</code>
+<code>/calc string: Ereshkigal qq</code>
 <br>
 This would calculate two Quick cards from Ereshkigal.
 </details>
@@ -484,19 +484,19 @@ Used to tell EreshBot to calculate an Extra card.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal extra</code>
+<code>/calc string: Ereshkigal extra</code>
 <br>
 This would calculate one Extra card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal extra extra</code>
+<code>/calc string: Ereshkigal extra extra</code>
 <br>
 This would calculate two Extra cards from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal e</code>
+<code>/calc string: Ereshkigal e</code>
 <br>
 This would calculate one Extra card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal ee</code>
+<code>/calc string: Ereshkigal ee</code>
 <br>
 This would calculate two Extra cards from Ereshkigal.
 </details>
@@ -523,19 +523,19 @@ Used to tell EreshBot to calculate a Noble Phantasm card.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal np</code>
+<code>/calc string: Ereshkigal np</code>
 <br>
 This would calculate one Noble Phantasm card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal npnp</code>
+<code>/calc string: Ereshkigal npnp</code>
 <br>
 This would calculate two Noble Phantasm cards from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal n</code>
+<code>/calc string: Ereshkigal n</code>
 <br>
 This would calculate one Noble Phantasm card from Ereshkigal.
 <br><br>
-<code>/calc2 string: Ereshkigal nn</code>
+<code>/calc string: Ereshkigal nn</code>
 <br>
 This would calculate two Noble Phantasm cards from Ereshkigal.
 </details>
@@ -559,12 +559,12 @@ This would calculate two Noble Phantasm cards from Ereshkigal.
 </tr>
 </table>
 Used to tell EreshBot to calculate skip a card while including it within a chain.
-Useful for cases such as <code>/calc2 string: Ereshkigal bxb</code> where you still want
+Useful for cases such as <code>/calc string: Ereshkigal bxb</code> where you still want
 the third card to be in position 3, even if you aren't calculating a second card.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal bxb</code>
+<code>/calc string: Ereshkigal bxb</code>
 <br>
 This would calculate one two Buster cards from Ereshkigal, with the first card in position 1 and the second card
 in position 3.
@@ -614,7 +614,7 @@ Used to indicate the level of your servant. Servant's base attack is automatical
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal lv50</code>
+<code>/calc string: Ereshkigal lv50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with an attack stat based on Ereshkigal's attack at level 50.
 </details>
@@ -641,7 +641,7 @@ Used to tell EreshBot what the NP level of your servant is.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal np3</code>
+<code>/calc string: Ereshkigal np3</code>
 <br>
 This would calculate a Noble Phantasm from Ereshkigal at NP level 3.
 </details>
@@ -673,19 +673,19 @@ Noble Phantasms are numbered starting from 0 in the same order they appear in <c
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal str1</code>
+<code>/calc string: Ereshkigal str1</code>
 <br>
 This would calculate Ereshkigal's upgraded Noble Phantasm.
 <br><br>
-<code>/calc2 string: Bride str0</code>
+<code>/calc string: Bride str0</code>
 <br>
 This would calculate Nero Bride's un-upgraded Noble Phantasm.
 <br><br>
-<code>/calc2 string: Vlad str2</code>
+<code>/calc string: Vlad str2</code>
 <br>
 This would calculate Vlad III's Noble Phantasm with its <i>second</i> strengthening.
 <br><br>
-<code>/calc2 string: Spishtar str1</code>
+<code>/calc string: Spishtar str1</code>
 <br>
 This would calculate Space Ishtar's Buster Noble Phantasm.
 </details>
@@ -711,7 +711,7 @@ Used to indicate how much additional ATK stat your servant should have from ATK 
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal fou2000</code>
+<code>/calc string: Ereshkigal fou2000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from fous.
 </details>
@@ -737,7 +737,7 @@ Used to indicate how much additional ATK stat your servant should have from fou 
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster paw250</code>
+<code>/calc string: Ereshkigal buster paw250</code>
 <br>
 This would calculate Ereshkigal's Buster card with 250 additional ATK from fou paws.
 </details>
@@ -763,7 +763,7 @@ Used to indicate how much additional ATK stat your servant should have from a cr
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal ce2000</code>
+<code>/calc string: Ereshkigal ce2000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from a craft essence.
 </details>
@@ -792,7 +792,7 @@ ignored and replaced by your specified total attack.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal ta11525</code>
+<code>/calc string: Ereshkigal ta11525</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 11,525 ATK stat.
 </details>
@@ -825,7 +825,7 @@ Note that this argument will not affect cards in card chains.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster first</code>
+<code>/calc string: Ereshkigal buster first</code>
 <br>
 This would calculate one of Ereshkigal's Buster cards in position 1.
 </details>
@@ -853,7 +853,7 @@ Note that this argument will not affect cards in card chains.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster second</code>
+<code>/calc string: Ereshkigal buster second</code>
 <br>
 This would calculate one of Ereshkigal's Buster cards in position 2.
 </details>
@@ -881,7 +881,7 @@ Note that this argument will not affect cards in card chains.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster third</code>
+<code>/calc string: Ereshkigal buster third</code>
 <br>
 This would calculate one of Ereshkigal's Buster cards in position 3.
 </details>
@@ -911,11 +911,11 @@ this bonus is automatically applied.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick bf</code>
+<code>/calc string: Ereshkigal quick bf</code>
 <br>
 This would calculate a quick card from Ereshkigal with buster first bonus.
 <br><br>
-<code>/calc2 string Ereshkigal xqbe bf</code>
+<code>/calc string Ereshkigal xqbe bf</code>
 <br>
 This would calculate an X→Quick→Buster→Extra card chain from Ereshkigal with buster first bonus.
 This could be useful if the x card is a different servant's buster card.
@@ -946,11 +946,11 @@ this bonus is automatically applied.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick af</code>
+<code>/calc string: Ereshkigal quick af</code>
 <br>
 This would calculate a quick card from Ereshkigal with arts first bonus.
 <br><br>
-<code>/calc2 string Ereshkigal xqbe af</code>
+<code>/calc string Ereshkigal xqbe af</code>
 <br>
 This would calculate an X→Quick→Buster→Extra card chain from Ereshkigal with arts first bonus.
 This could be useful if the x card is a different servant's arts card.
@@ -981,11 +981,11 @@ this bonus is automatically applied.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal arts qf</code>
+<code>/calc string: Ereshkigal arts qf</code>
 <br>
 This would calculate an arts card from Ereshkigal with quick first bonus.
 <br><br>
-<code>/calc2 string Ereshkigal xabe qf</code>
+<code>/calc string Ereshkigal xabe qf</code>
 <br>
 This would calculate an X→Arts→Buster→Extra card chain from Ereshkigal with quick first bonus.
 This could be useful if the x card is a different servant's quick card.
@@ -1016,7 +1016,7 @@ Additionally, using this argument will automatically apply buster first.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster bc</code>
+<code>/calc string: Ereshkigal buster bc</code>
 <br>
 This would calculate a single Buster card from Ereshkigal as a part of a buster chain.
 </details>
@@ -1046,7 +1046,7 @@ Additionally, using this chain argument will automatically apply arts first.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal arts ac</code>
+<code>/calc string: Ereshkigal arts ac</code>
 <br>
 This would calculate a single Arts card from Ereshkigal as a part of an arts chain.
 </details>
@@ -1076,7 +1076,7 @@ Additionally, using this argument will automatically apply quick first.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick qc</code>
+<code>/calc string: Ereshkigal quick qc</code>
 <br>
 This would calculate a single Quick card from Ereshkigal as a part of a quick chain.
 </details>
@@ -1108,11 +1108,11 @@ than as a part of a brave chain, so in practice this value should <b>always</b> 
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal extra ecm2</code>
+<code>/calc string: Ereshkigal extra ecm2</code>
 <br>
 This would calculate an extra card from Ereshkigal with an extra card modifier of 2.
 <br><br>
-<code>/calc2 string Ereshkigal extra ecm3.5</code>
+<code>/calc string Ereshkigal extra ecm3.5</code>
 <br>
 This would calculate an extra card from Ereshkigal with an extra card modifier of 3.5.
 </details>
@@ -1141,11 +1141,11 @@ As far as I am aware, this is impossible for the player, but when calculating an
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster nobf</code>
+<code>/calc string: Ereshkigal buster nobf</code>
 <br>
 This would calculate a single buster card from Ereshkigal without buster first bonus.
 <br><br>
-<code>/calc2 string Ereshkigal bbb bf</code>
+<code>/calc string Ereshkigal bbb bf</code>
 <br>
 This would calculate an Buster→Buster→Buster→Extra card chain from Ereshkigal without buster first bonus.
 </details>
@@ -1171,7 +1171,7 @@ This argument indicates that a card is a critical hit.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick critical</code>
+<code>/calc string: Ereshkigal quick critical</code>
 <br>
 This would calculate a single Quick card from Ereshkigal, and that card would be a critical hit.
 </details>
@@ -1200,7 +1200,7 @@ This corresponds to <code>npDamageMultiplier</code> in the damage formula.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal npv550</code>
+<code>/calc string: Ereshkigal npv550</code>
 <br>
 This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550%.
 </details>
@@ -1233,7 +1233,7 @@ Note that unlike the positional arguments, this argument <i>can</i> be used even
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster cmv1.8</code>
+<code>/calc string: Ereshkigal buster cmv1.8</code>
 <br>
 This would calculate Ereshkigal's Buster card with a custom multiplier of 180%.
 </details>
@@ -1262,7 +1262,7 @@ This corresponds to <code>cardNpValue</code> in the NP Generation formula.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal hp2250 quick crv1.5</code>
+<code>/calc string: Ereshkigal hp2250 quick crv1.5</code>
 <br>
 This would calculate a quick card from Ereshkigal with a refund value of 150%.
 </details>
@@ -1291,7 +1291,7 @@ This corresponds to <code>cardStarValue</code> in the Star Generation formula.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal hp2250 buster csv0.15</code>
+<code>/calc string: Ereshkigal hp2250 buster csv0.15</code>
 <br>
 This would calculate a buster card from Ereshkigal with a refund value of 15%.
 </details>
@@ -1319,11 +1319,11 @@ Used to set the HP of an enemy. This is required to calculate NP and Star Genera
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal hp20000</code>
+<code>/calc string: Ereshkigal hp20000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 20,000 HP.
 <br><br>
-<code>/calc2 string: Ereshkigal enemy1 hp20000 enemy2 hp15000</code>
+<code>/calc string: Ereshkigal enemy1 hp20000 enemy2 hp15000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 20,000 HP and an enemy with 15,000 HP.
 </details>
@@ -1359,7 +1359,7 @@ enemy server mod (NP Gen), and enemy server rate (Star Gen).
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal saber</code>
+<code>/calc string: Ereshkigal saber</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against a saber class enemy.
 </details>
@@ -1388,7 +1388,7 @@ the enemy class argument.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal cao2.0</code>
+<code>/calc string: Ereshkigal cao2.0</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with a 2x class advantage.
 </details>
@@ -1416,7 +1416,7 @@ This argument can be used to set the attribute of an enemy.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal earth</code>
+<code>/calc string: Ereshkigal earth</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an Earth attribute enemy.
 </details>
@@ -1446,7 +1446,7 @@ This corresponds to <code>enemyServerMod</code> in the NP Generation formula.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal arts hp2250 esm1.2</code>
+<code>/calc string: Ereshkigal arts hp2250 esm1.2</code>
 <br>
 This would calculate Ereshkigal's arts card against an enemy with a server mod of 120%
 </details>
@@ -1476,7 +1476,7 @@ This corresponds to <code>serverRate</code> in the Star Generation formula.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick hp2250 esr1</code>
+<code>/calc string: Ereshkigal quick hp2250 esr1</code>
 <br>
 This would calculate Ereshkigal's quick card against an enemy with a server rate of 100%
 </details>
@@ -1544,11 +1544,11 @@ Card Resist Up (Ex. Buster Card Resist Up)
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal m30</code>
+<code>/calc string: Ereshkigal m30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% Card Damage Up.
 <br><br>
-<code>/calc2 string: Ereshkigal m-30</code>
+<code>/calc string: Ereshkigal m-30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% Card Damage Down.
 </details>
@@ -1597,11 +1597,11 @@ Buster Card Resist Up
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster bm30</code>
+<code>/calc string: Ereshkigal buster bm30</code>
 <br>
 This would calculate Ereshkigal's Buster card with 30% Buster Damage Up.
 <br><br>
-<code>/calc2 string: Ereshkigal buster bm-30</code>
+<code>/calc string: Ereshkigal buster bm-30</code>
 <br>
 This would calculate Ereshkigal's Buster card 30% Buster Damage Down.
 </details>
@@ -1650,11 +1650,11 @@ Quick Card Resist Up
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick qm30</code>
+<code>/calc string: Ereshkigal quick qm30</code>
 <br>
 This would calculate Ereshkigal's Quick card with 30% Quick Damage Up.
 <br><br>
-<code>/calc2 string: Ereshkigal quick qm-30</code>
+<code>/calc string: Ereshkigal quick qm-30</code>
 <br>
 This would calculate Ereshkigal's Quick card 30% Quick Damage Down.
 </details>
@@ -1703,11 +1703,11 @@ Arts Card Resist Up
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal arts am30</code>
+<code>/calc string: Ereshkigal arts am30</code>
 <br>
 This would calculate Ereshkigal's Arts card with 30% Arts Damage Up.
 <br><br>
-<code>/calc2 string: Ereshkigal arts am-30</code>
+<code>/calc string: Ereshkigal arts am-30</code>
 <br>
 This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
 </details>
@@ -1756,11 +1756,11 @@ Extra Card Resist Up
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal extra em30</code>
+<code>/calc string: Ereshkigal extra em30</code>
 <br>
 This would calculate Ereshkigal's Extra card with 30% Extra Damage Up.
 <br><br>
-<code>/calc2 string: Ereshkigal extra em-30</code>
+<code>/calc string: Ereshkigal extra em-30</code>
 <br>
 This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
 </details>
@@ -1801,11 +1801,11 @@ Attack Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal a30</code>
+<code>/calc string: Ereshkigal a30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% Attack Up.
 <br><br>
-<code>/calc2 string: Ereshkigal a-30</code>
+<code>/calc string: Ereshkigal a-30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% Attack Down.
 </details>
@@ -1847,11 +1847,11 @@ Defense Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal d30</code>
+<code>/calc string: Ereshkigal d30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defense up.
 <br><br>
-<code>/calc2 string: Ereshkigal d-30</code>
+<code>/calc string: Ereshkigal d-30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defense down.
 </details>
@@ -1893,11 +1893,11 @@ Special Attack Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal p30</code>
+<code>/calc string: Ereshkigal p30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% special attack up.
 <br><br>
-<code>/calc2 string: Ereshkigal p-30</code>
+<code>/calc string: Ereshkigal p-30</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 30% special attack down.
 </details>
@@ -1938,11 +1938,11 @@ Damage Cut Up
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal fd1000</code>
+<code>/calc string: Ereshkigal fd1000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 1000 flat damage up.
 <br><br>
-<code>/calc2 string: Ereshkigal fd-1000</code>
+<code>/calc string: Ereshkigal fd-1000</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 1000 damage cut.
 </details>
@@ -1983,11 +1983,11 @@ Special Defense Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal sdm80</code>
+<code>/calc string: Ereshkigal sdm80</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 80% Special Defense Up.
 <br><br>
-<code>/calc2 string: Ereshkigal sdm-80</code>
+<code>/calc string: Ereshkigal sdm-80</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 80% Special Defense Down.
 </details>
@@ -2028,11 +2028,11 @@ Damage Special Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal spe100</code>
+<code>/calc string: Ereshkigal spe100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Damage Special Up.
 <br><br>
-<code>/calc2 string: Ereshkigal spe-100</code>
+<code>/calc string: Ereshkigal spe-100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Damage Special Down.
 </details>
@@ -2073,11 +2073,11 @@ NP Damage Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal n100</code>
+<code>/calc string: Ereshkigal n100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Up.
 <br><br>
-<code>/calc2 string: Ereshkigal n-100</code>
+<code>/calc string: Ereshkigal n-100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Down.
 </details>
@@ -2121,7 +2121,7 @@ None
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal se150</code>
+<code>/calc string: Ereshkigal se150</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 150% Super Effective Modifier.
 </details>
@@ -2164,11 +2164,11 @@ Crit Damage Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Buster crit cd100</code>
+<code>/calc string: Ereshkigal Buster crit cd100</code>
 <br>
 This would calculate Ereshkigal's Buster card with 100% Critical Damage Up and sets the card as a Critical Hit.
 <br><br>
-<code>/calc2 string: Ereshkigal Buster crit cd-100</code>
+<code>/calc string: Ereshkigal Buster crit cd-100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
 </details>
@@ -2215,11 +2215,11 @@ Buster Crit Damage Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Buster crit bcd100</code>
+<code>/calc string: Ereshkigal Buster crit bcd100</code>
 <br>
 This would calculate Ereshkigal's Buster card with 100% Critical Damage Up and sets the card as a Critical Hit.
 <br><br>
-<code>/calc2 string: Ereshkigal Buster crit bcd-100</code>
+<code>/calc string: Ereshkigal Buster crit bcd-100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
 </details>
@@ -2266,11 +2266,11 @@ Quick Crit Damage Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Quick crit qcd100</code>
+<code>/calc string: Ereshkigal Quick crit qcd100</code>
 <br>
 This would calculate Ereshkigal's Quick card with 100% Critical Damage Up and sets the card as a Critical Hit.
 <br><br>
-<code>/calc2 string: Ereshkigal Quick crit qcd-100</code>
+<code>/calc string: Ereshkigal Quick crit qcd-100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
 </details>
@@ -2317,11 +2317,11 @@ Arts Crit Damage Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Arts crit acd100</code>
+<code>/calc string: Ereshkigal Arts crit acd100</code>
 <br>
 This would calculate Ereshkigal's Arts card with 100% Critical Damage Up and sets the card as a Critical Hit.
 <br><br>
-<code>/calc2 string: Ereshkigal Arts crit acd-100</code>
+<code>/calc string: Ereshkigal Arts crit acd-100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down and sets the card as a Critical Hit.
 </details>
@@ -2362,11 +2362,11 @@ NP Gain Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal hp1000 ng50</code>
+<code>/calc string: Ereshkigal hp1000 ng50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50% NP generation up.
 <br><br>
-<code>/calc2 string: Ereshkigal hp1000 ng-50</code>
+<code>/calc string: Ereshkigal hp1000 ng-50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50% NP generation down.
 </details>
@@ -2410,7 +2410,7 @@ None
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal fr50</code>
+<code>/calc string: Ereshkigal fr50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50% flat refund.
 </details>
@@ -2451,11 +2451,11 @@ Star Gain Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal hp1000 sg50</code>
+<code>/calc string: Ereshkigal hp1000 sg50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50% Star generation up.
 <br><br>
-<code>/calc2 string: Ereshkigal hp1000 sg-50</code>
+<code>/calc string: Ereshkigal hp1000 sg-50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50% Star generation down.
 </details>
@@ -2500,11 +2500,11 @@ Buster Star Gain Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal buster hp1000 bsg50</code>
+<code>/calc string: Ereshkigal buster hp1000 bsg50</code>
 <br>
 This would calculate Ereshkigal's Buster card with 50% Buster Star generation up.
 <br><br>
-<code>/calc2 string: Ereshkigal buster hp1000 bsg-50</code>
+<code>/calc string: Ereshkigal buster hp1000 bsg-50</code>
 <br>
 This would calculate Ereshkigal's Buster card with 50% Buster Star generation down.
 </details>
@@ -2549,11 +2549,11 @@ Quick Star Gain Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal quick hp1000 qsg50</code>
+<code>/calc string: Ereshkigal quick hp1000 qsg50</code>
 <br>
 This would calculate Ereshkigal's Quick card with 50% Quick Star generation up.
 <br><br>
-<code>/calc2 string: Ereshkigal quick hp1000 qsg-50</code>
+<code>/calc string: Ereshkigal quick hp1000 qsg-50</code>
 <br>
 This would calculate Ereshkigal's Quick card with 50% Quick Star generation down.
 </details>
@@ -2598,11 +2598,11 @@ Arts Star Gain Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal arts hp1000 asg50</code>
+<code>/calc string: Ereshkigal arts hp1000 asg50</code>
 <br>
 This would calculate Ereshkigal's Arts card with 50% Arts Star generation up.
 <br><br>
-<code>/calc2 string: Ereshkigal arts hp1000 asg-50</code>
+<code>/calc string: Ereshkigal arts hp1000 asg-50</code>
 <br>
 This would calculate Ereshkigal's Arts card with 50% Arts Star generation down.
 </details>
@@ -2647,11 +2647,11 @@ Extra Star Gain Down
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal extra hp1000 esg50</code>
+<code>/calc string: Ereshkigal extra hp1000 esg50</code>
 <br>
 This would calculate Ereshkigal's Extra card with 50% Extra Star generation up.
 <br><br>
-<code>/calc2 string: Ereshkigal extra hp1000 esg-50</code>
+<code>/calc string: Ereshkigal extra hp1000 esg-50</code>
 <br>
 This would calculate Ereshkigal's Extra card with 50% Extra Star generation down.
 </details>
@@ -2694,7 +2694,7 @@ None
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal fs50</code>
+<code>/calc string: Ereshkigal fs50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50 flat stars.
 </details>
@@ -2722,7 +2722,7 @@ This argument is a shorthand for <code>ecm3.5</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal extra brave</code>
+<code>/calc string: Ereshkigal extra brave</code>
 <br>
 This would calculate an extra card from Ereshkigal with an extra card modifier of 3.5.
 </details>
@@ -2748,7 +2748,7 @@ This argument is a shorthand for <code>enemy0 lv100 fou2000</code>
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal super</code>
+<code>/calc string: Ereshkigal super</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm at level 100 with 2000 fou ATK.
 </details>
@@ -2774,7 +2774,7 @@ This argument is a shorthand for <code>enemy0 lv120 fou2000</code>
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal hyper</code>
+<code>/calc string: Ereshkigal hyper</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm at level 120 with 2000 fou ATK.
 </details>
@@ -2801,7 +2801,7 @@ you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Sei Quick crit xss</code>
+<code>/calc string: Sei Quick crit xss</code>
 <br>
 This would calculate Sei Shonagons's quick card with 100% Quick Card Mod and 200% Quick Critical Damage.
 </details>
@@ -2828,7 +2828,7 @@ you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Sei Quick crit xssd</code>
+<code>/calc string: Sei Quick crit xssd</code>
 <br>
 This would calculate Sei Shonagons's quick card with 100% Quick Card Mod, 200% Quick Critical Damage, and 60% Def Down.
 </details>
@@ -2854,7 +2854,7 @@ This argument is a shorthand for <code>a40 bm100</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Buster xmm</code>
+<code>/calc string: Ereshkigal Buster xmm</code>
 <br>
 This would calculate Ereshkigal's Buster card with 100% Buster Card Mod and 40% Attack Mod.
 </details>
@@ -2881,7 +2881,7 @@ crit if you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Buster xmmc</code>
+<code>/calc string: Ereshkigal Buster xmmc</code>
 <br>
 This would calculate Ereshkigal's Buster card with 100% Buster Card Mod, 40% Attack Mod, and 200% Crit Damage.
 </details>
@@ -2908,7 +2908,7 @@ crit if you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Buster xww</code>
+<code>/calc string: Ereshkigal Buster xww</code>
 <br>
 This would calculate Ereshkigal's Buster card with 60% Attack Mod, 100% Crit Damage, and 1000 Flat Damage.
 </details>
@@ -2934,7 +2934,7 @@ This argument is a shorthand for <code>a40 am100</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Arts xcc</code>
+<code>/calc string: Ereshkigal Arts xcc</code>
 <br>
 This would calculate Ereshkigal's Arts card with 40% Attack Mod and 100% Arts Mod.
 </details>
@@ -2960,7 +2960,7 @@ This argument is a shorthand for <code>a40 am100 ng60</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal Arts hp22500 xccng</code>
+<code>/calc string: Ereshkigal Arts hp22500 xccng</code>
 <br>
 This would calculate Ereshkigal's Arts card with 40% Attack Mod, 100% Arts Mod, and 60% NP Gen Up.
 </details>
@@ -2986,7 +2986,7 @@ This argument is a shorthand for <code>ce2400 n80</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal sbg</code>
+<code>/calc string: Ereshkigal sbg</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2400 CE ATK and 80% NP Damage Up.
 </details>
@@ -3012,7 +3012,7 @@ This argument is a shorthand for <code>ce2000 bm10 n10</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal superad</code>
+<code>/calc string: Ereshkigal superad</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 10% Buster Mod and 10% NP Mod.
 </details>
@@ -3038,7 +3038,7 @@ This argument is a shorthand for <code>ce2000 a15</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal supersumo</code>
+<code>/calc string: Ereshkigal supersumo</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 15% ATK Up.
 </details>
@@ -3064,7 +3064,7 @@ This argument is a shorthand for <code>ce2000 cd15 n15</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal superhns</code>
+<code>/calc string: Ereshkigal superhns</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK, 15% Crit Damage Up and 15% NP Damage Up.
 </details>
@@ -3090,7 +3090,7 @@ This argument is a shorthand for <code>ce2000</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal sscope</code>
+<code>/calc string: Ereshkigal sscope</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK.
 </details>
@@ -3116,7 +3116,7 @@ This argument is a shorthand for <code>ce2000 p30</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal sf</code>
+<code>/calc string: Ereshkigal sf</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 30% Power Mod.
 </details>
@@ -3142,7 +3142,7 @@ This argument is a shorthand for <code>ce2000 qm10 ng10</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Sei supertoc</code>
+<code>/calc string: Sei supertoc</code>
 <br>
 This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quick Mod and 10% NP Gen Up.
 </details>
@@ -3170,7 +3170,7 @@ Blocks hiding enemy num and card num on the summary page even in cases where the
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc2 string: Ereshkigal v</code>
+<code>/calc string: Ereshkigal v</code>
 <br>
 </details>
 <details>

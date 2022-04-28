@@ -6,7 +6,7 @@
 
 <h2>What is this?</h2>
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
-Currently, this command is <code>/calc2</code>.
+Currently, this command is <code>/calc</code>.
 <h2>I already know how to use the original EreshBot calc command. Should I still read this?</h2>
 That depends. If you don't care about the new features, then probably not. Everything that you could do with the old 
 command can be done in the exact same way with the new command, except for the fact that the servant name now has to 
@@ -17,7 +17,7 @@ For example:
 <strong>Old Command</strong>:<br>
 <code>/calc servant:</code> Arjuna Alter <code>string:</code> ce2400 n80 a30 p50 m20 saber hp1000
 <br><b>New Command</b>:<br>
-<code>/calc2 string:</code> ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
+<code>/calc string:</code> ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
 
 With that said, the new command is much, much more powerful. If you'd like to take advantage of all the new 
 features and capabilities it now offers, you should definitely continue on reading.
