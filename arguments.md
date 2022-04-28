@@ -1,5 +1,3 @@
-<body style="overflow-x:scroll">
-
 <h2>Full Argument List</h2>
 
 <h3>Structure Arguments</h3>
@@ -1208,7 +1206,7 @@ This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550
 </details>
 <details>
   <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardDamageVal / CDV / CardValue / CardMultiplierOverride / CMV</b></summary>
- <table>
+ <table style="width: 100%">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
