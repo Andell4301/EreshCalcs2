@@ -2,7 +2,7 @@
 
 <h1>Welcome to the EreshCalcs2 Wiki!</h1>
 
-<a href="basics.md">Basics</a> | <a href="syntax.md">Syntax</a> | <a href="arguments.md">Arguments</a> | <a href="assumptions.md">Assumptions</a> | <a href="reading.md">Reading</a> | <a href="FAQ.md">FAQ</a>
+<a href="#basics.md">Basics</a> | <a href="#syntax.md">Syntax</a> | <a href="#arguments.md">Arguments</a> | <a href="#assumptions.md">Assumptions</a> | <a href="#reading.md">Reading</a> | <a href="#FAQ.md">FAQ</a>
 
 <h2>What is this?</h2>
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
