@@ -75,8 +75,8 @@ When it comes to multi calcs, there are two specific types of [arguments](./argu
 
  <ol>
   <li>Arguments used to specify the structure of the calculation, such as the number of 
-    enemies or which arguments apply to which enemy. This includes args like <b>enemy</b> and <b>card</b>.</li>
-  <li>Arguments used to specify a card or card chain. This includes args like <b>buster</b> and <b>arts</b>.</li>
+    enemies or which arguments apply to which enemy. This includes args like <strong>enemy</strong> and <strong>card</strong>.</li>
+  <li>Arguments used to specify a card or card chain. This includes args like <strong>buster</strong> and <strong>arts</strong>.</li>
 </ol>
 
 The most important thing to remember when dealing with multi calcs is that 
@@ -137,7 +137,7 @@ That is to say, `Enemy > Card > Wave > General`. To check the details for a spec
 
 For a brief explanation of each structure and card chain argument, see the charts below.
 
-<b>Full List of Structure Arguments</b>
+<strong>Full List of Structure Arguments</strong>
  <table>
   <tr>
     <th>Argument</th>
@@ -187,7 +187,7 @@ For a brief explanation of each structure and card chain argument, see the chart
   </tr>
 </table>
 
-<b>Full List of Card Chain Arguments</b>
+<strong>Full List of Card Chain Arguments</strong>
  <table>
   <tr>
     <th>Argument</th>
