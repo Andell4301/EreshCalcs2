@@ -4,24 +4,23 @@
 
 [Basics](basics.md) | [Syntax](syntax.md) | [Arguments](arguments.md) | [Assumptions](assumptions.md) | [Reading](reading.md) | [FAQ](FAQ.md)
 
-## What is this?
+<h2>What is this?</h2>
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
-Currently, this command is `/calc2`.
-Please note that at the time of writing, this command is still not available for public use.
-## I already know how to use the original EreshBot calc command. Should I still read this?
+Currently, this command is <code>/calc2</code>.
+<h2>I already know how to use the original EreshBot calc command. Should I still read this?</h2>
 That depends. If you don't care about the new features, then probably not. Everything that you could do with the old 
 command can be done in the exact same way with the new command, except for the fact that the servant name now has to 
 be one word (i.e. from "Arjuna Alter" to "ArjunaAlter") and that everything goes in the same box now.
 For example:
 
 **Old Command**:<br>
-`/calc servant:` Arjuna Alter `string:` ce2400 n80 a30 p50 m20 saber hp1000
+<code>/calc servant:</code> Arjuna Alter <code>string:</code> ce2400 n80 a30 p50 m20 saber hp1000
 <br>**New Command**:<br>
-`/calc2 string:` ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
+<code>/calc2 string:</code> ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
 
 With that said, the new command is much, much more powerful. If you'd like to take advantage of all the new 
 features and capabilities it now offers, you should definitely continue on reading.
-## What are the main differences between the old and new versions? Why was the command rewritten?
+<h2>What are the main differences between the old and new versions? Why was the command rewritten?</h2>
 The major difference between the two is that the old version was written to calculate one card on one enemy at a time,
 whereas the new version can calculate multiple cards on multiple enemies at once.
 <br>
