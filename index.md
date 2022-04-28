@@ -11,8 +11,9 @@ Currently, this command is <code>/calc2</code>.
 That depends. If you don't care about the new features, then probably not. Everything that you could do with the old 
 command can be done in the exact same way with the new command, except for the fact that the servant name now has to 
 be one word (i.e. from "Arjuna Alter" to "ArjunaAlter") and that everything goes in the same box now.
+<br><br>
 For example:
-
+<br>
 <b>Old Command</b>:<br>
 <code>/calc servant:</code> Arjuna Alter <code>string:</code> ce2400 n80 a30 p50 m20 saber hp1000
 <br><b>New Command</b>:<br>
