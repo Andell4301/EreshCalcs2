@@ -2,7 +2,7 @@
 
 <h1>Welcome to the EreshCalcs2 Wiki!</h1>
 
-[Basics](basics.md) | [Syntax](syntax.md) | [Arguments](arguments.md) | [Assumptions](assumptions.md) | [Reading](reading.md) | [FAQ](FAQ.md)
+<a href="basics.md">Basics</a> | <a href="syntax.md">Syntax</a> | <a href="arguments.md">Arguments</a> | <a href="assumptions.md">Assumptions</a> | <a href="reading.md">Reading</a> | <a href="FAQ.md">FAQ</a>
 
 <h2>What is this?</h2>
 This wiki is to help document how to use the new, revamped calculation command with Ereshbot. 
@@ -13,9 +13,9 @@ command can be done in the exact same way with the new command, except for the f
 be one word (i.e. from "Arjuna Alter" to "ArjunaAlter") and that everything goes in the same box now.
 For example:
 
-**Old Command**:<br>
+<b>Old Command</b>:<br>
 <code>/calc servant:</code> Arjuna Alter <code>string:</code> ce2400 n80 a30 p50 m20 saber hp1000
-<br>**New Command**:<br>
+<br><b>New Command</b>:<br>
 <code>/calc2 string:</code> ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
 
 With that said, the new command is much, much more powerful. If you'd like to take advantage of all the new 
