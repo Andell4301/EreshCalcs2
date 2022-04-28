@@ -14,7 +14,7 @@ be one word (i.e. from "Arjuna Alter" to "ArjunaAlter") and that everything goes
 <br><br>
 For example:
 <br>
-<b>Old Command</b>:<br>
+<strong>Old Command</strong>:<br>
 <code>/calc servant:</code> Arjuna Alter <code>string:</code> ce2400 n80 a30 p50 m20 saber hp1000
 <br><b>New Command</b>:<br>
 <code>/calc2 string:</code> ArjunaAlter ce2400 n80 a30 p50 m20 saber hp1000
