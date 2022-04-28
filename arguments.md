@@ -1206,7 +1206,7 @@ This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550
 </details>
 <details>
   <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardDamageVal / CDV / CardValue / CardMultiplierOverride / CMV</b></summary>
- <table style="max-width: fit-content">
+ <table>
   <tr>
     <th>Arg</th>
     <th>Number?</th>
