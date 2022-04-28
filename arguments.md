@@ -6,7 +6,7 @@ hits who, etc.
 <br>
 <details>
   <summary><b><img src="./images/icons/cards.png" alt="Card Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Card</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -21,7 +21,7 @@ hits who, etc.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 All arguments following the card argument will apply only to the specified card until a new card, enemy, or wave
 arg is specified. 
 The card argument does not define new cards. If you use <code>card6</code> when there are only 5 cards, 
@@ -43,7 +43,7 @@ This would calculate a Buster➝NP➝Quick➝Extra chain from Ereshkigal. The Bu
 </details>
 <details>
   <summary><b><img src="./images/icons/enemies_light.png" alt="Enemy Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Enemy</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -58,7 +58,7 @@ This would calculate a Buster➝NP➝Quick➝Extra chain from Ereshkigal. The Bu
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 All arguments following the enemy argument will apply only to the specified enemy until a new card, enemy, or wave
 is specified. 
 The enemy argument also defines new enemies. If you use <code>enemy3</code> when there are only 2 enemies, 
@@ -91,7 +91,7 @@ cards can only hit one enemy, it would only hit <code>enemy1</code>. The Buster 
 </details>
 <details>
   <summary><b><img src="./images/icons/enemies_light.png" alt="Enemy Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> E</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -106,7 +106,7 @@ cards can only hit one enemy, it would only hit <code>enemy1</code>. The Buster 
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used for targeting enemies with a card. If provided after a card, the card will only hit
 the specified enemy. For AoE Noble Phantasms, multiple <code>e</code> args can be specified.
 <br><br>
@@ -140,7 +140,7 @@ Noble Phantasm would only hit <code>enemy1</code> and <code>enemy2</code>.
 </details>
 <details>
   <summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Wave</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -155,7 +155,7 @@ Noble Phantasm would only hit <code>enemy1</code> and <code>enemy2</code>.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 All arguments following the wa argument will apply only to the specified wave until a new card, enemy, or wave 
 arg is specified. 
 <br>
@@ -183,7 +183,7 @@ and would have 30% Card Up. The second Noble Phantasm would only hit <code>wave2
 </details>
 <details>
   <summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NewWave / NWave</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -198,7 +198,7 @@ and would have 30% Card Up. The second Noble Phantasm would only hit <code>wave2
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 The newwave argument is used to define and switch to entire waves at once. It is equivalent to specifying
 <code>enemy#</code> for each enemy that would be in a given wave, followed by <code>wave#</code> for the 
 corresponding wave.
@@ -223,7 +223,7 @@ the Noble Phantasm would have 30% Card Up.
 </details>
 <details>
   <summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> W</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -238,7 +238,7 @@ the Noble Phantasm would have 30% Card Up.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used for targeting waves with a card. If provided after a card, the card will only hit
 the specified wave. For an AoE Noble Phantasm, this means that it will hit all enemies in the wave.
 For a normal card, it will hit the first enemy in the wave.
@@ -265,7 +265,7 @@ using <code>w2</code> as a target. The first enemy of <code>wave2</code> is <cod
 </details>
 <details>
 <summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> WaveSize</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -280,7 +280,7 @@ using <code>w2</code> as a target. The first enemy of <code>wave2</code> is <cod
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used to specify the number of enemies per wave, 1-6. In practice, unless you really know what you're doing and 
 why you're doing it, this should <b>only</b> ever be used for battles with 6 enemy waves.
 <br><br>
@@ -314,7 +314,7 @@ of 6 enemies (<code>nwave2</code>). Note that the wave of 6 enemies will begin w
 </details>
 <details>
   <summary><b>🎲 RNG / Rand / Random</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -329,7 +329,7 @@ of 6 enemies (<code>nwave2</code>). Note that the wave of 6 enemies will begin w
     <td>N/A</td>
     <td>Ignore</td>
 </tr>
-</table>
+</table><br>
 Used to provide a custom RNG value as opposed to the default range of 
 <code>0.9</code>, <code>1.0</code>, and <code>1.099</code>. Note that only one custom RNG value 
 can be provided. Subsequent values will be ignored.
@@ -350,7 +350,7 @@ Used to tell EreshBot which cards to calculate.
 <br>
 <details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Buster / B</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -365,7 +365,7 @@ Used to tell EreshBot which cards to calculate.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot to calculate a Buster card.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -388,7 +388,7 @@ This would calculate two Buster cards from Ereshkigal.
 </details>
 <details>
   <summary><b><img src="./images/cards/arts.png" alt="Arts Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Arts / A</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -403,7 +403,7 @@ This would calculate two Buster cards from Ereshkigal.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot to calculate an Arts card.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -426,7 +426,7 @@ This would calculate two Arts cards from Ereshkigal.
 </details>
 <details>
   <summary><b><img src="./images/cards/quick.png" alt="Quick Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Quick / Q</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -441,7 +441,7 @@ This would calculate two Arts cards from Ereshkigal.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot to calculate a Quick card.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -464,7 +464,7 @@ This would calculate two Quick cards from Ereshkigal.
 </details>
 <details>
   <summary><b><img src="./images/cards/extra.png" alt="Extra Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Extra / E</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -479,7 +479,7 @@ This would calculate two Quick cards from Ereshkigal.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot to calculate an Extra card.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -503,7 +503,7 @@ This would calculate two Extra cards from Ereshkigal.
 <details>
   <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Noble / NP / N</b>
 </summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -518,7 +518,7 @@ This would calculate two Extra cards from Ereshkigal.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot to calculate a Noble Phantasm card.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -542,7 +542,7 @@ This would calculate two Noble Phantasm cards from Ereshkigal.
 <details>
   <summary><b><img src="./images/cards/card_bg_blank.png" alt="NP Icon" style="width: 16px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> X</b>
 </summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -557,7 +557,7 @@ This would calculate two Noble Phantasm cards from Ereshkigal.
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot to calculate skip a card while including it within a chain.
 Useful for cases such as <code>/calc2 string: Ereshkigal bxb</code> where you still want
 the third card to be in position 3, even if you aren't calculating a second card.
@@ -594,7 +594,7 @@ Used to indicate the specifics of your servant, such as NP level, CE Attack, etc
 <br>
 <details>
   <summary><b><img src="./images/icons/level.png" alt="Level" style="width: 19px; height:auto; border:none; padding:0; margin:0"> Level / Lvl / Lv / L</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -609,7 +609,7 @@ Used to indicate the specifics of your servant, such as NP level, CE Attack, etc
     <td>N/A</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to indicate the level of your servant. Servant's base attack is automatically set based on level.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -621,7 +621,7 @@ This would calculate Ereshkigal's Noble Phantasm with an attack stat based on Er
 <details>
   <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NPLevel / NP</b>
 </summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -636,7 +636,7 @@ This would calculate Ereshkigal's Noble Phantasm with an attack stat based on Er
     <td>N/A</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot what the NP level of your servant is.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -648,7 +648,7 @@ This would calculate a Noble Phantasm from Ereshkigal at NP level 3.
 <details>
   <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Strengthen / STR / Lewd / Interlude / SetNP / SNP</b>
 </summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -663,7 +663,7 @@ This would calculate a Noble Phantasm from Ereshkigal at NP level 3.
     <td>N/A</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to tell EreshBot what the strengthening status of your servant is.
 <br>
 This argument is also used to switch between Noble Phantasms for servants like Space Ishtar 
@@ -691,7 +691,7 @@ This would calculate Space Ishtar's Buster Noble Phantasm.
 </details>
 <details>
   <summary><b><img src="./images/icons/fou.png" alt="Fou" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Fou / F</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -706,7 +706,7 @@ This would calculate Space Ishtar's Buster Noble Phantasm.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to indicate how much additional ATK stat your servant should have from ATK fous.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -717,7 +717,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from 
 </details>
 <details>
   <summary><b><img src="./images/icons/2000.png" alt="Paw" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Paw / FouPaw / Print / Footprint</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -732,7 +732,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from 
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to indicate how much additional ATK stat your servant should have from fou paws.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -743,7 +743,7 @@ This would calculate Ereshkigal's Buster card with 250 additional ATK from fou p
 </details>
 <details>
   <summary><b><img src="./images/icons/ce.png" alt="CE" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CE / C</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -758,7 +758,7 @@ This would calculate Ereshkigal's Buster card with 250 additional ATK from fou p
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to indicate how much additional ATK stat your servant should have from a craft essence.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -769,7 +769,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from 
 </details>
 <details>
   <summary><b><img src="./images/icons/img_list_atk.png" alt="ATK" style="width: 23px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> TotalAttack / TA</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -784,7 +784,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from 
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to specify the total attack stat of your servant. This will override all other sources of ATK.
 <br>
 In other words, if you specify total attack, then fou, ce, paw, and the servant's base attack will all be 
@@ -802,7 +802,7 @@ Used to specify things like buster first bonus, whether a card critically hits, 
 <br>
 <details>
   <summary><b>1️⃣ First</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -817,7 +817,7 @@ Used to specify things like buster first bonus, whether a card critically hits, 
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to indicate that a given card should be in position 1. Using this argument will automatically
 apply the first card bonus for the card type.
 <br><br>
@@ -831,7 +831,7 @@ This would calculate one of Ereshkigal's Buster cards in position 1.
 </details>
 <details>
   <summary><b>2️⃣ Second</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -846,7 +846,7 @@ This would calculate one of Ereshkigal's Buster cards in position 1.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to indicate that a given card should be in position 2.
 <br><br>
 Note that this argument will not affect cards in card chains.
@@ -859,7 +859,7 @@ This would calculate one of Ereshkigal's Buster cards in position 2.
 </details>
 <details>
   <summary><b>3️⃣ Third</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -874,7 +874,7 @@ This would calculate one of Ereshkigal's Buster cards in position 2.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to indicate that a given card should be in position 3.
 <br><br>
 Note that this argument will not affect cards in card chains.
@@ -887,7 +887,7 @@ This would calculate one of Ereshkigal's Buster cards in position 3.
 </details>
 <details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> BusterFirst / BF</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -902,7 +902,7 @@ This would calculate one of Ereshkigal's Buster cards in position 3.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to force buster first card bonus even in cases where a buster card is not 
 first and/or you are calculating a single non-buster card.
 <br>
@@ -922,7 +922,7 @@ This could be useful if the x card is a different servant's buster card.
 </details>
 <details>
   <summary><b><img src="./images/cards/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ArtsFirst / AF</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -937,7 +937,7 @@ This could be useful if the x card is a different servant's buster card.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to force arts first card bonus even in cases where an arts card is not 
 first and/or you are calculating a single non-arts card.
 <br>
@@ -957,7 +957,7 @@ This could be useful if the x card is a different servant's arts card.
 </details>
 <details>
   <summary><b><img src="./images/cards/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> QuickFirst / QF</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -972,7 +972,7 @@ This could be useful if the x card is a different servant's arts card.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to force quick first card bonus even in cases where a quick card is not 
 first and/or you are calculating a single non-quick card.
 <br>
@@ -992,7 +992,7 @@ This could be useful if the x card is a different servant's quick card.
 </details>
 <details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> BusterChain / BC</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1007,7 +1007,7 @@ This could be useful if the x card is a different servant's quick card.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to force a buster chain bonus even when calculating a single card.
 <br>
 Note that when calculating a buster card chain using card arguments, this is automatically applied.
@@ -1022,7 +1022,7 @@ This would calculate a single Buster card from Ereshkigal as a part of a buster 
 </details>
 <details>
   <summary><b><img src="./images/cards/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ArtsChain / AC</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1037,7 +1037,7 @@ This would calculate a single Buster card from Ereshkigal as a part of a buster 
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to force an arts chain bonus even when calculating a single card.
 <br>
 Note that when calculating an arts card chain using card arguments, this is automatically applied.
@@ -1052,7 +1052,7 @@ This would calculate a single Arts card from Ereshkigal as a part of an arts cha
 </details>
 <details>
   <summary><b><img src="./images/cards/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> QuickChain / QC</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1067,7 +1067,7 @@ This would calculate a single Arts card from Ereshkigal as a part of an arts cha
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to force a quick chain bonus even when calculating a single card.
 <br>
 Note that when calculating a quick card chain using card arguments, this is automatically applied.
@@ -1082,7 +1082,7 @@ This would calculate a single Quick card from Ereshkigal as a part of a quick ch
 </details>
 <details>
   <summary><b><img src="./images/cards/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ExtraCardModifier / ECM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1097,7 +1097,7 @@ This would calculate a single Quick card from Ereshkigal as a part of a quick ch
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to set a custom extra card modifier. Note that this argument only impacts extra cards.
 <br>
 When calculating using card chains, the extra card modifier is automatically applied with the appropriate amount.
@@ -1118,7 +1118,7 @@ This would calculate an extra card from Ereshkigal with an extra card modifier o
 </details>
 <details>
   <summary><b><img src="./images/cards/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NoBusterFirst / NoBF / No-BF</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1133,7 +1133,7 @@ This would calculate an extra card from Ereshkigal with an extra card modifier o
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to force remove the buster first card bonus even when calculating a single 
 buster card or a card chain beginning with a buster card.
 <br>
@@ -1151,7 +1151,7 @@ This would calculate an Buster→Buster→Buster→Extra card chain from Ereshki
 </details>
 <details>
   <summary><b><img src="./images/icons/crit_dmg_up.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Critical / Crit</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1166,7 +1166,7 @@ This would calculate an Buster→Buster→Buster→Extra card chain from Ereshki
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument indicates that a card is a critical hit.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -1177,7 +1177,7 @@ This would calculate a single Quick card from Ereshkigal, and that card would be
 </details>
 <details>
   <summary><b><img src="./images/cards/np.png" alt="NP" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> NPOverride / NPValue / NPV / NPO</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1192,7 +1192,7 @@ This would calculate a single Quick card from Ereshkigal, and that card would be
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to set a custom np multiplier. This can be used to calculate very new NP before EreshBot 
 updates.
 <br><br>
@@ -1206,7 +1206,7 @@ This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550
 </details>
 <details>
   <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardDamageVal / CDV / CardValue / CardMultiplierOverride / CMV</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1223,7 +1223,7 @@ This would calculate Ereshkigal's noble phantasm with a custom multiplier of 550
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to set a custom card multiplier. This can be used to manually set the value that 
 would typically be set by the <code>first</code>, <code>second</code>, and <code>third</code> arguments. 
 <br><br>
@@ -1239,7 +1239,7 @@ This would calculate Ereshkigal's Buster card with a custom multiplier of 180%.
 </details>
 <details>
   <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardRefundValue / CRV</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1254,7 +1254,7 @@ This would calculate Ereshkigal's Buster card with a custom multiplier of 180%.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This can be used to set a custom NP value for a card. Doing so manually sets the card's np value 
 that is normally set automatically based on a card's position or by using the position arguments.
 <br><br>
@@ -1268,7 +1268,7 @@ This would calculate a quick card from Ereshkigal with a refund value of 150%.
 </details>
 <details>
   <summary><b><img src="./images/icons/cards.png" alt="Cards" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> CardStarValue / CSV</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1283,7 +1283,7 @@ This would calculate a quick card from Ereshkigal with a refund value of 150%.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This can be used to set a custom star value for a card. Doing so manually sets the card's star value 
 that is normally set automatically based on a card's position or by using the position arguments.
 <br><br>
@@ -1299,7 +1299,7 @@ This would calculate a buster card from Ereshkigal with a refund value of 15%.
 <h3>Enemy Attribute Arguments</h3>
 <details>
   <summary><b><img src="./images/icons/img_list_hp.png" alt="HP" style="width: 23px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> EnemyHP / HP</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1314,7 +1314,7 @@ This would calculate a buster card from Ereshkigal with a refund value of 15%.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 Used to set the HP of an enemy. This is required to calculate NP and Star Generation.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -1329,7 +1329,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 20,000 HP
 </details>
 <details>
   <summary><b><img src="./images/icons/All_Gold.png" alt="Class Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> [Any Class Name] (No Spaces)</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1353,7 +1353,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 20,000 HP
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to set the class of an enemy. This automatically sets class advantage, 
 enemy server mod (NP Gen), and enemy server rate (Star Gen).
 <br><br>
@@ -1365,7 +1365,7 @@ This would calculate Ereshkigal's Noble Phantasm against a saber class enemy.
 </details>
 <details>
   <summary><b><img src="./images/icons/All_Gold.png" alt="Class Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ClassAdvantageOverride / CAO</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1382,7 +1382,7 @@ This would calculate Ereshkigal's Noble Phantasm against a saber class enemy.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to manually set the class advantage override versus an enemy as opposed to using
 the enemy class argument.
 <br><br>
@@ -1394,7 +1394,7 @@ This would calculate Ereshkigal's Noble Phantasm with a 2x class advantage.
 </details>
 <details>
   <summary><b>天 Human / Man / Sky / Heaven / Earth / Star / Beast </b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1411,7 +1411,7 @@ This would calculate Ereshkigal's Noble Phantasm with a 2x class advantage.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to set the attribute of an enemy.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -1422,7 +1422,7 @@ This would calculate Ereshkigal's Noble Phantasm against an Earth attribute enem
 </details>
 <details>
   <summary><b><img src="./images/icons/np_gain_up.png" alt="NP" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> EnemyServerMod / ESM / SM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1439,7 +1439,7 @@ This would calculate Ereshkigal's Noble Phantasm against an Earth attribute enem
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to manually set the server mod of an enemy.
 <br><br>
 This corresponds to <code>enemyServerMod</code> in the NP Generation formula.
@@ -1452,7 +1452,7 @@ This would calculate Ereshkigal's arts card against an enemy with a server mod o
 </details>
 <details>
   <summary><b><img src="./images/icons/star_gen_up.png" alt="Stars" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> EnemyServerRate / ESR / SR / SRR / ServerRate</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1469,7 +1469,7 @@ This would calculate Ereshkigal's arts card against an enemy with a server mod o
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument can be used to manually set the server rate of an enemy.
 <br><br>
 This corresponds to <code>serverRate</code> in the Star Generation formula.
@@ -1497,7 +1497,7 @@ This would calculate Ereshkigal's quick card against an enemy with a server rate
     <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     CardMod / CM / M</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1514,7 +1514,7 @@ This would calculate Ereshkigal's quick card against an enemy with a server rate
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set cardmod. This argument is universal and applies to Buster, Arts, and Quick cards. It does <b>NOT</b>
 apply to Extra cards.
 <br><br>
@@ -1559,7 +1559,7 @@ This would calculate Ereshkigal's Noble Phantasm with 30% Card Damage Down.
     <img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     BCardMod / BCM / BM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1576,7 +1576,7 @@ This would calculate Ereshkigal's Noble Phantasm with 30% Card Damage Down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set buster specific cardmod. This argument will only apply to Buster cards.
 <br><br>
 Positive Values:
@@ -1612,7 +1612,7 @@ This would calculate Ereshkigal's Buster card 30% Buster Damage Down.
     <img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     QCardMod / QCM / QM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1629,7 +1629,7 @@ This would calculate Ereshkigal's Buster card 30% Buster Damage Down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set quick specific cardmod. This argument will only apply to Quick cards.
 <br><br>
 Positive Values:
@@ -1665,7 +1665,7 @@ This would calculate Ereshkigal's Quick card 30% Quick Damage Down.
     <img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     ACardMod / ACM / AM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1682,7 +1682,7 @@ This would calculate Ereshkigal's Quick card 30% Quick Damage Down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set arts specific cardmod. This argument will only apply to Arts cards.
 <br><br>
 Positive Values:
@@ -1718,7 +1718,7 @@ This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
     <img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     ECardMod / ECM / EM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1735,7 +1735,7 @@ This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set extra specific cardmod. This argument will only apply to Extra cards.
 <br><br>
 Positive Values:
@@ -1769,7 +1769,7 @@ This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
     <img src="./images/icons/atk_up.png" alt="Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/atk_down.png" alt="Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     AtkMod / Attack / ATK / A</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1786,7 +1786,7 @@ This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set attack mod for attack up buffs like Charisma.
 <br><br>
 Positive Values:
@@ -1814,7 +1814,7 @@ This would calculate Ereshkigal's Noble Phantasm with 30% Attack Down.
     <img src="./images/icons/def_up.png" alt="Def Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/def_down.png" alt="Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     DefMod / Defence / Defense / Def / D</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1831,7 +1831,7 @@ This would calculate Ereshkigal's Noble Phantasm with 30% Attack Down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set defense mod for defense up buffs. Note that defense UP will reduce your damage, and 
 defense DOWN will increase your damage. So for Skadi's defense down skill, you'll want to use NEGATIVE 30.
 <br><br>
@@ -1860,7 +1860,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defen
     <img src="./images/icons/sp_atk_up.png" alt="Sp Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/sp_atk_down.png" alt="Sp Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     PowerMod / Power / PMod / P</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1877,7 +1877,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 30% defen
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set power mod / special attack buffs. This is <b>NOT</b> for servants like Gilgamesh. This is for things 
 like event damage bonuses,  Musashi's first skill, or the NP of servants like Jack the Ripper with apply a buff.
 <br><br>
@@ -1906,7 +1906,7 @@ This would calculate Ereshkigal's Noble Phantasm with 30% special attack down.
     <img src="./images/icons/atk_up.png" alt="Flat Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/def_up.png" alt="Flat Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     FlatDamage / FDMG / FD / DMG / AD </b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1923,7 +1923,7 @@ This would calculate Ereshkigal's Noble Phantasm with 30% special attack down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set flat damage (like from Waver's S3) and damage cut (like from Waver's S2).
 <br><br>
 Positive Values:
@@ -1951,7 +1951,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 1000 dama
     <img src="./images/icons/spec_def_up.png" alt="Special Def Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/spec_def_down.png" alt="Special Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     SpecialDefenceMod / SpecialDefenseMod / SDM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -1968,7 +1968,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 1000 dama
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set special defense mod. This is given to some bosses like Gawain.
 <br><br>
 Positive Values:
@@ -1996,7 +1996,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 80% Speci
     <img src="./images/icons/damage_special.png" alt="Damage Special Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/sp_atk_down.png" alt="Damage Special Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     DamageSpecialMod / DSMod / DSM / SPE</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2013,7 +2013,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 80% Speci
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Damage Special Mod. So far, this is only utilized in "Advanced Quests" in Chaldea Gate.
 <br><br>
 Positive Values:
@@ -2041,7 +2041,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Dama
     <img src="./images/icons/np_dmg_up.png" alt="NP Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/np_dmg_down.png" alt="NP Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     NPMod / N</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2058,7 +2058,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Dama
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set NP damage up or down.
 <br><br>
 Positive Values:
@@ -2085,7 +2085,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Down.
   <summary><b>
     <img src="./images/icons/sp_atk_up.png" alt="Sp Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     SuperEffectiveMod / Super / SEMod / SEM / SE / S</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2102,7 +2102,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Super Effective Modifier. This is used for servants like Gilgamesh and Enkidu with an NP
 that deals Super Effective damage. This is NOT used for servants like Jack the Ripper with an NP that applies a 
 power mod buff.
@@ -2130,7 +2130,7 @@ This would calculate Ereshkigal's Noble Phantasm with 150% Super Effective Modif
     <img src="./images/icons/crit_dmg_up.png" alt="Crit Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     Critical / Crit / CritDamage / CD </b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2147,7 +2147,7 @@ This would calculate Ereshkigal's Noble Phantasm with 150% Super Effective Modif
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Crit damage up or down. This argument applies to all card types. Note that using this argument 
 does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
 critically hit.
@@ -2179,7 +2179,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     BusterCritical / BusterCrit / BusterCritDamage / BCD </b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2196,7 +2196,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Crit damage up or down. This argument only works for Buster cards. Note that using this argument 
 does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
 critically hit.
@@ -2230,7 +2230,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     QuickCritical / QuickCrit / QuickCritDamage / QCD </b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2247,7 +2247,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Crit damage up or down. This argument only works for Quick cards. Note that using this argument 
 does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
 critically hit.
@@ -2281,7 +2281,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/crit_dmg_down.png" alt="Crit Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     ArtsCritical / ArtsCrit / ArtsCritDamage / ACD </b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2298,7 +2298,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Crit damage up or down. This argument only works for Arts cards. Note that using this argument 
 does NOT automatically make a card a critical hit. You must additionally specify "crit" for the card to make it 
 critically hit.
@@ -2330,7 +2330,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <img src="./images/icons/np_gain_up.png" alt="NP Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/np_gain_down.png" alt="NP Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     NPGain / NPGen / NG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2347,7 +2347,7 @@ This would calculate Ereshkigal's Noble Phantasm with 100% Critical Damage Down 
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set NP Gen Up or Down buffs.
 <br><br>
 Positive Values:
@@ -2374,7 +2374,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% NP generation down.
   <summary><b>
     <img src="./images/icons/battery_2.png" alt="Flat Refund" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     FlatRefund / FlatGain / FG / FR</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2391,7 +2391,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% NP generation down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to add flat refund to a calculation. Note that unlike most args, if this is applied to a card, it will NOT give 
 additional flat refund per enemy hit by that card, only to the card itself. If applied globally, it will similarly only 
 be applied once.
@@ -2419,7 +2419,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% flat refund.
     <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     StarGain / SG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2436,7 +2436,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% flat refund.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Star Gen Up or Down buffs. Works for all card types.
 <br><br>
 Positive Values:
@@ -2466,7 +2466,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% Star generation down.
     <img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     BStarGain / BSG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2483,7 +2483,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% Star generation down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Star Gen Up or Down buffs. This argument only works for Buster cards.
 <br><br>
 Positive Values:
@@ -2515,7 +2515,7 @@ This would calculate Ereshkigal's Buster card with 50% Buster Star generation do
     <img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     QStarGain / QSG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2532,7 +2532,7 @@ This would calculate Ereshkigal's Buster card with 50% Buster Star generation do
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Star Gen Up or Down buffs. This argument only works for Quick cards.
 <br><br>
 Positive Values:
@@ -2564,7 +2564,7 @@ This would calculate Ereshkigal's Quick card with 50% Quick Star generation down
     <img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     AStarGain / ASG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2581,7 +2581,7 @@ This would calculate Ereshkigal's Quick card with 50% Quick Star generation down
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Star Gen Up or Down buffs. This argument only works for Arts cards.
 <br><br>
 Positive Values:
@@ -2613,7 +2613,7 @@ This would calculate Ereshkigal's Arts card with 50% Arts Star generation down.
     <img src="./images/icons/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     EStarGain / ESG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2630,7 +2630,7 @@ This would calculate Ereshkigal's Arts card with 50% Arts Star generation down.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to set Star Gen Up or Down buffs. This argument only works for Extra cards.
 <br><br>
 Positive Values:
@@ -2659,7 +2659,7 @@ This would calculate Ereshkigal's Extra card with 50% Extra Star generation down
   <summary><b>
     <img src="./images/icons/stargen.png" alt="Flat Stars" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     FlatStarGain / FlatStars / FST / FS</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2676,7 +2676,7 @@ This would calculate Ereshkigal's Extra card with 50% Extra Star generation down
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 Used to add flat stars to a calculation. Note that unlike most args, if this is applied to a card, it will NOT give 
 additional flat stars per enemy hit by that card, only to the card itself. If applied globally, it will similarly only 
 be applied once.
@@ -2702,7 +2702,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50 flat stars.
 <h3>Shorthands</h3>
 <details>
   <summary><b><img src="./images/cards/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Brave</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2717,7 +2717,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50 flat stars.
     <td>E>C>W>G</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ecm3.5</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2728,7 +2728,7 @@ This would calculate an extra card from Ereshkigal with an extra card modifier o
 </details>
 <details>
   <summary><b><img src="./images/icons/7999.png" alt="Grail" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Super / Supered</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2743,7 +2743,7 @@ This would calculate an extra card from Ereshkigal with an extra card modifier o
     <td>N/A</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>enemy0 lv100 fou2000</code>
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2754,7 +2754,7 @@ This would calculate Ereshkigal's Noble Phantasm at level 100 with 2000 fou ATK.
 </details>
 <details>
   <summary><b><img src="./images/icons/7999.png" alt="Grail" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Superer / SuperGrail / Hyper</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2769,7 +2769,7 @@ This would calculate Ereshkigal's Noble Phantasm at level 100 with 2000 fou ATK.
     <td>N/A</td>
     <td>Replace</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>enemy0 lv120 fou2000</code>
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2780,7 +2780,7 @@ This would calculate Ereshkigal's Noble Phantasm at level 120 with 2000 fou ATK.
 </details>
 <details>
   <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XSS</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2795,7 +2795,7 @@ This would calculate Ereshkigal's Noble Phantasm at level 120 with 2000 fou ATK.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>qcd200 qcm100</code>. Remember to set your card to critical if 
 you want it to crit!
 <br><br>
@@ -2807,7 +2807,7 @@ This would calculate Sei Shonagons's quick card with 100% Quick Card Mod and 200
 </details>
 <details>
   <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/def_down.png" alt="Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XSSD</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2822,7 +2822,7 @@ This would calculate Sei Shonagons's quick card with 100% Quick Card Mod and 200
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>qcd200 qcm100 d-60</code>. Remember to set your card to critical if 
 you want it to crit!
 <br><br>
@@ -2834,7 +2834,7 @@ This would calculate Sei Shonagons's quick card with 100% Quick Card Mod, 200% Q
 </details>
 <details>
   <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XMM</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2849,7 +2849,7 @@ This would calculate Sei Shonagons's quick card with 100% Quick Card Mod, 200% Q
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>a40 bm100</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2860,7 +2860,7 @@ This would calculate Ereshkigal's Buster card with 100% Buster Card Mod and 40% 
 </details>
 <details>
   <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/crit_dmg_up.png" alt="Crit" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XMMC</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2875,7 +2875,7 @@ This would calculate Ereshkigal's Buster card with 100% Buster Card Mod and 40% 
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>a40 bm100 cd200</code>. Make sure to set your card to 
 crit if you want it to crit!
 <br><br>
@@ -2887,7 +2887,7 @@ This would calculate Ereshkigal's Buster card with 100% Buster Card Mod, 40% Att
 </details>
 <details>
   <summary><b><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XWW</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2902,7 +2902,7 @@ This would calculate Ereshkigal's Buster card with 100% Buster Card Mod, 40% Att
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>a60 cd100 fd1000</code>. Make sure to set your card to 
 crit if you want it to crit!
 <br><br>
@@ -2914,7 +2914,7 @@ This would calculate Ereshkigal's Buster card with 60% Attack Mod, 100% Crit Dam
 </details>
 <details>
   <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XCC</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2929,7 +2929,7 @@ This would calculate Ereshkigal's Buster card with 60% Attack Mod, 100% Crit Dam
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>a40 am100</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2940,7 +2940,7 @@ This would calculate Ereshkigal's Arts card with 40% Attack Mod and 100% Arts Mo
 </details>
 <details>
   <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/np_gain_up.png" alt="NP Gain" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XCCNG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2955,7 +2955,7 @@ This would calculate Ereshkigal's Arts card with 40% Attack Mod and 100% Arts Mo
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>a40 am100 ng60</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2966,7 +2966,7 @@ This would calculate Ereshkigal's Arts card with 40% Attack Mod, 100% Arts Mod, 
 </details>
 <details>
   <summary><b><img src="./images/icons/bg.png" alt="Black Grail" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperBlackGrail / SuperBG / SBG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -2981,7 +2981,7 @@ This would calculate Ereshkigal's Arts card with 40% Attack Mod, 100% Arts Mod, 
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ce2400 n80</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2992,7 +2992,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2400 CE ATK and 80% NP Dam
 </details>
 <details>
   <summary><b><img src="./images/icons/ad.png" alt="Aerial Drive" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperAD</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3007,7 +3007,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2400 CE ATK and 80% NP Dam
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ce2000 bm10 n10</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -3018,7 +3018,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 10% Buster
 </details>
 <details>
   <summary><b><img src="./images/icons/gs.png" alt="Golden Sumo" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperSumo / SuperGS</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3033,7 +3033,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 10% Buster
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ce2000 a15</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -3044,7 +3044,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 15% ATK Up
 </details>
 <details>
   <summary><b><img src="./images/icons/hns.png" alt="Holy Night Supper" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperHNS / SuperHolyNight</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3059,7 +3059,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 15% ATK Up
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ce2000 cd15 n15</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -3070,7 +3070,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK, 15% Crit Dama
 </details>
 <details>
   <summary><b><img src="./images/icons/kscope.png" alt="Scope" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SScope</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3085,7 +3085,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK, 15% Crit Dama
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ce2000</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -3096,7 +3096,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK.
 </details>
 <details>
   <summary><b><img src="./images/icons/fc.png" alt="Fondant" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperFondant / SF</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3111,7 +3111,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK.
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ce2000 p30</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -3122,7 +3122,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 30% Power 
 </details>
 <details>
   <summary><b><img src="./images/icons/toc.png" alt="ToC" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperTraces / SuperTOC</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3137,7 +3137,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2000 CE ATK and 30% Power 
     <td>E>C>W>G</td>
     <td>Sum</td>
 </tr>
-</table>
+</table><br>
 This argument is a shorthand for <code>ce2000 qm10 ng10</code>.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -3150,7 +3150,7 @@ This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quic
 <h3>Other Args</h3>
 <details>
   <summary><b>Verbose / V</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3165,7 +3165,7 @@ This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quic
     <td>N/A</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Blocks hiding enemy num and card num on the summary page even in cases where they would normally be hidden.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -3175,7 +3175,7 @@ Blocks hiding enemy num and card num on the summary page even in cases where the
 </details>
 <details>
   <summary><b>ReducedMin / ReduceMin</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3190,14 +3190,14 @@ Blocks hiding enemy num and card num on the summary page even in cases where the
     <td>E>C>W>G</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used for custom reducedHP for Min RNG. This is a debug arg. If you need to use this, you probably already know how.
 If you don't, you probably shouldn't be using this.
 <br><br>
 </details>
 <details>
   <summary><b>ReducedAVG / ReduceAVG</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3212,14 +3212,14 @@ If you don't, you probably shouldn't be using this.
     <td>E>C>W>G</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used for custom reducedHP for Average RNG. This is a debug arg. If you need to use this, you probably already know how.
 If you don't, you probably shouldn't be using this.
 <br><br>
 </details>
 <details>
   <summary><b>ReducedMax / ReduceMax</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3234,14 +3234,14 @@ If you don't, you probably shouldn't be using this.
     <td>E>C>W>G</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used for custom reducedHP for Max RNG. This is a debug arg. If you need to use this, you probably already know how.
 If you don't, you probably shouldn't be using this.
 <br><br>
 </details>
 <details>
   <summary><b>ReducedCustom / ReduceCustom</b></summary>
- <table>
+ <table style="display: block; overflow: scroll">
   <tr>
     <th>Arg</th>
     <th>Number?</th>
@@ -3256,7 +3256,7 @@ If you don't, you probably shouldn't be using this.
     <td>E>C>W>G</td>
     <td>N/A</td>
 </tr>
-</table>
+</table><br>
 Used for custom reducedHP for Custom RNG. This is a debug arg. If you need to use this, you probably already know how.
 If you don't, you probably shouldn't be using this.
 <br><br>
