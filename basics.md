@@ -6,14 +6,14 @@ When you do this, any and all slash commands available to you from all of the bo
 <img width="20" alt="EreshBot Avatar" src="https://cdn.discordapp.com/avatars/912209452596363325/1ae321df6d8233616edf7b7504bf1dec.png"> 
 icon by its name and says `Eresh (Slash)` on the right side. 
 <br>
-<img width="859" alt="Slash Command Input" src="https://user-images.githubusercontent.com/56235026/163707477-683a498c-5d50-400a-a298-573538b2cf9a.png">
+<img alt="Slash Command Input" src="./images/general/slash_commands.png" style="width: 859px; height:auto">
 <br>
 <br>
 After entering `/` into the chat box and pulling up the list of slash commands, you'll want to type out `calc` 
 to search for the command in question. Once you find the EreshBot command named `calc`, you'll want to hit your enter
 key to select it.
 <br>
-<img src="https://user-images.githubusercontent.com/56235026/163707996-c863c0c2-561f-4b4d-ae19-ecaa81d8fa26.gif" alt="Searching For Slash Commands">
+<img alt="Slash Command Input" src="./images/general/finding_commands.gif" style="width: 859px; height:auto">
 <br>
 <br>
 Once you've hit the enter key and selected the `calc` command, a box labeled `string` will appear. This will be where 
@@ -21,4 +21,4 @@ you will enter what we call your
 <span style="color: #209e5f"> calculation string</span>. This is the text that you use to tell EreshBot what it is you
 want to calculate.
 <br>
-<img width="346" alt="Screenshot 2022-04-17 051507" src="https://user-images.githubusercontent.com/56235026/163708289-ef16a5c9-d8df-4d6b-8aba-e5953631bef1.png">
+<img alt="Slash Command Input" src="./images/general/command_string.png" style="width: 520px; height:auto">
