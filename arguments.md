@@ -716,7 +716,7 @@ Used to indicate how much additional ATK stat your servant should have from ATK 
 This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from fous.
 </details>
 <details>
-  <summary><b><img src="./images/icons/2000.png" alt="Paw" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Paw / FouPaw / Print / Footprint</b></summary>
+  <summary><b><img src="./images/icons/2000.png" alt="Paw" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> FP / Paw / FouPaw / Print / Footprint</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -726,7 +726,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from 
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>paw<br>foupaw<br>print<br>footprint</td>
+    <td>fp<br>paw<br>foupaw<br>print<br>footprint</td>
     <td>✔️</td>
     <td>❌</td>
     <td>E>C>W>G</td>
