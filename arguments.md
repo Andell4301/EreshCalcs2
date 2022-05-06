@@ -716,7 +716,7 @@ Used to indicate how much additional ATK stat your servant should have from ATK 
 This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from fous.
 </details>
 <details>
-  <summary><b><img src="./images/icons/2000.png" alt="Paw" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Paw / FouPaw / Print / Footprint</b></summary>
+  <summary><b><img src="./images/icons/2000.png" alt="Paw" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> FP / Paw / FouPaw / Print / Footprint</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -726,7 +726,7 @@ This would calculate Ereshkigal's Noble Phantasm with 2,000 additional ATK from 
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>paw<br>foupaw<br>print<br>footprint</td>
+    <td>fp<br>paw<br>foupaw<br>print<br>footprint</td>
     <td>✔️</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -1763,6 +1763,57 @@ This would calculate Ereshkigal's Extra card with 30% Extra Damage Up.
 <code>/calc string: Ereshkigal extra em-30</code>
 <br>
 This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    EAttack / EATK / EA / ECP / EP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    eattack<br>eatk<br>ea<br>ecp<br>ep
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This is the same as the extra card mod above, but it only impacts extra card damage, it 
+does not impact NP or star generation like normal extra mod does. This is the buff on 
+Space Ishtar's Noble Phantasm.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Up
+<br>
+<img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Down
+<br>
+<img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Resist Up
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Spishtar extra ea30</code>
+<br>
+This would calculate Space Ishtar's Extra card with special 30% Extra Damage Up that doesn't impact NP or star gen.
 </details>
 <details>
   <summary><b>
