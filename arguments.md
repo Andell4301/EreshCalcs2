@@ -1766,289 +1766,6 @@ This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
 </details>
 <details>
   <summary><b>
-    <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    CPower / CP</b></summary>
- <table style="display: block; overflow-x: auto; max-width:fit-content">
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>
-    cpower<br>cp
-    </td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>E>C>W>G</td>
-    <td>Sum</td>
-</tr>
-</table>
-The same as the normal cardmod buff, but this one only impacts a card's damage, not NP and Stargen.
-<br>
-99.99999999% of the time, you should not use this.<br>
-It is here <b>ONLY</b> for the event bonus effects on three specific prisma cosmos CEs.
-<br><br>
-Positive Values:
-<br>
-<img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Card Up (Ex. Buster Card Up) 
-<br>
-<img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Card Resist Down (Ex. Buster Card Resist Down)
-<br><br>
-Negative Values:
-<br>
-<img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Card Down (Ex. Buster Card Down)
-<br>
-<img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-<img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Card Resist Up (Ex. Buster Card Resist Up)
-<br><br>
-<strong>Usage Examples:</strong>
-<br>
-<code>/calc string: Ereshkigal cp30</code>
-<br>
-This would calculate Ereshkigal's Noble Phantasm with 30% ATK Only Card Damage Up.
-<br><br>
-<code>/calc string: Ereshkigal cp-30</code>
-<br>
-This would calculate Ereshkigal's Noble Phantasm with 30% ATK Only Card Damage Down.
-</details>
-<details>
-  <summary><b>
-    <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    BPower / BCP / BP</b></summary>
- <table style="display: block; overflow-x: auto; max-width:fit-content">
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>
-    bpower<br>bcp<br>bp
-    </td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>E>C>W>G</td>
-    <td>Sum</td>
-</tr>
-</table>
-This is the same as the normal buster card mod, but it only impacts buster card damage, it 
-does not impact NP or star generation like normal buster mod does.
-<br>
-99.99999999% of the time, you should not use this.<br>
-It is here <b>ONLY</b> for the event bonus effects on a specific prisma cosmos CE.
-<br><br>
-Positive Values:
-<br>
-<img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Buster Card Up
-<br>
-<img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Buster Resist Down
-<br><br>
-Negative Values:
-<br>
-<img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Buster Card Down
-<br>
-<img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Buster Card Resist Up
-<br><br>
-<strong>Usage Examples:</strong>
-<br>
-<code>/calc string: Ereshkigal buster bp30</code>
-<br>
-This would calculate Ereshkigal's Buster card with special 30% Buster Damage Up that doesn't impact NP or star gen.
-</details>
-<details>
-  <summary><b>
-    <img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    APower / ACP / AP</b></summary>
- <table style="display: block; overflow-x: auto; max-width:fit-content">
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>
-    apower<br>acp<br>ap
-    </td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>E>C>W>G</td>
-    <td>Sum</td>
-</tr>
-</table>
-This is the same as the normal arts card mod, but it only impacts arts card damage, it 
-does not impact NP or star generation like normal arts mod does.
-<br>
-99.99999999% of the time, you should not use this.<br>
-It is here <b>ONLY</b> for the event bonus effects on a specific prisma cosmos CE.
-<br><br>
-Positive Values:
-<br>
-<img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Arts Card Up
-<br>
-<img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Arts Resist Down
-<br><br>
-Negative Values:
-<br>
-<img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Arts Card Down
-<br>
-<img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Arts Card Resist Up
-<br><br>
-<strong>Usage Examples:</strong>
-<br>
-<code>/calc string: Ereshkigal arts ap30</code>
-<br>
-This would calculate Ereshkigal's Arts card with special 30% Arts Damage Up that doesn't impact NP or star gen.
-</details>
-<details>
-  <summary><b>
-    <img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    QPower / QCP / QP</b></summary>
- <table style="display: block; overflow-x: auto; max-width:fit-content">
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>
-    qpower<br>qcp<br>qp
-    </td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>E>C>W>G</td>
-    <td>Sum</td>
-</tr>
-</table>
-This is the same as the normal quick card mod, but it only impacts quick card damage, it 
-does not impact NP or star generation like normal quick mod does.
-<br>
-99.99999999% of the time, you should not use this.<br>
-It is here <b>ONLY</b> for the event bonus effects on a specific prisma cosmos CE.
-<br><br>
-Positive Values:
-<br>
-<img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Quick Card Up
-<br>
-<img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Quick Resist Down
-<br><br>
-Negative Values:
-<br>
-<img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Quick Card Down
-<br>
-<img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Quick Card Resist Up
-<br><br>
-<strong>Usage Examples:</strong>
-<br>
-<code>/calc string: Ereshkigal quick qp30</code>
-<br>
-This would calculate Ereshkigal's Quick card with special 30% Quick Damage Up that doesn't impact NP or star gen.
-</details>
-<details>
-  <summary><b>
-    <img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    <img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    EPower / ECP / EP</b></summary>
- <table style="display: block; overflow-x: auto; max-width:fit-content">
-  <tr>
-    <th>Arg</th>
-    <th>Number?</th>
-    <th>Decimals?</th>
-    <th>Priority</th>
-    <th>Duplicate</th>
-  </tr>
-  <tr>
-    <td>
-    epower<br>ecp<br>ep
-    </td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>E>C>W>G</td>
-    <td>Sum</td>
-</tr>
-</table>
-This is the same as the normal extra card mod, but it only impacts extra card damage, it 
-does not impact NP or star generation like normal extra mod does.
-<br>
-This is the buff on Space Ishtar's NP. This is NOT the buff for appends.
-<br><br>
-Positive Values:
-<br>
-<img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Extra Card Up
-<br>
-<img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Extra Resist Down
-<br><br>
-Negative Values:
-<br>
-<img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Extra Card Down
-<br>
-<img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-Extra Card Resist Up
-<br><br>
-<strong>Usage Examples:</strong>
-<br>
-<code>/calc string: Spishtar extra ep30</code>
-<br>
-This would calculate Space Ishtar's Extra card with special 30% Extra Damage Up that doesn't impact NP or star gen.
-</details>
-<details>
-  <summary><b>
     <img src="./images/icons/atk_up.png" alt="Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/atk_down.png" alt="Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     AtkMod / Attack / ATK / A</b></summary>
@@ -2980,6 +2697,292 @@ None
 <code>/calc string: Ereshkigal fs50</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 50 flat stars.
+</details>
+⚠️ <b>Note: The Following Card Power Arguments Are Rarely Used</b>
+<br>
+<b>99.99% of the time, you want the CardMod args from the top of this section instead.</b>
+<details>
+  <summary><b>
+    <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    CPower / CP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    cpower<br>cp
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+The same as the normal cardmod buff, but this one only impacts a card's damage, not NP and Stargen.
+<br>
+99.99999999% of the time, you should not use this.<br>
+It is here <b>ONLY</b> for the event bonus effects on three specific prisma cosmos CEs.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Up (Ex. Buster Card Up) 
+<br>
+<img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Resist Down (Ex. Buster Card Resist Down)
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Down (Ex. Buster Card Down)
+<br>
+<img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Card Resist Up (Ex. Buster Card Resist Up)
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal cp30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% ATK Only Card Damage Up.
+<br><br>
+<code>/calc string: Ereshkigal cp-30</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 30% ATK Only Card Damage Down.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    BPower / BCP / BP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    bpower<br>bcp<br>bp
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This is the same as the normal buster card mod, but it only impacts buster card damage, it 
+does not impact NP or star generation like normal buster mod does.
+<br>
+99.99999999% of the time, you should not use this.<br>
+It is here <b>ONLY</b> for the event bonus effects on a specific prisma cosmos CE.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/buster_up.png" alt="Buster Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Card Up
+<br>
+<img src="./images/icons/buster_resist_down.png" alt="Buster Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/buster_down.png" alt="Buster Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Card Down
+<br>
+<img src="./images/icons/buster_resist_up.png" alt="Buster Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Buster Card Resist Up
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal buster bp30</code>
+<br>
+This would calculate Ereshkigal's Buster card with special 30% Buster Damage Up that doesn't impact NP or star gen.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    APower / ACP / AP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    apower<br>acp<br>ap
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This is the same as the normal arts card mod, but it only impacts arts card damage, it 
+does not impact NP or star generation like normal arts mod does.
+<br>
+99.99999999% of the time, you should not use this.<br>
+It is here <b>ONLY</b> for the event bonus effects on a specific prisma cosmos CE.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/arts_up.png" alt="Arts Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Card Up
+<br>
+<img src="./images/icons/arts_resist_down.png" alt="Arts Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/arts_down.png" alt="Arts Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Card Down
+<br>
+<img src="./images/icons/arts_resist_up.png" alt="Arts Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Arts Card Resist Up
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal arts ap30</code>
+<br>
+This would calculate Ereshkigal's Arts card with special 30% Arts Damage Up that doesn't impact NP or star gen.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    QPower / QCP / QP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    qpower<br>qcp<br>qp
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This is the same as the normal quick card mod, but it only impacts quick card damage, it 
+does not impact NP or star generation like normal quick mod does.
+<br>
+99.99999999% of the time, you should not use this.<br>
+It is here <b>ONLY</b> for the event bonus effects on a specific prisma cosmos CE.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/quick_up.png" alt="Quick Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Card Up
+<br>
+<img src="./images/icons/quick_resist_down.png" alt="Quick Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/quick_down.png" alt="Quick Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Card Down
+<br>
+<img src="./images/icons/quick_resist_up.png" alt="Quick Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Quick Card Resist Up
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal quick qp30</code>
+<br>
+This would calculate Ereshkigal's Quick card with special 30% Quick Damage Up that doesn't impact NP or star gen.
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    <img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+    EPower / ECP / EP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    epower<br>ecp<br>ep
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This is the same as the normal extra card mod, but it only impacts extra card damage, it 
+does not impact NP or star generation like normal extra mod does.
+<br>
+This is the buff on Space Ishtar's NP. This is NOT the buff for appends.
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/extra_up.png" alt="Extra Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Up
+<br>
+<img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Resist Down
+<br><br>
+Negative Values:
+<br>
+<img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Down
+<br>
+<img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+Extra Card Resist Up
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Spishtar extra ep30</code>
+<br>
+This would calculate Space Ishtar's Extra card with special 30% Extra Damage Up that doesn't impact NP or star gen.
 </details>
 
 <h3>Shorthands</h3>
