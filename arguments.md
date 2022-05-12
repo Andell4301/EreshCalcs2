@@ -540,6 +540,87 @@ This would calculate one Noble Phantasm card from Ereshkigal.
 This would calculate two Noble Phantasm cards from Ereshkigal.
 </details>
 <details>
+  <summary><b><img src="./images/cards/letter_w.png" alt="Weak Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Weak / W</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>weak<br>w</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate a weak card. This is an enemy only card type.
+<br><br>
+Chains with weak cards cannot generate stars or NP.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal weak</code>
+<br>
+This would calculate one Weak card from Ereshkigal.
+<br><br>
+<code>/calc string: Ereshkigal weak weak</code>
+<br>
+This would calculate two Weak cards from Ereshkigal.
+<br><br>
+<code>/calc string: Ereshkigal w</code>
+<br>
+This would calculate one Weak card from Ereshkigal.
+<br><br>
+<code>/calc string: Ereshkigal ww</code>
+<br>
+This would calculate two Weak cards from Ereshkigal.
+</details>
+<details>
+  <summary><b><img src="./images/cards/letter_s.png" alt="strength Icon" style="width: auto; height:19px; border:none; padding:0; margin:0; vertical-align: sub"> Strength / S</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>strength<br>s</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to tell EreshBot to calculate a strength card. This is an enemy only card type. Strength cards always critically 
+hit.
+<br><br>
+Chains with strength cards cannot generate stars or NP.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal strength</code>
+<br>
+This would calculate one Strength card from Ereshkigal.
+<br><br>
+<code>/calc string: Ereshkigal strength strength</code>
+<br>
+This would calculate two Strength cards from Ereshkigal.
+<br><br>
+<code>/calc string: Ereshkigal s</code>
+<br>
+This would calculate one Strength card from Ereshkigal.
+<br><br>
+<code>/calc string: Ereshkigal ss</code>
+<br>
+This would calculate two Strength cards from Ereshkigal.
+</details>
+<details>
   <summary><b><img src="./images/cards/card_bg_blank.png" alt="NP Icon" style="width: 16px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> X</b>
 </summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
