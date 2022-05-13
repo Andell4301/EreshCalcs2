@@ -64,6 +64,12 @@ is specified.
 The enemy argument also defines new enemies. If you use <code>enemy3</code> when there are only 2 enemies, 
 a new enemy in position 3 will be created.
 <br><br>
+This argument can also be used in dash or comma notation.
+<br>
+<code>enemy1-5</code> will apply all arguments to enemy 1, 2, 3, 4, and 5.
+<br>
+<code>enemy1,2,5</code> will apply all arguments to enemy 1, 2, and 5.
+<br><br>
 Utilizing <code>enemy0</code> will return you to the global scope.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -264,7 +270,7 @@ using <code>w2</code> as a target. The first enemy of <code>wave2</code> is <cod
 <br><br>
 </details>
 <details>
-<summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> WaveSize</b></summary>
+<summary><b><img src="./images/icons/enemies_dark.png" alt="Wave Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> WaveSize / WS</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -274,7 +280,7 @@ using <code>w2</code> as a target. The first enemy of <code>wave2</code> is <cod
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>wavesize</td>
+    <td>wavesize<br>ws</td>
     <td>✔️ (1-6)</td>
     <td>❌</td>
     <td>N/A</td>
@@ -3516,7 +3522,7 @@ This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quic
 
 <h3>Other Args</h3>
 <details>
-  <summary><b>Verbose / V</b></summary>
+  <summary><b>NoCap</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3526,19 +3532,18 @@ This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quic
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>verbose<br>v</td>
+    <td>nocap</td>
     <td>❌</td>
     <td>❌</td>
     <td>N/A</td>
     <td>N/A</td>
 </tr>
 </table>
-Blocks hiding enemy num and card num on the summary page even in cases where they would normally be hidden.
+By default, Eresh enforces common buff caps found here: https://github.com/atlasacademy/fgo-docs#lower-and-upper-bounds-of-buffs
+<br>
+This argument will disable those caps. Note that doing so may make your calculations 
+inaccurate.
 <br><br>
-<strong>Usage Examples:</strong>
-<br>
-<code>/calc string: Ereshkigal v</code>
-<br>
 </details>
 <details>
   <summary><b>ReducedMin / ReduceMin</b></summary>
