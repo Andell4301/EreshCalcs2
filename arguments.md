@@ -3152,7 +3152,7 @@ This argument is a shorthand for <code>enemy0 lv120 fou2000</code>
 This would calculate Ereshkigal's Noble Phantasm at level 120 with 2000 fou ATK.
 </details>
 <details>
-  <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XSS</b></summary>
+  <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XS</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3162,7 +3162,7 @@ This would calculate Ereshkigal's Noble Phantasm at level 120 with 2000 fou ATK.
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>xss</td>
+    <td>2xs</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -3174,12 +3174,12 @@ you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc string: Sei Quick crit xss</code>
+<code>/calc string: Sei Quick crit 2xs</code>
 <br>
 This would calculate Sei Shonagons's quick card with 100% Quick Card Mod and 200% Quick Critical Damage.
 </details>
 <details>
-  <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/def_down.png" alt="Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XSSD</b></summary>
+  <summary><b><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/skadi.png" alt="Skadi" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/def_down.png" alt="Def Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XSD</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3189,7 +3189,7 @@ This would calculate Sei Shonagons's quick card with 100% Quick Card Mod and 200
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>xssd</td>
+    <td>2xsd</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -3201,12 +3201,12 @@ you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc string: Sei Quick crit xssd</code>
+<code>/calc string: Sei Quick crit 2xsd</code>
 <br>
 This would calculate Sei Shonagons's quick card with 100% Quick Card Mod, 200% Quick Critical Damage, and 60% Def Down.
 </details>
 <details>
-  <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XMM</b></summary>
+  <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XM</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3216,7 +3216,7 @@ This would calculate Sei Shonagons's quick card with 100% Quick Card Mod, 200% Q
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>xmm</td>
+    <td>2xm</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -3227,12 +3227,12 @@ This argument is a shorthand for <code>a40 bm100</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc string: Ereshkigal Buster xmm</code>
+<code>/calc string: Ereshkigal Buster 2xm</code>
 <br>
 This would calculate Ereshkigal's Buster card with 100% Buster Card Mod and 40% Attack Mod.
 </details>
 <details>
-  <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/crit_dmg_up.png" alt="Crit" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XMMC</b></summary>
+  <summary><b><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/merlin.png" alt="Merlin" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/crit_dmg_up.png" alt="Crit" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XMC</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3242,7 +3242,7 @@ This would calculate Ereshkigal's Buster card with 100% Buster Card Mod and 40% 
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>xmmc</td>
+    <td>2xmc</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -3254,12 +3254,12 @@ crit if you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc string: Ereshkigal Buster xmmc</code>
+<code>/calc string: Ereshkigal Buster 2xmc</code>
 <br>
 This would calculate Ereshkigal's Buster card with 100% Buster Card Mod, 40% Attack Mod, and 200% Crit Damage.
 </details>
 <details>
-  <summary><b><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XWW</b></summary>
+  <summary><b><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/waver.png" alt="Waver" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XW</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3269,7 +3269,7 @@ This would calculate Ereshkigal's Buster card with 100% Buster Card Mod, 40% Att
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>xww</td>
+    <td>2xw</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -3281,12 +3281,12 @@ crit if you want it to crit!
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc string: Ereshkigal Buster xww</code>
+<code>/calc string: Ereshkigal Buster 2xw</code>
 <br>
 This would calculate Ereshkigal's Buster card with 60% Attack Mod, 100% Crit Damage, and 1000 Flat Damage.
 </details>
 <details>
-  <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XCC</b></summary>
+  <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XC</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3296,7 +3296,7 @@ This would calculate Ereshkigal's Buster card with 60% Attack Mod, 100% Crit Dam
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>xcc</td>
+    <td>2xc</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -3307,12 +3307,12 @@ This argument is a shorthand for <code>a40 am100</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc string: Ereshkigal Arts xcc</code>
+<code>/calc string: Ereshkigal Arts 2xc</code>
 <br>
 This would calculate Ereshkigal's Arts card with 40% Attack Mod and 100% Arts Mod.
 </details>
 <details>
-  <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/np_gain_up.png" alt="NP Gain" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> XCCNG</b></summary>
+  <summary><b><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/castoria.png" alt="Castoria" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/np_gain_up.png" alt="NP Gain" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XCN</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3322,7 +3322,7 @@ This would calculate Ereshkigal's Arts card with 40% Attack Mod and 100% Arts Mo
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>xccng</td>
+    <td>2xcn</td>
     <td>❌</td>
     <td>❌</td>
     <td>E>C>W>G</td>
@@ -3333,7 +3333,7 @@ This argument is a shorthand for <code>a40 am100 ng60</code>.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
-<code>/calc string: Ereshkigal Arts hp22500 xccng</code>
+<code>/calc string: Ereshkigal Arts hp22500 2xcn</code>
 <br>
 This would calculate Ereshkigal's Arts card with 40% Attack Mod, 100% Arts Mod, and 60% NP Gen Up.
 </details>
