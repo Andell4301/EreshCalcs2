@@ -1804,7 +1804,7 @@ This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
     <img src="./images/icons/extra_down.png" alt="Extra Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/extra_res_up.png" alt="Extra Resist Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/extra_res_down.png" alt="Extra Resist Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
-    ECardMod / ECM / EM</b></summary>
+    ECardMod / EM</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -1815,7 +1815,7 @@ This would calculate Ereshkigal's Arts card 30% Arts Damage Down.
   </tr>
   <tr>
     <td>
-    ecardmod<br>ecm<br>em
+    ecardmod<br>em
     </td>
     <td>✔️</td>
     <td>✔️</td>
