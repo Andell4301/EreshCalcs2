@@ -173,6 +173,12 @@ In the calc <code>/calc string: Ereshkigal enemy1 enemy2 enemy3 enemy4</code>, <
 <code>wave2</code> would be valid, with <code>wave1</code> containing enemies 1-3 and <code>wave2</code> 
 containing enemy 4.
 <br><br>
+This argument can also be used in dash or comma notation.
+<br>
+<code>wave1-5</code> will apply all arguments to wave 1, 2, 3, 4, and 5.
+<br>
+<code>wave1,2,5</code> will apply all arguments to wave 1, 2, and 5.
+<br><br>
 Utilizing <code>wave0</code> will return you to the general scope.
 <br><br>
 <strong>Usage Examples:</strong>
@@ -216,6 +222,12 @@ In this scenario, <code>nwave3</code> would be equivalent to <code>enemy7 enemy8
 In the scenario that you specify an already existing wave, <code>nwave</code> will fill out 
 the remaining enemies in that wave until it has the same number of enemies as 
 <code>wavesize</code>.
+<br><br>
+This argument can also be used in dash or comma notation.
+<br>
+<code>nwave1-5</code> will create and apply all arguments to wave 1, 2, 3, 4, and 5.
+<br>
+<code>nwave1,2,5</code> will create and apply all arguments to wave 1, 2, and 5.
 <br><br>
 Utilizing <code>nwave0</code> will return you to the general scope.
 <br><br>
