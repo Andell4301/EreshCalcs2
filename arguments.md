@@ -2517,7 +2517,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% flat refund.
   <summary><b>
     <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
-    StarGain / SG</b></summary>
+    StarGain / StarGen / SG</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -2528,7 +2528,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% flat refund.
   </tr>
   <tr>
     <td>
-    stargain<br>sg
+    stargain<br>stargen<br>sg
     </td>
     <td>✔️</td>
     <td>✔️</td>
@@ -2564,7 +2564,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% Star generation down.
     <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/buster.png" alt="Buster" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
-    BStarGain / BSG</b></summary>
+    BStarGain / BStarGen / BSG</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -2575,7 +2575,7 @@ This would calculate Ereshkigal's Noble Phantasm with 50% Star generation down.
   </tr>
   <tr>
     <td>
-    bstargain<br>bsg
+    bstargain<br>bstargen<br>bsg
     </td>
     <td>✔️</td>
     <td>✔️</td>
@@ -2613,7 +2613,7 @@ This would calculate Ereshkigal's Buster card with 50% Buster Star generation do
     <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/quick.png" alt="Quick" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
-    QStarGain / QSG</b></summary>
+    QStarGain / QStarGen / QSG</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -2624,7 +2624,7 @@ This would calculate Ereshkigal's Buster card with 50% Buster Star generation do
   </tr>
   <tr>
     <td>
-    qstargain<br>qsg
+    qstargain<br>qstargen<br>qsg
     </td>
     <td>✔️</td>
     <td>✔️</td>
@@ -2662,7 +2662,7 @@ This would calculate Ereshkigal's Quick card with 50% Quick Star generation down
     <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/arts.png" alt="Arts" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
-    AStarGain / ASG</b></summary>
+    AStarGain / AStarGen / ASG</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -2673,7 +2673,7 @@ This would calculate Ereshkigal's Quick card with 50% Quick Star generation down
   </tr>
   <tr>
     <td>
-    astargain<br>asg
+    astargain<br>astargen<br>asg
     </td>
     <td>✔️</td>
     <td>✔️</td>
@@ -2711,7 +2711,7 @@ This would calculate Ereshkigal's Arts card with 50% Arts Star generation down.
     <img src="./images/icons/star_gen_up.png" alt="Star Gain Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
     <img src="./images/icons/star_gen_down.png" alt="Star Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
-    EStarGain / ESG</b></summary>
+    EStarGain / EStarGen / ESG</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -2722,7 +2722,7 @@ This would calculate Ereshkigal's Arts card with 50% Arts Star generation down.
   </tr>
   <tr>
     <td>
-    estargain<br>esg
+    estargain<br>estargen<br>esg
     </td>
     <td>✔️</td>
     <td>✔️</td>
