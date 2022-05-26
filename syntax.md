@@ -373,7 +373,7 @@ arguments, as you should know what those are doing. Skips will be indicated by
 <br>
 <br>
 
-<span style="color: #0083AFFF;font-weight:bold"> /calc string: Lancelot npnpnp np4 sscope xss archer sky</span>
+<span style="color: #0083AFFF;font-weight:bold"> /calc string: Lancelot npnpnp np4 sscope 2xs archer sky</span>
 <span style="color: #00A82FFF;font-weight:bold"> enemy1 hp32149</span>
 <span style="color: #B70000FF;font-weight:bold"> enemy2 hp32739</span>
 <span style="color: #C97C00FF;font-weight:bold"> enemy3 hp31560</span>
@@ -409,7 +409,7 @@ arguments, as you should know what those are doing. Skips will be indicated by
     <td>Dedicated arg for level 100 Kaleidoscope. It's equivalent to ce2000.</td>
   </tr>
   <tr>
-    <td style="color: #0083AFFF;font-weight:bold">xss</td>
+    <td style="color: #0083AFFF;font-weight:bold">2xs</td>
     <td>Globally specify double Skadi buffs without def down. It's equivalent to 
     writing qm100 qcd200.</td>
   </tr>
