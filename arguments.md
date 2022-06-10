@@ -920,8 +920,6 @@ Used to specify things like buster first bonus, whether a card critically hits, 
 Used to indicate that a given card should be in position 1. Using this argument will automatically
 apply the first card bonus for the card type.
 <br><br>
-Note that this argument will not affect cards in card chains.
-<br><br>
 <strong>Usage Examples:</strong>
 <br>
 <code>/calc string: Ereshkigal buster first</code>
@@ -948,8 +946,6 @@ This would calculate one of Ereshkigal's Buster cards in position 1.
 </table>
 Used to indicate that a given card should be in position 2.
 <br><br>
-Note that this argument will not affect cards in card chains.
-<br><br>
 <strong>Usage Examples:</strong>
 <br>
 <code>/calc string: Ereshkigal buster second</code>
@@ -975,8 +971,6 @@ This would calculate one of Ereshkigal's Buster cards in position 2.
 </tr>
 </table>
 Used to indicate that a given card should be in position 3.
-<br><br>
-Note that this argument will not affect cards in card chains.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
@@ -1327,8 +1321,6 @@ This argument can be used to set a custom card multiplier. This can be used to m
 would typically be set by the <code>first</code>, <code>second</code>, and <code>third</code> arguments. 
 <br><br>
 This corresponds to <code>cardDamageValue</code> in the damage formula.
-<br><br>
-Note that unlike the positional arguments, this argument <i>can</i> be used even on cards in chains.
 <br><br>
 <strong>Usage Examples:</strong>
 <br>
