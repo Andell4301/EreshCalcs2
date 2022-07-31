@@ -3526,6 +3526,52 @@ This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quic
 
 <h3>Other Args</h3>
 <details>
+  <summary><b>Eng</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>eng</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+This arg will set the calc to use NA sever chain bonuses. Quick chains will give 10 stars and there are no mighty chains.
+<br>
+Defaults to true if the servant is available in NA.
+<br><br>
+</details>
+<details>
+  <summary><b>JP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>eng</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>N/A</td>
+    <td>N/A</td>
+</tr>
+</table>
+This arg will set the calc to use JP sever chain bonuses. Quick chains will give 20 stars and mighty chains will be enabled.
+<br>
+Defaults to true if the servant is not available in NA.
+<br><br>
+</details>
+<details>
   <summary><b>NoCap</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
