@@ -1174,6 +1174,36 @@ Additionally, using this argument will automatically apply quick first.
 This would calculate a single Quick card from Ereshkigal as a part of a quick chain.
 </details>
 <details>
+  <summary><b>MightyChain / MC</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>mightychain<br>mc</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Replace</td>
+</tr>
+</table>
+This argument can be used to force a mighty chain bonus even when calculating a single card. Also sets chain type to JP.
+<br>
+Note that when calculating a mighty card chain using card arguments if chain type is set to jp, this is automatically applied.
+<br>
+Additionally, using this argument will automatically apply quick first.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal quick mc</code>
+<br>
+This would calculate a single Quick card from Ereshkigal as a part of a mighty chain.
+</details>
+<details>
   <summary><b><img src="./images/cards/extra.png" alt="Extra" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> ExtraCardModifier / ECM</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
