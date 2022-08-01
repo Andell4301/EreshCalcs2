@@ -3556,7 +3556,7 @@ This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quic
 
 <h3>Other Args</h3>
 <details>
-  <summary><b>Eng</b></summary>
+  <summary><b>Eng / Global / G</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -3566,7 +3566,7 @@ This would calculate Sei Shonagon's Noble Phantasm with 2000 CE ATK and 10% Quic
     <th>Duplicate</th>
   </tr>
   <tr>
-    <td>eng</td>
+    <td>eng<br>global<br>g</td>
     <td>❌</td>
     <td>❌</td>
     <td>N/A</td>
