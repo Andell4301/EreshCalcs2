@@ -745,7 +745,7 @@ Used to tell EreshBot what the NP level of your servant is.
 This would calculate a Noble Phantasm from Ereshkigal at NP level 3.
 </details>
 <details>
-  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Strengthen / STR / Lewd / Interlude / SetNP / SNP</b>
+  <summary><b><img src="./images/cards/np.png" alt="NP Icon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> Strengthen / STR / Lewd / Interlude / SetNP</b>
 </summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
