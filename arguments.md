@@ -1,4 +1,4 @@
-<h2>Full Argument List</h2>
+)<h2>Full Argument List</h2>
 
 <h3>Structure Arguments</h3>
 Used for setting up the structure of the calculation. How many enemies, which card 
@@ -2204,6 +2204,41 @@ This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Down.
 </details>
 <details>
   <summary><b>
+    <img src="./images/icons/buffrate.png" alt="NP Rate Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    NPPower / NPP</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    nppower<br>npp
+    </td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+Used to set NP Rate up. This is the Oberon buff. Multiplies total npmod by 100% + NPP
+<br><br>
+Positive Values:
+<br>
+<img src="./images/icons/np_dmg_up.png" alt="NP Rate Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+NP Rate Up
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal n50 npp100</code>
+<br>
+This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Up (50% * (100% + 100%)).
+</details>
+<details>
+  <summary><b>
     <img src="./images/icons/sp_atk_up.png" alt="Sp Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     SuperEffectiveMod / Super / SEMod / SEM / SE / S</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
@@ -3370,6 +3405,84 @@ This argument is a shorthand for <code>a40 am100 ng60</code>.
 <code>/calc string: Ereshkigal Arts hp22500 2xcn</code>
 <br>
 This would calculate Ereshkigal's Arts card with 40% Attack Mod, 100% Arts Mod, and 60% NP Gen Up.
+</details>
+<details>
+  <summary><b><img src="./images/icons/koyan_light.png" alt="Koyanskaya of Light" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 1XK</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>1xk</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>bm50 bcd50</code>.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal Buster hp22500 1xk</code>
+<br>
+This would calculate Ereshkigal's Buster card with 50% Buster Mod and 50% Buster Crit Mod.
+</details>
+<details>
+  <summary><b><img src="./images/icons/koyan_light.png" alt="Koyanskaya of Light" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"><img src="./images/icons/koyan_light.png" alt="Koyanskaya of Light" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 2XK</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>2xk</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>bm100 bcd100</code>.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal Buster hp22500 2xk</code>
+<br>
+This would calculate Ereshkigal's Buster card with 100% Buster Mod and 100% Buster Crit Mod.
+</details>
+<details>
+  <summary><b><img src="./images/icons/oberon.png" alt="Oberon" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 1XO</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>1xo</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>Sum</td>
+</tr>
+</table>
+This argument is a shorthand for <code>n30 bm50 npp100</code>.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal hp22500 1xo</code>
+<br>
+This would calculate Ereshkigal's Buster card with 30% NP Mod, 50% Buster Mod, and 100% NP Rate Up.
 </details>
 <details>
   <summary><b><img src="./images/icons/bg.png" alt="Black Grail" style="width: 18px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> SuperBlackGrail / SuperBG / SBG</b></summary>
