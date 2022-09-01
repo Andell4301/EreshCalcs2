@@ -1889,7 +1889,7 @@ This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
   <summary><b>
     <img src="./images/icons/atk_up.png" alt="Atk Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/atk_down.png" alt="Atk Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
-    AtkMod / Attack / ATK / A</b></summary>
+    AtkMod / Attack / ATKM / ATK / A</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -1900,7 +1900,7 @@ This would calculate Ereshkigal's Extra card 30% Extra Damage Down.
   </tr>
   <tr>
     <td>
-    atkmod<br>attack<br>atk<br>a
+    atkmod<br>attack<br>atkm<br>atk<br>a
     </td>
     <td>✔️</td>
     <td>✔️</td>
@@ -2161,7 +2161,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Dama
   <summary><b>
     <img src="./images/icons/np_dmg_up.png" alt="NP Damage Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
     <img src="./images/icons/np_dmg_down.png" alt="NP Damage Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
-    NPMod / N</b></summary>
+    NPMod / NPM / N</b></summary>
  <table style="display: block; overflow-x: auto; max-width:fit-content">
   <tr>
     <th>Arg</th>
@@ -2172,7 +2172,7 @@ This would calculate Ereshkigal's Noble Phantasm against an enemy with 100% Dama
   </tr>
   <tr>
     <td>
-    npmod<br>n
+    npmod<br>npm<br>n
     </td>
     <td>✔️</td>
     <td>✔️</td>
