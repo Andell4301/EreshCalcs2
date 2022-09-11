@@ -1416,6 +1416,36 @@ This corresponds to <code>cardStarValue</code> in the Star Generation formula.
 <br>
 This would calculate a buster card from Ereshkigal with a refund value of 15%.
 </details>
+<details>
+  <summary><b>
+    <img src="./images/icons/np_gain_down.png" alt="NP Gain Down" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    NR</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    nr
+    </td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to indicate that a card should not generate NP.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Ereshkigal hp1000 anpb card1 nr</code>
+<br>
+This would make Ereshkigal's first card (the arts card) generate no NP.
+</details>
 
 <h3>Enemy Attribute Arguments</h3>
 <details>
