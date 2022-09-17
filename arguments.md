@@ -1,4 +1,4 @@
-)<h2>Full Argument List</h2>
+<h2>Full Argument List</h2>
 
 <h3>Structure Arguments</h3>
 Used for setting up the structure of the calculation. How many enemies, which card 
