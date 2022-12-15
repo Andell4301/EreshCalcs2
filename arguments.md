@@ -2258,7 +2258,7 @@ Used to set NP Rate up. This is the Oberon buff. Multiplies total npmod by 100% 
 <br><br>
 Positive Values:
 <br>
-<img src="./images/icons/np_dmg_up.png" alt="NP Rate Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
+<img src="./images/icons/buffrate.png" alt="NP Rate Up" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub"> 
 NP Rate Up
 <br><br>
 <strong>Usage Examples:</strong>
@@ -2266,6 +2266,36 @@ NP Rate Up
 <code>/calc string: Ereshkigal n50 npp100</code>
 <br>
 This would calculate Ereshkigal's Noble Phantasm with 100% NP Damage Up (50% * (100% + 100%)).
+</details>
+<details>
+  <summary><b>
+    <img src="./images/icons/multihit.png" alt="Fifth Force" style="width: 19px; height:auto; border:none; padding:0; margin:0; vertical-align: sub">
+    FF</b></summary>
+ <table style="display: block; overflow-x: auto; max-width:fit-content">
+  <tr>
+    <th>Arg</th>
+    <th>Number?</th>
+    <th>Decimals?</th>
+    <th>Priority</th>
+    <th>Duplicate</th>
+  </tr>
+  <tr>
+    <td>
+    ff
+    </td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>E>C>W>G</td>
+    <td>N/A</td>
+</tr>
+</table>
+Used to double hit counts for Musashi's Fifth Force buff.
+<br><br>
+<strong>Usage Examples:</strong>
+<br>
+<code>/calc string: Musashi ff p30</code>
+<br>
+This would calculate Musashi's Noble Phantasm with double hit counts and the powermod buff that also comes with fifth force.
 </details>
 <details>
   <summary><b>
